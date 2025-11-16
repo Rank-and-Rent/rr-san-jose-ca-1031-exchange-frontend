@@ -1,0 +1,16 @@
+{
+  "company": "1031 Exchange San Jose",
+  "phone": "(408) 539-2254",
+  "phoneDigits": "4085392254",
+  "mainCity": "San Jose",
+  "state": "CA",
+  "services": [],
+  "servicesNav": [],
+  "locationsNav": [],
+  "extraLinks": [
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ]
+}
