@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { servicesData } from "../data/services";
 import { locationsData } from "../data/locations";
@@ -58,9 +57,7 @@ export default function Header() {
 
   const handleServicesMouseLeave = () => {
     if (servicesTimeoutRef.current) clearTimeout(servicesTimeoutRef.current);
-    servicesTimeoutRef.current = setTimeout(() => {
-      setServicesOpen(false);
-    }, 300);
+    servicesTimeoutRef.current = setTimeout(() => setServicesOpen(false), 300);
   };
 
   const handleLocationsMouseEnter = () => {
@@ -70,9 +67,7 @@ export default function Header() {
 
   const handleLocationsMouseLeave = () => {
     if (locationsTimeoutRef.current) clearTimeout(locationsTimeoutRef.current);
-    locationsTimeoutRef.current = setTimeout(() => {
-      setLocationsOpen(false);
-    }, 300);
+    locationsTimeoutRef.current = setTimeout(() => setLocationsOpen(false), 300);
   };
 
   const handleToolsMouseEnter = () => {
@@ -82,17 +77,15 @@ export default function Header() {
 
   const handleToolsMouseLeave = () => {
     if (toolsTimeoutRef.current) clearTimeout(toolsTimeoutRef.current);
-    toolsTimeoutRef.current = setTimeout(() => {
-      setToolsOpen(false);
-    }, 300);
+    toolsTimeoutRef.current = setTimeout(() => setToolsOpen(false), 300);
   };
 
   return (
     <header className="sticky top-0 z-50 bg-navy">
-      <nav className="max-w-7xl mx-auto px-6 lg:px-10" aria-label="Main navigation">
-        <div className="flex h-20 items-center justify-between">
+      <nav className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-10" aria-label="Main navigation">
+        <div className="flex h-20 items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition">
+          <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition shrink-0">
             <div className="flex flex-col leading-tight">
               <span className="font-heading text-2xl italic text-lime">1031</span>
               <span className="text-[10px] font-medium tracking-[0.2em] text-white/90 italic">Exchange</span>
@@ -100,8 +93,8 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          {/* Desktop Navigation - Always visible */}
+          <div className="flex flex-1 items-center justify-end gap-4 lg:gap-6 xl:gap-8">
             {/* Services Dropdown */}
             <div
               ref={servicesRef}
@@ -111,14 +104,14 @@ export default function Header() {
             >
               <button
                 type="button"
-                className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-super-wide text-white hover:text-lime transition"
+                className="flex items-center gap-1 text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
                 onClick={() => setServicesOpen(!servicesOpen)}
               >
                 Services
                 <svg
-                  className={`w-3 h-3 transition-transform ${servicesOpen ? "rotate-180" : ""}`}
+                  className={`w-2.5 h-2.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -127,7 +120,7 @@ export default function Header() {
                 </svg>
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-4 w-80 bg-white shadow-elegant-lg rounded-sm py-4 border-t-2 border-lime">
+                <div className="absolute top-full left-0 mt-4 w-80 bg-white shadow-xl py-4 border-t-2 border-lime z-50">
                   <div className="space-y-0.5">
                     {topServices.map((service) => (
                       <Link
@@ -143,7 +136,7 @@ export default function Header() {
                   <div className="border-t border-gray-200 mt-3 pt-3 px-5">
                     <Link
                       href="/services"
-                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-navy hover:text-lime transition"
+                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-navy hover:text-lime-dark transition"
                       onClick={() => setServicesOpen(false)}
                     >
                       View All Services
@@ -165,14 +158,14 @@ export default function Header() {
             >
               <button
                 type="button"
-                className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-super-wide text-white hover:text-lime transition"
+                className="flex items-center gap-1 text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
                 aria-expanded={locationsOpen}
                 aria-haspopup="true"
                 onClick={() => setLocationsOpen(!locationsOpen)}
               >
                 Locations
                 <svg
-                  className={`w-3 h-3 transition-transform ${locationsOpen ? "rotate-180" : ""}`}
+                  className={`w-2.5 h-2.5 transition-transform ${locationsOpen ? "rotate-180" : ""}`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -181,7 +174,7 @@ export default function Header() {
                 </svg>
               </button>
               {locationsOpen && (
-                <div className="absolute top-full left-0 mt-4 w-64 bg-white shadow-elegant-lg rounded-sm py-4 border-t-2 border-lime">
+                <div className="absolute top-full left-0 mt-4 w-64 bg-white shadow-xl py-4 border-t-2 border-lime z-50">
                   <div className="space-y-0.5">
                     {topLocations.map((location) => (
                       <Link
@@ -197,7 +190,7 @@ export default function Header() {
                   <div className="border-t border-gray-200 mt-3 pt-3 px-5">
                     <Link
                       href={LOCATIONS_ROUTE}
-                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-navy hover:text-lime transition"
+                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-navy hover:text-lime-dark transition"
                       onClick={() => setLocationsOpen(false)}
                     >
                       View All Locations
@@ -210,23 +203,23 @@ export default function Header() {
               )}
             </div>
 
-            {/* Tools Dropdown */}
+            {/* Tools Dropdown - Hidden on smaller screens */}
             <div
               ref={toolsRef}
-              className="relative"
+              className="relative hidden lg:block"
               onMouseEnter={handleToolsMouseEnter}
               onMouseLeave={handleToolsMouseLeave}
             >
               <button
                 type="button"
-                className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-super-wide text-white hover:text-lime transition"
+                className="flex items-center gap-1 text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
                 aria-expanded={toolsOpen}
                 aria-haspopup="true"
                 onClick={() => setToolsOpen(!toolsOpen)}
               >
                 Tools
                 <svg
-                  className={`w-3 h-3 transition-transform ${toolsOpen ? "rotate-180" : ""}`}
+                  className={`w-2.5 h-2.5 transition-transform ${toolsOpen ? "rotate-180" : ""}`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -235,7 +228,7 @@ export default function Header() {
                 </svg>
               </button>
               {toolsOpen && (
-                <div className="absolute top-full left-0 mt-4 w-72 bg-white shadow-elegant-lg rounded-sm py-4 border-t-2 border-lime">
+                <div className="absolute top-full left-0 mt-4 w-72 bg-white shadow-xl py-4 border-t-2 border-lime z-50">
                   <div className="space-y-0.5">
                     {tools.map((tool) => (
                       <Link
@@ -251,7 +244,7 @@ export default function Header() {
                   <div className="border-t border-gray-200 mt-3 pt-3 px-5">
                     <Link
                       href="/tools"
-                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-navy hover:text-lime transition"
+                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-navy hover:text-lime-dark transition"
                       onClick={() => setToolsOpen(false)}
                     >
                       View All Tools
@@ -266,56 +259,51 @@ export default function Header() {
 
             <Link
               href="/property-types"
-              className="text-xs font-semibold uppercase tracking-super-wide text-white hover:text-lime transition"
+              className="hidden xl:block text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
             >
               Property Types
             </Link>
 
             <Link
-              href="/blog"
-              className="text-xs font-semibold uppercase tracking-super-wide text-white hover:text-lime transition"
-            >
-              Blog
-            </Link>
-
-            <Link
               href="/contact"
-              className="text-xs font-semibold uppercase tracking-super-wide text-white hover:text-lime transition"
+              className="text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
             >
               Contact Us
             </Link>
 
             <a
               href={phoneNumberHref}
-              className="text-xs font-semibold uppercase tracking-super-wide text-white hover:text-lime transition"
+              className="text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
             >
               {phoneNumberDisplay}
             </a>
+
+            {/* Hamburger - Always visible like reference */}
+            <button
+              type="button"
+              className="flex items-center justify-center w-11 h-11 rounded-full bg-white text-navy hover:bg-lime transition shrink-0"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            type="button"
-            className="lg:hidden flex items-center justify-center w-12 h-12 rounded-full bg-white text-navy hover:bg-lime transition"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? (
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
+{/* Mobile hamburger removed - nav is always visible */}
         </div>
       </nav>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-navy border-t border-white/10">
+        <div className="bg-navy border-t border-white/10">
           <div className="max-w-7xl mx-auto px-6 py-6 space-y-4">
             <Link
               href="/services"
@@ -344,13 +332,6 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Property Types
-            </Link>
-            <Link
-              href="/blog"
-              className="block text-sm font-semibold uppercase tracking-wide text-white hover:text-lime transition py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Blog
             </Link>
             <Link
               href="/contact"
