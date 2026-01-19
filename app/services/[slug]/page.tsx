@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { servicesData } from "../../../data/services";
 import { serviceBatches01, serviceBatches02, serviceBatches03 } from "../../../data";
-import SearchInput from "../../../components/SearchInput";
 import Breadcrumbs from "../../../components/Breadcrumbs";
 
 type Props = {
@@ -44,14 +44,10 @@ export default async function ServicePage({ params }: Props) {
   }
 
   const batchData =
-    (serviceBatches01.servicesBatch01 as any)[slug] ||
-    (serviceBatches02.servicesBatch02 as any)[slug] ||
-    (serviceBatches03.servicesBatch03 as any)[slug];
+    (serviceBatches01.servicesBatch01 as Record<string, { mainDescription: string; faqs?: { question: string; answer: string }[] }>)[slug] ||
+    (serviceBatches02.servicesBatch02 as Record<string, { mainDescription: string; faqs?: { question: string; answer: string }[] }>)[slug] ||
+    (serviceBatches03.servicesBatch03 as Record<string, { mainDescription: string; faqs?: { question: string; answer: string }[] }>)[slug];
   const relatedServices = servicesData.filter((s) => s.slug !== slug).slice(0, 4);
-  const relatedItems = relatedServices.map((s) => ({
-    title: s.name,
-    slug: s.route,
-  }));
 
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -60,46 +56,56 @@ export default async function ServicePage({ params }: Props) {
   ];
 
   return (
-    <div className="bg-[#F9FAFB] text-[#111827] min-h-screen">
-      <Breadcrumbs items={breadcrumbItems} />
-      <main className="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28">
-        <article className="space-y-12">
-          <div className="space-y-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#3B82F6]">Service</p>
-            <h1 className="text-4xl font-semibold text-[#0F172A] md:text-5xl">{service.name}</h1>
-            <p className="text-lg text-[#4B5563] max-w-3xl">{service.short}</p>
-          </div>
+    <div className="bg-white text-gray-900 min-h-screen">
+      {/* Hero Section */}
+      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/locations/san-jose-1031-exchange.jpg"
+          alt={service.name}
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <p className="text-xs font-light uppercase tracking-[0.3em] text-white/70 mb-6">Service</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-light tracking-wide">
+            {service.name}
+          </h1>
+          <p className="mt-6 text-white/80 text-lg font-light max-w-2xl mx-auto">
+            {service.short}
+          </p>
+        </div>
+      </section>
 
+      <Breadcrumbs items={breadcrumbItems} />
+
+      <main className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-24">
+        <article className="space-y-16">
           {batchData && (
-            <div className="prose prose-lg max-w-none">
+            <div className="prose prose-lg max-w-none prose-headings:font-light prose-headings:tracking-wide prose-p:text-gray-600 prose-p:font-light">
               <div
-                className="rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-lg"
+                className="bg-gray-50 p-8 md:p-12"
                 dangerouslySetInnerHTML={{ __html: batchData.mainDescription }}
               />
             </div>
           )}
 
-          <section className="space-y-6">
-            <h2 className="text-2xl font-semibold text-[#0F172A]">Related Services</h2>
-            <div className="max-w-2xl">
-              <SearchInput
-                placeholder="Search related services..."
-                items={relatedItems}
-                contactRedirectPrefix=""
-              />
-            </div>
-            <div className="grid gap-6 md:grid-cols-2">
+          <section className="space-y-8">
+            <h2 className="text-2xl md:text-3xl text-gray-900 font-light tracking-wide uppercase">Related Services</h2>
+            <div className="grid gap-8 md:grid-cols-2">
               {relatedServices.map((related) => (
-                  <Link
-                    key={related.slug}
-                    href={related.route}
-                    className="group rounded-2xl border border-[#E0E7FF] bg-white p-6 shadow-md transition hover:border-[#3B82F6] hover:shadow-lg"
-                  >
-                    <h3 className="text-lg font-semibold text-[#0F172A] group-hover:text-[#3B82F6] transition">
-                      {related.name}
-                    </h3>
-                    <p className="mt-2 text-sm text-[#4B5563]">{related.short}</p>
-                  </Link>
+                <Link
+                  key={related.slug}
+                  href={related.route}
+                  className="group block border-t border-gray-200 pt-6 hover:border-gray-900 transition-colors duration-300"
+                >
+                  <h3 className="text-lg text-gray-900 font-normal mb-3 group-hover:text-gray-600 transition-colors duration-300">
+                    {related.name}
+                  </h3>
+                  <p className="text-gray-500 text-sm font-light">{related.short}</p>
+                </Link>
               ))}
             </div>
           </section>
@@ -107,49 +113,50 @@ export default async function ServicePage({ params }: Props) {
           <div className="flex justify-center">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 rounded-full border border-[#3B82F6] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#3B82F6] transition hover:bg-[#EFF6FF]"
+              className="inline-flex items-center justify-center border border-gray-900 text-gray-900 px-10 py-4 text-xs font-medium uppercase tracking-[0.2em] hover:bg-gray-900 hover:text-white transition-all duration-300"
             >
               View All {servicesData.length} Services
             </Link>
           </div>
 
           {batchData && batchData.faqs && (
-            <section className="space-y-6">
-              <h2 className="text-2xl font-semibold text-[#0F172A]">Frequently Asked Questions</h2>
-              <div className="space-y-4">
-                {batchData.faqs.map((item: any, index: number) => (
+            <section className="space-y-8">
+              <h2 className="text-2xl md:text-3xl text-gray-900 font-light tracking-wide uppercase">Frequently Asked Questions</h2>
+              <div className="grid lg:grid-cols-2 gap-x-12 gap-y-0">
+                {batchData.faqs.map((item: { question: string; answer: string }, index: number) => (
                   <details
                     key={index}
-                    className="group rounded-2xl border border-[#E5E7EB] bg-white p-6 shadow-sm"
+                    className="group border-t border-gray-200 last:border-b lg:last:border-b-0 lg:[&:nth-last-child(2)]:border-b"
                   >
-                    <summary className="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-[#0F172A]">
+                    <summary className="flex cursor-pointer items-center justify-between py-6 text-left text-base font-normal text-gray-900">
                       {item.question}
-                      <span className="ml-4 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E7EB] text-sm transition group-open:bg-[#3B82F6] group-open:text-white">
+                      <span className="ml-4 flex-shrink-0 text-gray-400 transition-transform duration-300 group-open:rotate-45">
                         +
                       </span>
                     </summary>
-                    <p className="mt-4 text-sm text-[#4B5563]">{item.answer}</p>
+                    <p className="pb-6 text-gray-500 leading-relaxed font-light">{item.answer}</p>
                   </details>
                 ))}
               </div>
             </section>
           )}
 
-          <div className="rounded-3xl border border-[#3B82F6] bg-gradient-to-br from-[#EFF6FF] to-white p-8 text-center">
-            <h2 className="text-2xl font-semibold text-[#0F172A]">Ready to get started?</h2>
-            <p className="mt-4 text-[#4B5563]">
+          {/* CTA Section */}
+          <div className="bg-navy py-16 px-8 text-center">
+            <h2 className="text-2xl md:text-3xl text-white font-light tracking-wide uppercase">Ready to get started?</h2>
+            <p className="mt-6 text-white/70 font-light max-w-2xl mx-auto">
               Contact us to learn more about {service.name.toLowerCase()} and how we can help with your 1031 exchange.
             </p>
-            <div className="mt-6 flex flex-wrap gap-4 justify-center">
+            <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <Link
                 href={`/contact?projectType=${encodeURIComponent(service.name)}`}
-                className="inline-flex items-center justify-center rounded-full bg-[#3B82F6] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#2563EB]"
+                className="inline-flex items-center justify-center bg-white text-gray-900 px-10 py-4 text-xs font-medium uppercase tracking-[0.2em] hover:bg-gray-100 transition-all duration-300"
               >
                 Contact Us
               </Link>
               <a
                 href="tel:+14085392254"
-                className="inline-flex items-center justify-center rounded-full border border-[#3B82F6] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#3B82F6] transition hover:bg-[#EFF6FF]"
+                className="inline-flex items-center justify-center border border-white/50 text-white px-10 py-4 text-xs font-light uppercase tracking-[0.2em] hover:bg-white/10 transition-all duration-300"
               >
                 Call (408) 539-2254
               </a>
@@ -196,4 +203,3 @@ export default async function ServicePage({ params }: Props) {
     </div>
   );
 }
-

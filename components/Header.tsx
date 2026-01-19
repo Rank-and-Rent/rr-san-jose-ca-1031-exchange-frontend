@@ -30,12 +30,21 @@ export default function Header() {
   const [locationsOpen, setLocationsOpen] = useState(false);
   const [toolsOpen, setToolsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
   const locationsRef = useRef<HTMLDivElement>(null);
   const toolsRef = useRef<HTMLDivElement>(null);
   const servicesTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
   const locationsTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
   const toolsTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -81,20 +90,21 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-navy">
-      <nav className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-10" aria-label="Main navigation">
-        <div className="flex h-20 items-center justify-between gap-4">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition shrink-0">
-            <div className="flex flex-col leading-tight">
-              <span className="font-heading text-2xl italic text-lime">1031</span>
-              <span className="text-[10px] font-medium tracking-[0.2em] text-white/90 italic">Exchange</span>
-              <span className="text-xs font-semibold tracking-wider text-white uppercase">San Jose</span>
-            </div>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-navy/95 backdrop-blur-sm" : "bg-transparent"}`}>
+      <nav className="max-w-[1600px] mx-auto px-6 lg:px-12" aria-label="Main navigation">
+        <div className="flex h-20 items-center justify-between">
+          {/* Logo - Kim Bibb Style: Two lines, elegant spacing */}
+          <Link href="/" className="flex flex-col hover:opacity-80 transition shrink-0">
+            <span className="text-white text-[13px] font-light tracking-[0.35em] uppercase leading-tight">
+              1031 Exchange
+            </span>
+            <span className="text-white/70 text-[11px] font-light tracking-[0.3em] uppercase">
+              San Jose
+            </span>
           </Link>
 
-          {/* Desktop Navigation - Always visible */}
-          <div className="flex flex-1 items-center justify-end gap-4 lg:gap-6 xl:gap-8">
+          {/* Desktop Navigation - Kim Bibb Style */}
+          <div className="hidden lg:flex items-center gap-8 xl:gap-10">
             {/* Services Dropdown */}
             <div
               ref={servicesRef}
@@ -104,45 +114,34 @@ export default function Header() {
             >
               <button
                 type="button"
-                className="flex items-center gap-1 text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
+                className="text-[11px] font-normal uppercase tracking-[0.2em] text-white/90 hover:text-white transition"
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
                 onClick={() => setServicesOpen(!servicesOpen)}
               >
                 Services
-                <svg
-                  className={`w-2.5 h-2.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-4 w-80 bg-white shadow-xl py-4 border-t-2 border-lime z-50">
-                  <div className="space-y-0.5">
+                <div className="absolute top-full left-0 mt-6 w-80 bg-white shadow-2xl py-6 z-50">
+                  <div className="space-y-1">
                     {topServices.map((service) => (
                       <Link
                         key={service.slug}
                         href={service.slug}
-                        className="block px-5 py-2.5 text-sm text-navy hover:bg-cream hover:text-navy-dark transition"
+                        className="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-navy transition"
                         onClick={() => setServicesOpen(false)}
                       >
                         {service.title}
                       </Link>
                     ))}
                   </div>
-                  <div className="border-t border-gray-200 mt-3 pt-3 px-5">
+                  <div className="border-t border-gray-100 mt-4 pt-4 px-6">
                     <Link
                       href="/services"
-                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-navy hover:text-lime-dark transition"
+                      className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-navy hover:text-gray-600 transition"
                       onClick={() => setServicesOpen(false)}
                     >
                       View All Services
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
                     </Link>
                   </div>
                 </div>
@@ -158,99 +157,77 @@ export default function Header() {
             >
               <button
                 type="button"
-                className="flex items-center gap-1 text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
+                className="text-[11px] font-normal uppercase tracking-[0.2em] text-white/90 hover:text-white transition"
                 aria-expanded={locationsOpen}
                 aria-haspopup="true"
                 onClick={() => setLocationsOpen(!locationsOpen)}
               >
                 Locations
-                <svg
-                  className={`w-2.5 h-2.5 transition-transform ${locationsOpen ? "rotate-180" : ""}`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
               </button>
               {locationsOpen && (
-                <div className="absolute top-full left-0 mt-4 w-64 bg-white shadow-xl py-4 border-t-2 border-lime z-50">
-                  <div className="space-y-0.5">
+                <div className="absolute top-full left-0 mt-6 w-64 bg-white shadow-2xl py-6 z-50">
+                  <div className="space-y-1">
                     {topLocations.map((location) => (
                       <Link
                         key={location.slug}
                         href={location.slug}
-                        className="block px-5 py-2.5 text-sm text-navy hover:bg-cream hover:text-navy-dark transition"
+                        className="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-navy transition"
                         onClick={() => setLocationsOpen(false)}
                       >
                         {location.title}
                       </Link>
                     ))}
                   </div>
-                  <div className="border-t border-gray-200 mt-3 pt-3 px-5">
+                  <div className="border-t border-gray-100 mt-4 pt-4 px-6">
                     <Link
                       href={LOCATIONS_ROUTE}
-                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-navy hover:text-lime-dark transition"
+                      className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-navy hover:text-gray-600 transition"
                       onClick={() => setLocationsOpen(false)}
                     >
                       View All Locations
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
                     </Link>
                   </div>
                 </div>
               )}
             </div>
 
-            {/* Tools Dropdown - Hidden on smaller screens */}
+            {/* Tools Dropdown */}
             <div
               ref={toolsRef}
-              className="relative hidden lg:block"
+              className="relative"
               onMouseEnter={handleToolsMouseEnter}
               onMouseLeave={handleToolsMouseLeave}
             >
               <button
                 type="button"
-                className="flex items-center gap-1 text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
+                className="text-[11px] font-normal uppercase tracking-[0.2em] text-white/90 hover:text-white transition"
                 aria-expanded={toolsOpen}
                 aria-haspopup="true"
                 onClick={() => setToolsOpen(!toolsOpen)}
               >
                 Tools
-                <svg
-                  className={`w-2.5 h-2.5 transition-transform ${toolsOpen ? "rotate-180" : ""}`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
               </button>
               {toolsOpen && (
-                <div className="absolute top-full left-0 mt-4 w-72 bg-white shadow-xl py-4 border-t-2 border-lime z-50">
-                  <div className="space-y-0.5">
+                <div className="absolute top-full left-0 mt-6 w-72 bg-white shadow-2xl py-6 z-50">
+                  <div className="space-y-1">
                     {tools.map((tool) => (
                       <Link
                         key={tool.href}
                         href={tool.href}
-                        className="block px-5 py-2.5 text-sm text-navy hover:bg-cream hover:text-navy-dark transition"
+                        className="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-navy transition"
                         onClick={() => setToolsOpen(false)}
                       >
                         {tool.name}
                       </Link>
                     ))}
                   </div>
-                  <div className="border-t border-gray-200 mt-3 pt-3 px-5">
+                  <div className="border-t border-gray-100 mt-4 pt-4 px-6">
                     <Link
                       href="/tools"
-                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-navy hover:text-lime-dark transition"
+                      className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-navy hover:text-gray-600 transition"
                       onClick={() => setToolsOpen(false)}
                     >
                       View All Tools
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
                     </Link>
                   </div>
                 </div>
@@ -259,90 +236,88 @@ export default function Header() {
 
             <Link
               href="/property-types"
-              className="hidden xl:block text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
+              className="text-[11px] font-normal uppercase tracking-[0.2em] text-white/90 hover:text-white transition"
             >
               Property Types
             </Link>
 
             <Link
               href="/contact"
-              className="text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
+              className="text-[11px] font-normal uppercase tracking-[0.2em] text-white/90 hover:text-white transition"
             >
-              Contact Us
+              Contact
             </Link>
 
             <a
               href={phoneNumberHref}
-              className="text-[10px] lg:text-[11px] xl:text-xs font-semibold uppercase tracking-[0.12em] text-white hover:text-lime transition whitespace-nowrap"
+              className="text-[11px] font-normal uppercase tracking-[0.2em] text-white/90 hover:text-white transition"
             >
               {phoneNumberDisplay}
             </a>
-
-            {/* Hamburger - Always visible like reference */}
-            <button
-              type="button"
-              className="flex items-center justify-center w-11 h-11 rounded-full bg-white text-navy hover:bg-lime transition shrink-0"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {mobileMenuOpen ? (
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              )}
-            </button>
           </div>
 
-{/* Mobile hamburger removed - nav is always visible */}
+          {/* Mobile Menu Button */}
+          <button
+            type="button"
+            className="lg:hidden flex items-center justify-center w-10 h-10 text-white"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? (
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
+          </button>
         </div>
       </nav>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="bg-navy border-t border-white/10">
-          <div className="max-w-7xl mx-auto px-6 py-6 space-y-4">
+        <div className="lg:hidden bg-navy/95 backdrop-blur-sm border-t border-white/10">
+          <div className="max-w-7xl mx-auto px-6 py-8 space-y-6">
             <Link
               href="/services"
-              className="block text-sm font-semibold uppercase tracking-wide text-white hover:text-lime transition py-2"
+              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Services
             </Link>
             <Link
               href={LOCATIONS_ROUTE}
-              className="block text-sm font-semibold uppercase tracking-wide text-white hover:text-lime transition py-2"
+              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Locations
             </Link>
             <Link
               href="/tools"
-              className="block text-sm font-semibold uppercase tracking-wide text-white hover:text-lime transition py-2"
+              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Tools
             </Link>
             <Link
               href="/property-types"
-              className="block text-sm font-semibold uppercase tracking-wide text-white hover:text-lime transition py-2"
+              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Property Types
             </Link>
             <Link
               href="/contact"
-              className="block text-sm font-semibold uppercase tracking-wide text-white hover:text-lime transition py-2"
+              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Contact Us
+              Contact
             </Link>
             <a
               href={phoneNumberHref}
-              className="block text-sm font-semibold uppercase tracking-wide text-lime py-2"
+              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
             >
               {phoneNumberDisplay}
             </a>
