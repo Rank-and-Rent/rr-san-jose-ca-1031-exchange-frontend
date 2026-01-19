@@ -8,7 +8,7 @@ import { LOCATIONS_ROUTE } from "../lib/config";
 const phoneNumberDisplay = "(408) 539-2254";
 const phoneNumberHref = "tel:+14085392254";
 
-// Stats data - removed "Exchanges Coordinated"
+// Stats data
 const stats = [
   { value: "$2.5B+", label: "Total Exchange Volume" },
   { value: "$250K-$50M", label: "Property Range" },
@@ -20,32 +20,32 @@ const propertyCategories = [
   {
     title: "Single Tenant Retail",
     image: "/locations/san-jose-1031-exchange.jpg",
-    href: "/property-types/convenience-store-gas-c-store",
+    href: "/inventory/convenience-store-gas-c-store",
   },
   {
     title: "Medical Office",
     image: "/locations/palo-alto-1031-exchange.jpg",
-    href: "/property-types/urgent-care-medical-clinic",
+    href: "/inventory/urgent-care-medical-clinic",
   },
   {
     title: "Industrial & Logistics",
     image: "/locations/fremont-1031-exchange.jpg",
-    href: "/property-types/last-mile-logistics-flex",
+    href: "/inventory/last-mile-logistics-flex",
   },
   {
     title: "Quick Service Restaurant",
     image: "/locations/sunnyvale-1031-exchange.jpg",
-    href: "/property-types/drive-thru-qsr",
+    href: "/inventory/drive-thru-qsr",
   },
   {
     title: "Auto Service",
     image: "/locations/santa-clara-1031-exchange.jpg",
-    href: "/property-types/auto-service-oil-change",
+    href: "/inventory/auto-service-oil-change",
   },
   {
     title: "Grocery & Discount",
     image: "/locations/mountain-view-1031-exchange.jpg",
-    href: "/property-types/hard-discount-grocer",
+    href: "/inventory/hard-discount-grocer",
   },
 ];
 
@@ -216,7 +216,7 @@ export default function HomePage() {
     <>
       <div className="bg-white text-gray-900">
         <main>
-          {/* Hero Section with Video */}
+          {/* Hero Section with Video - Kim Bibb Style */}
           <section className="relative h-screen flex items-center justify-center overflow-hidden">
             {/* Video Background */}
             <video
@@ -228,30 +228,35 @@ export default function HomePage() {
             >
               <source src="/49ers!.mp4" type="video/mp4" />
             </video>
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-black/50" />
             
             <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-light tracking-wide leading-tight">
-                Silicon Valley&apos;s Premier
-                <br />
-                <span className="font-normal">1031 Exchange Specialists</span>
+              {/* Small top text like Kim Bibb */}
+              <p className="text-[11px] font-light uppercase tracking-[0.4em] text-white/60 mb-8">
+                Silicon Valley&apos;s Premier Qualified Intermediary Network
+              </p>
+              
+              {/* HUGE elegant title like KIM BIBB */}
+              <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white font-light tracking-[0.15em] leading-none">
+                1031
+              </h1>
+              <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white font-light tracking-[0.15em] leading-none mt-2">
+                EXCHANGE
                     </h1>
-              <p className="mt-8 text-sm md:text-base uppercase tracking-[0.3em] text-white/70 font-light">
-                Tax-Deferred Real Estate Investments
-                    </p>
-              <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
+              
+              {/* Subtitle */}
+              <p className="mt-10 text-[13px] uppercase tracking-[0.35em] text-white/80 font-light">
+                Tax-Deferred Real Estate Investments + San Jose
+              </p>
+              
+              {/* CTA Button - bordered like Kim Bibb */}
+              <div className="mt-14">
                     <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center bg-white text-gray-900 px-10 py-4 text-xs font-medium uppercase tracking-[0.2em] hover:bg-gray-100 transition-all duration-300"
-                    >
-                  Start Your Exchange
-                    </Link>
-                    <a
-                      href={phoneNumberHref}
-                  className="inline-flex items-center justify-center border border-white/50 text-white px-10 py-4 text-xs font-light uppercase tracking-[0.2em] hover:bg-white/10 transition-all duration-300"
+                  className="inline-flex items-center justify-center border border-white/60 text-white px-14 py-5 text-[11px] font-light uppercase tracking-[0.3em] hover:bg-white hover:text-gray-900 transition-all duration-500"
                 >
-                  {phoneNumberDisplay}
-                </a>
+                  Start Your Exchange
+                </Link>
               </div>
             </div>
             
@@ -264,7 +269,7 @@ export default function HomePage() {
           {/* Action Cards Section */}
           <section className="bg-white py-20 md:py-28">
             <div className="max-w-7xl mx-auto px-6 lg:px-10">
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-3 gap-6">
                 <Link href="/services" className="group relative block h-80 overflow-hidden">
                   <Image
                     src="/locations/san-jose-1031-exchange.jpg"
@@ -318,7 +323,7 @@ export default function HomePage() {
 
           {/* Property Types - Conveyor Belt Carousel */}
           <section className="bg-gray-50 py-20 md:py-28 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6 lg:px-10 mb-16">
+            <div className="max-w-7xl mx-auto px-6 lg:px-10 mb-12">
               <h2 className="text-3xl md:text-4xl text-gray-900 font-light tracking-wide text-center uppercase">
                 Property Types We Serve
               </h2>
@@ -398,18 +403,15 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* Featured Locations Grid - Edge to Edge */}
+          {/* Featured Locations Grid - Edge to Edge, Less Spacing */}
           <section className="bg-white">
-            <div className="py-20 md:py-24">
-              <h2 className="text-3xl md:text-4xl text-gray-900 font-light tracking-wide text-center uppercase mb-4 px-6">
+            <div className="py-12 md:py-16">
+              <h2 className="text-3xl md:text-4xl text-gray-900 font-light tracking-wide text-center uppercase px-6">
                 Featured Locations
                 </h2>
-              <p className="text-center text-gray-500 max-w-2xl mx-auto mb-16 px-6 font-light">
-                Browse our areas of expertise below.
-                </p>
               </div>
             
-            {/* Edge-to-edge grid */}
+            {/* Edge-to-edge grid - no extra padding */}
             <div className="grid grid-cols-2 lg:grid-cols-3">
               {featuredLocations.map((location) => (
                 <Link
@@ -434,7 +436,7 @@ export default function HomePage() {
                     ))}
                   </div>
             
-            <div className="text-center py-16">
+            <div className="text-center py-12">
                     <Link
                       href={LOCATIONS_ROUTE}
                 className="inline-flex items-center justify-center border border-gray-900 text-gray-900 px-10 py-4 text-xs font-medium uppercase tracking-[0.2em] hover:bg-gray-900 hover:text-white transition-all duration-300"

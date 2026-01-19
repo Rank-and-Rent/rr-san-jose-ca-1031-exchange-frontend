@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ExchangeCostEstimator from "@/components/tools/ExchangeCostEstimator";
 
@@ -33,29 +34,6 @@ const webPageJsonLd = {
   description:
     "Calculate QI fees, escrow costs, title insurance, recording fees, and other closing costs for your 1031 exchange.",
   url: "https://www.1031exchangesanjose.com/tools/exchange-cost-estimator",
-  breadcrumb: {
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://www.1031exchangesanjose.com/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Tools",
-        item: "https://www.1031exchangesanjose.com/tools",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Exchange Cost Estimator",
-        item: "https://www.1031exchangesanjose.com/tools/exchange-cost-estimator",
-      },
-    ],
-  },
 };
 
 const softwareApplicationJsonLd = {
@@ -84,49 +62,77 @@ export default function ExchangeCostEstimatorPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationJsonLd) }}
       />
-      <div className="bg-[#F9FAFB] text-[#111827] min-h-screen">
-        <Breadcrumbs items={breadcrumbItems} />
-        <div className="mx-auto max-w-4xl px-6 py-12 md:px-8 md:py-20">
-          <h1 className="font-serif text-3xl font-bold text-[#0B3C5D] md:text-4xl mb-4">
-            Exchange Cost Estimator
-          </h1>
-          <p className="text-lg text-gray-700 mb-8">
-            Calculate QI fees, escrow costs, title insurance, recording fees, and other closing costs for your 1031 exchange. Understanding these costs helps you plan your exchange budget and make informed decisions.
-          </p>
-
-          <ExchangeCostEstimator />
-
-          <div className="mt-8 rounded-lg border border-gray-200 bg-gray-50 p-6">
-            <p className="text-sm text-gray-700">
-              <strong>Educational content only.</strong> Not tax, legal, or investment advice. Results are estimates only. Consult a qualified intermediary and tax advisor before making decisions. California does not impose a state real estate transfer tax, but local transfer taxes may apply. Recording fees and title insurance premiums still apply.
+      <div className="bg-white text-gray-900 min-h-screen">
+        {/* Hero Section */}
+        <section className="relative h-[40vh] min-h-[350px] flex items-center justify-center overflow-hidden">
+          <Image
+            src="/locations/palo-alto-1031-exchange.jpg"
+            alt="Exchange Cost Estimator"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <p className="text-[11px] font-light uppercase tracking-[0.4em] text-white/60 mb-6">
+              Exchange Tool
+            </p>
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl text-white font-light tracking-[0.1em] leading-tight">
+              EXCHANGE COST ESTIMATOR
+            </h1>
+            <p className="mt-6 text-[13px] uppercase tracking-[0.25em] text-white/70 font-light">
+              Calculate All Closing Costs
             </p>
           </div>
+        </section>
 
-          <div className="mt-12 border-t border-gray-200 pt-8">
-            <h2 className="font-serif text-2xl font-bold text-[#0B3C5D] mb-4">Related Resources</h2>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/tools/boot-calculator" className="text-[#0B3C5D] underline hover:text-[#C9A227]">
-                  Boot Calculator
+        <Breadcrumbs items={breadcrumbItems} />
+
+        <main className="max-w-4xl mx-auto px-6 py-16 md:py-24">
+          <div className="space-y-12">
+            <div className="space-y-6">
+              <p className="text-gray-500 leading-relaxed font-light text-lg">
+                Calculate QI fees, escrow costs, title insurance, recording fees, and other closing costs for your 1031 exchange. Understanding these costs helps you plan your exchange budget and make informed decisions.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-8">
+              <ExchangeCostEstimator />
+            </div>
+
+            <div className="bg-gray-100 p-6">
+              <p className="text-sm text-gray-500 font-light">
+                <strong className="font-medium">Educational content only.</strong> Not tax, legal, or investment advice. Results are estimates only. Consult a qualified intermediary and tax advisor before making decisions.
+              </p>
+            </div>
+
+            <section className="border-t border-gray-200 pt-12">
+              <h2 className="text-2xl text-gray-900 font-light tracking-wide uppercase mb-8">Related Tools</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Link
+                  href="/tools/boot-calculator"
+                  className="group block border-t border-gray-200 pt-6 hover:border-gray-900 transition-colors duration-300"
+                >
+                  <h3 className="text-lg text-gray-900 font-normal mb-2 group-hover:text-gray-600 transition-colors duration-300">
+                    Boot Calculator
+                  </h3>
+                  <p className="text-gray-500 text-sm font-light">Calculate boot and estimate tax implications.</p>
                 </Link>
-              </li>
-              <li>
-                <Link href="/tools/identification-rules-checker" className="text-[#0B3C5D] underline hover:text-[#C9A227]">
-                  Identification Rules Checker
+                <Link
+                  href="/tools/identification-rules-checker"
+                  className="group block border-t border-gray-200 pt-6 hover:border-gray-900 transition-colors duration-300"
+                >
+                  <h3 className="text-lg text-gray-900 font-normal mb-2 group-hover:text-gray-600 transition-colors duration-300">
+                    Identification Rules Checker
+                  </h3>
+                  <p className="text-gray-500 text-sm font-light">Validate against 3-property, 200%, and 95% rules.</p>
                 </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-[#0B3C5D] underline hover:text-[#C9A227]">
-                  Our Services
-                </Link>
-              </li>
-            </ul>
+              </div>
+            </section>
           </div>
-        </div>
+        </main>
       </div>
     </>
   );
 }
-
-
-
