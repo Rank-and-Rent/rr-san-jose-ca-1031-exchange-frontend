@@ -19,32 +19,32 @@ const stats = [
 const propertyCategories = [
   {
     title: "NNN Triple Net",
-    image: "/locations/san-jose-1031-exchange.jpg",
+    image: "/property-types/nnn-triple-net/nnn-sj.jpg",
     href: "/inventory/nnn-triple-net",
   },
   {
     title: "Retail",
-    image: "/locations/palo-alto-1031-exchange.jpg",
+    image: "/property-types/retail/retail-sj.png",
     href: "/inventory/retail",
   },
   {
     title: "Residential",
-    image: "/locations/mountain-view-1031-exchange.jpg",
+    image: "/property-types/residential/residential-sj.avif",
     href: "/inventory/residential",
   },
   {
     title: "Commercial",
-    image: "/locations/sunnyvale-1031-exchange.jpg",
+    image: "/property-types/commercial/commercial-sj.webp",
     href: "/inventory/commercial",
   },
   {
     title: "Industrial",
-    image: "/locations/fremont-1031-exchange.jpg",
+    image: "/property-types/industrial/industrial-sj.webp",
     href: "/inventory/industrial",
   },
   {
     title: "Multifamily",
-    image: "/locations/santa-clara-1031-exchange.jpg",
+    image: "/property-types/multifamily/multifamily-sj.jpg",
     href: "/inventory/multifamily",
   },
 ];
@@ -70,12 +70,12 @@ const tools = [
 
 // Featured locations
 const featuredLocations = [
-  { name: "San Jose", slug: "/locations/san-jose-ca", image: "/locations/san-jose-1031-exchange.jpg" },
-  { name: "Palo Alto", slug: "/locations/palo-alto-ca", image: "/locations/palo-alto-1031-exchange.jpg" },
-  { name: "Mountain View", slug: "/locations/mountain-view-ca", image: "/locations/mountain-view-1031-exchange.jpg" },
-  { name: "Sunnyvale", slug: "/locations/sunnyvale-ca", image: "/locations/sunnyvale-1031-exchange.jpg" },
-  { name: "Santa Clara", slug: "/locations/santa-clara-ca", image: "/locations/santa-clara-1031-exchange.jpg" },
-  { name: "Fremont", slug: "/locations/fremont-ca", image: "/locations/fremont-1031-exchange.jpg" },
+  { name: "San Jose", slug: "/locations/san-jose-ca", image: "/service-areas/san-jose-ca/redwood-city-ca-sj.jpg" },
+  { name: "Palo Alto", slug: "/locations/palo-alto-ca", image: "/service-areas/palo-alto-ca/palo-alto-ca-sj.jpg" },
+  { name: "Mountain View", slug: "/locations/mountain-view-ca", image: "/service-areas/mountain-view-ca/mountain-view-ca-sj.jpg" },
+  { name: "Sunnyvale", slug: "/locations/sunnyvale-ca", image: "/service-areas/sunnyvale-ca/sunnyvale-ca-sj.jpg" },
+  { name: "Santa Clara", slug: "/locations/santa-clara-ca", image: "/service-areas/santa-clara-ca/santa-clara-ca.webp" },
+  { name: "Fremont", slug: "/locations/fremont-ca", image: "/service-areas/fremont-ca/fremont-ca.jpg" },
 ];
 
 // FAQ items
@@ -285,7 +285,7 @@ export default function HomePage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <Link href="/services" className="group relative block h-80 overflow-hidden">
                   <Image
-                    src="/locations/san-jose-1031-exchange.jpg"
+                    src="/service-areas/san-jose-ca/redwood-city-ca-sj.jpg"
                     alt="Find Properties"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
@@ -301,7 +301,7 @@ export default function HomePage() {
                 
                 <Link href="/contact" className="group relative block h-80 overflow-hidden">
                   <Image
-                    src="/locations/palo-alto-1031-exchange.jpg"
+                    src="/service-areas/palo-alto-ca/palo-alto-ca-sj.jpg"
                     alt="Contact Us"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
@@ -317,7 +317,7 @@ export default function HomePage() {
                 
                 <Link href="/tools" className="group relative block h-80 overflow-hidden">
                   <Image
-                    src="/locations/mountain-view-1031-exchange.jpg"
+                    src="/service-areas/mountain-view-ca/mountain-view-ca-sj.jpg"
                     alt="Exchange Tools"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
@@ -372,30 +372,40 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* Featured Tools Section - Navy Background */}
+          {/* Featured Tools Section */}
           <section className="bg-navy py-20 md:py-28">
             <div className="max-w-7xl mx-auto px-6 lg:px-10">
+              <p className="text-[11px] font-light uppercase tracking-[0.4em] text-white/50 text-center mb-6">
+                Resources
+              </p>
               <h2 className="text-3xl md:text-4xl text-white font-light tracking-wide text-center uppercase mb-4">
                 Exchange Tools
               </h2>
               <p className="text-center text-white/60 max-w-2xl mx-auto mb-16 font-light">
                 Free calculators and resources to help you plan your 1031 exchange.
               </p>
-              
-              <div className="grid md:grid-cols-3 gap-10">
+
+              <div className="grid gap-6 md:grid-cols-3 md:gap-8">
                 {tools.map((tool) => (
                   <Link
                     key={tool.href}
                     href={tool.href}
-                    className="group block border-t border-white/20 pt-8 hover:border-white/50 transition-colors duration-300"
+                    className="group block border border-white/10 p-8 md:p-10 hover:border-white/30 hover:bg-white/5 transition-all duration-300"
                   >
-                    <h3 className="text-xl text-white font-normal mb-4 group-hover:text-white/80 transition-colors duration-300">
-                      {tool.name}
-                    </h3>
-                    <p className="text-white/60 text-sm leading-relaxed mb-6 font-light">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-10 h-10 border border-white/30 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-5 h-5 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25v-.008zm2.25-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008v-.008zm2.25-2.25h.008v.008H15v-.008zm0 2.25h.008v.008H15v-.008zM3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v2.776c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-2.776a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
+                        </svg>
+                      </div>
+                      <h3 className="text-lg text-white font-normal group-hover:text-white/90 transition-colors duration-300">
+                        {tool.name}
+                      </h3>
+                    </div>
+                    <p className="text-white/50 text-sm leading-relaxed mb-8 font-light">
                       {tool.description}
                     </p>
-                    <span className="inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.15em] text-white group-hover:text-white/80 transition-colors duration-300">
+                    <span className="inline-flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.2em] text-white/80 group-hover:text-white transition-colors duration-300">
                       Use Tool
                       <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -404,7 +414,7 @@ export default function HomePage() {
                   </Link>
                 ))}
               </div>
-              
+
               <div className="text-center mt-16">
                 <Link
                   href="/tools"
@@ -508,7 +518,7 @@ export default function HomePage() {
           <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
               <Image
-                src="/locations/fremont-1031-exchange.jpg"
+                src="/service-areas/fremont-ca/fremont-ca.jpg"
                 alt="Partner with our team"
                 fill
                 sizes="100vw"

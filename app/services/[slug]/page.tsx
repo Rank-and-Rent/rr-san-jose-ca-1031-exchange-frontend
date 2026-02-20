@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { servicesData } from "../../../data/services";
 import { serviceBatches01, serviceBatches02, serviceBatches03 } from "../../../data";
@@ -30,6 +29,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${service.name} | San Jose 1031 Exchange Services`,
     description: service.short,
+    openGraph: {
+      title: `${service.name} | 1031 Exchange San Jose`,
+      description: service.short,
+      url: `https://www.1031exchangesanjose.com${service.route}`,
+      siteName: "1031 Exchange San Jose",
+      type: "website",
+    },
     alternates: {
       canonical: `https://www.1031exchangesanjose.com${service.route}`,
     },
@@ -60,16 +66,7 @@ export default async function ServicePage({ params }: Props) {
   return (
     <div className="bg-white text-gray-900 min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-        <Image
-          src="/locations/san-jose-1031-exchange.jpg"
-          alt={service.name}
-          fill
-          sizes="100vw"
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/50" />
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-navy">
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <p className="text-[11px] font-light uppercase tracking-[0.4em] text-white/60 mb-8">
             Service
@@ -97,7 +94,7 @@ export default async function ServicePage({ params }: Props) {
         <article className="space-y-20">
           {/* Main Content */}
           {batchData && (
-            <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <div className="max-w-4xl">
               <div className="space-y-8">
                 <h2 className="text-2xl md:text-3xl text-gray-900 font-light tracking-wide">
                   About {service.name}
@@ -105,15 +102,6 @@ export default async function ServicePage({ params }: Props) {
                 <div
                   className="text-gray-500 leading-relaxed font-light prose prose-lg max-w-none prose-p:text-gray-500 prose-headings:font-light"
                   dangerouslySetInnerHTML={{ __html: batchData.mainDescription }}
-                />
-              </div>
-              <div className="relative h-80 lg:h-full lg:min-h-[400px]">
-                <Image
-                  src="/locations/palo-alto-1031-exchange.jpg"
-                  alt={service.name}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
                 />
               </div>
             </div>
@@ -149,26 +137,17 @@ export default async function ServicePage({ params }: Props) {
             <h2 className="text-2xl md:text-3xl text-gray-900 font-light tracking-wide uppercase mb-8">
               Related Services
             </h2>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-              {relatedServices.map((related, index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {relatedServices.map((related) => (
                 <Link
                   key={related.slug}
                   href={related.route}
-                  className="group relative h-48 overflow-hidden"
+                  className="group block border-t border-gray-200 pt-6 hover:border-gray-900 transition-colors duration-300"
                 >
-                  <Image
-                    src={`/locations/${index % 2 === 0 ? 'mountain-view' : 'sunnyvale'}-1031-exchange.jpg`}
-                    alt={related.name}
-                    fill
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300" />
-                  <div className="absolute inset-0 flex items-center justify-center p-4">
-                    <h3 className="text-sm text-white uppercase tracking-[0.15em] font-light text-center">
-                      {related.name}
-                    </h3>
-                  </div>
+                  <h3 className="text-base text-gray-900 font-normal mb-3 group-hover:text-gray-600 transition-colors duration-300 uppercase tracking-wide">
+                    {related.name}
+                  </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed font-light">{related.short}</p>
                 </Link>
               ))}
             </div>
@@ -192,21 +171,11 @@ export default async function ServicePage({ params }: Props) {
                 <Link
                   key={location.slug}
                   href={location.route}
-                  className="group relative h-40 overflow-hidden"
+                  className="group block bg-white border border-gray-200 p-6 text-center hover:border-gray-900 transition-colors duration-300"
                 >
-                  <Image
-                    src={location.heroImage || "/locations/san-jose-1031-exchange.jpg"}
-                    alt={location.name}
-                    fill
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <h3 className="text-sm text-white uppercase tracking-[0.15em] font-light">
-                      {location.name}
-                    </h3>
-                  </div>
+                  <h3 className="text-sm text-gray-900 uppercase tracking-[0.15em] font-light group-hover:text-gray-600 transition-colors duration-300">
+                    {location.name}
+                  </h3>
                 </Link>
               ))}
             </div>
@@ -273,6 +242,25 @@ export default async function ServicePage({ params }: Props) {
           }),
         }}
       />
+      {batchData && batchData.faqs && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: batchData.faqs.map((item: { question: string; answer: string }) => ({
+                "@type": "Question",
+                name: item.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
     </div>
   );
 }

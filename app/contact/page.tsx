@@ -15,7 +15,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/locations/palo-alto-1031-exchange.jpg"
+          src="/service-areas/palo-alto-ca/palo-alto-ca-sj.jpg"
           alt="Contact Us"
           fill
           sizes="100vw"

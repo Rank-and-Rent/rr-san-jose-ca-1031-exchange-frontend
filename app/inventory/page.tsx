@@ -23,7 +23,7 @@ export default function InventoryPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/locations/san-jose-1031-exchange.jpg"
+          src="/service-areas/san-jose-ca/redwood-city-ca-sj.jpg"
           alt="1031 Exchange Property Types"
           fill
           sizes="100vw"
@@ -59,7 +59,7 @@ export default function InventoryPage() {
               className="group relative h-72 lg:h-96 overflow-hidden"
             >
               <Image
-                src={category.heroImage || "/locations/san-jose-1031-exchange.jpg"}
+                src={category.heroImage || "/service-areas/san-jose-ca/redwood-city-ca-sj.jpg"}
                 alt={`${category.name} properties`}
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"

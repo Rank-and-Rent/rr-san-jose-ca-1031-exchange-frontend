@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { servicesData } from "../../data/services";
 import Breadcrumbs from "../../components/Breadcrumbs";
 
@@ -14,22 +13,10 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesPage() {
-  // Split services into groups for the grid
-  const topServices = servicesData.slice(0, 6);
-
   return (
     <div className="bg-white text-gray-900 min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-        <Image
-          src="/locations/san-jose-1031-exchange.jpg"
-          alt="1031 Exchange Services"
-          fill
-          sizes="100vw"
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/50" />
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-navy">
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <p className="text-[11px] font-light uppercase tracking-[0.4em] text-white/60 mb-8">
             What We Offer
@@ -54,31 +41,6 @@ export default function ServicesPage() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Services" }]} />
 
       <main className="py-16 md:py-24">
-        {/* Services Grid - Edge to Edge */}
-        <div className="grid grid-cols-2 lg:grid-cols-3">
-          {topServices.map((service, index) => (
-            <Link
-              key={service.slug}
-              href={service.route}
-              className="group relative h-72 lg:h-80 overflow-hidden"
-            >
-              <Image
-                src={`/locations/${index % 2 === 0 ? 'san-jose' : index % 3 === 0 ? 'palo-alto' : 'mountain-view'}-1031-exchange.jpg`}
-                alt={service.name}
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
-                <h2 className="text-lg text-white uppercase tracking-[0.15em] font-light text-center">
-                  {service.name}
-                </h2>
-              </div>
-            </Link>
-          ))}
-        </div>
-
         {/* All Services List */}
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-20">
           <h2 className="text-2xl md:text-3xl text-gray-900 font-light tracking-wide text-center uppercase mb-16">

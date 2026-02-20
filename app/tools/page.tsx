@@ -79,7 +79,7 @@ export default function ToolsPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/locations/mountain-view-1031-exchange.jpg"
+            src="/service-areas/mountain-view-ca/mountain-view-ca-sj.jpg"
             alt="1031 Exchange Tools"
             fill
             sizes="100vw"

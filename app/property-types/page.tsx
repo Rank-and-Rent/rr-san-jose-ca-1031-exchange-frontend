@@ -19,7 +19,7 @@ export default function PropertyTypesPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/locations/sunnyvale-1031-exchange.jpg"
+          src="/service-areas/sunnyvale-ca/sunnyvale-ca-sj.jpg"
           alt="Property Types"
           fill
           sizes="100vw"
@@ -55,7 +55,7 @@ export default function PropertyTypesPage() {
               className="group relative h-72 lg:h-96 overflow-hidden"
             >
               <Image
-                src={type.heroImage || "/locations/san-jose-1031-exchange.jpg"}
+                src={type.heroImage || "/service-areas/san-jose-ca/redwood-city-ca-sj.jpg"}
                 alt={`${type.name} properties`}
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
@@ -95,6 +95,35 @@ export default function PropertyTypesPage() {
           </div>
         </div>
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "1031 Exchange Property Types",
+            itemListElement: propertyTypesData.map((type, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              name: type.name,
+              url: `https://www.1031exchangesanjose.com${type.route}`,
+            })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.1031exchangesanjose.com/" },
+              { "@type": "ListItem", position: 2, name: "Property Types" },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

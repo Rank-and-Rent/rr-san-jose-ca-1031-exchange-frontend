@@ -29,8 +29,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `1031 Exchange Properties in ${location.name} | San Jose Area`,
-    description: `1031 exchange opportunities in ${location.name}, CA. Find replacement properties and tax-deferred investment options.`,
+    title: `1031 Exchange Properties in ${location.name}, CA | San Jose Area`,
+    description: `Find 1031 exchange replacement properties in ${location.name}, California. Tax-deferred real estate investment opportunities in Silicon Valley.`,
+    openGraph: {
+      title: `1031 Exchange Properties in ${location.name}, CA`,
+      description: `Find 1031 exchange replacement properties in ${location.name}, California. Tax-deferred real estate investment opportunities in Silicon Valley.`,
+      url: `https://www.1031exchangesanjose.com${location.route}`,
+      siteName: "1031 Exchange San Jose",
+      type: "website",
+    },
     alternates: {
       canonical: `https://www.1031exchangesanjose.com${location.route}`,
     },
@@ -300,6 +307,25 @@ export default async function LocationPage({ params }: Props) {
           }),
         }}
       />
+      {batchData && batchData.faqs && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: batchData.faqs.map((item: { question: string; answer: string }) => ({
+                "@type": "Question",
+                name: item.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
     </div>
   );
 }

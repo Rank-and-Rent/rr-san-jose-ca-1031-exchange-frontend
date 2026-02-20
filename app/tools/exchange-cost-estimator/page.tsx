@@ -66,7 +66,7 @@ export default function ExchangeCostEstimatorPage() {
         {/* Hero Section */}
         <section className="relative h-[40vh] min-h-[350px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/locations/palo-alto-1031-exchange.jpg"
+            src="/service-areas/palo-alto-ca/palo-alto-ca-sj.jpg"
             alt="Exchange Cost Estimator"
             fill
             sizes="100vw"

@@ -66,7 +66,7 @@ export default function BootCalculatorPage() {
         {/* Hero Section */}
         <section className="relative h-[40vh] min-h-[350px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/locations/san-jose-1031-exchange.jpg"
+            src="/service-areas/san-jose-ca/redwood-city-ca-sj.jpg"
             alt="Boot Calculator"
             fill
             sizes="100vw"

@@ -19,6 +19,7 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.1031exchangesanjose.com"),
   title: "San Jose 1031 Exchange Experts | California Qualified Intermediary Network",
   description:
     "Bay Area 1031 exchange specialists offering compliant, technology-driven coordination for investors across Northern California.",

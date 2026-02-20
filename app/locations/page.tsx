@@ -20,7 +20,7 @@ export default function LocationsPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/locations/san-jose-1031-exchange.jpg"
+          src="/service-areas/san-jose-ca/redwood-city-ca-sj.jpg"
           alt="Silicon Valley Locations"
           fill
           sizes="100vw"
@@ -51,7 +51,7 @@ export default function LocationsPage() {
               className="group relative h-64 lg:h-80 overflow-hidden"
             >
               <Image
-                src={`/locations/${location.slug.replace("-ca", "")}-1031-exchange.jpg`}
+                src={location.heroImage || "/service-areas/san-jose-ca/redwood-city-ca-sj.jpg"}
                 alt={location.name}
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"

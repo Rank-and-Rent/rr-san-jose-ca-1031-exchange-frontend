@@ -66,7 +66,7 @@ export default function IdentificationRulesCheckerPage() {
         {/* Hero Section */}
         <section className="relative h-[40vh] min-h-[350px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/locations/mountain-view-1031-exchange.jpg"
+            src="/service-areas/mountain-view-ca/mountain-view-ca-sj.jpg"
             alt="Identification Rules Checker"
             fill
             sizes="100vw"

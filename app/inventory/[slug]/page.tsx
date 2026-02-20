@@ -27,8 +27,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${category.name} Properties | San Jose 1031 Exchange`,
+    title: `${category.name} Properties for 1031 Exchange | San Jose`,
     description: `Browse ${category.name.toLowerCase()} properties for 1031 exchange opportunities in Silicon Valley. Tax-deferred investment options available.`,
+    openGraph: {
+      title: `${category.name} Properties for 1031 Exchange`,
+      description: `Browse ${category.name.toLowerCase()} properties for 1031 exchange opportunities in Silicon Valley.`,
+      url: `https://www.1031exchangesanjose.com${category.route}`,
+      siteName: "1031 Exchange San Jose",
+      type: "website",
+    },
     alternates: {
       canonical: `https://www.1031exchangesanjose.com${category.route}`,
     },
@@ -122,7 +129,7 @@ export default async function InventoryPage({ params }: Props) {
     { label: category.name },
   ];
 
-  const heroImage = category.heroImage || "/locations/san-jose-1031-exchange.jpg";
+  const heroImage = category.heroImage || "/service-areas/san-jose-ca/redwood-city-ca-sj.jpg";
 
   return (
     <div className="bg-white text-gray-900 min-h-screen">
@@ -233,7 +240,7 @@ export default async function InventoryPage({ params }: Props) {
                   className="group relative h-48 overflow-hidden"
                 >
                   <Image
-                    src={type.heroImage || "/locations/san-jose-1031-exchange.jpg"}
+                    src={type.heroImage || "/service-areas/san-jose-ca/redwood-city-ca-sj.jpg"}
                     alt={type.name}
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
@@ -310,10 +317,17 @@ export default async function InventoryPage({ params }: Props) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Product",
-            name: `${category.name} Properties`,
+            "@type": "Service",
+            name: `${category.name} Properties for 1031 Exchange`,
             description: typeInfo.description,
-            category: "Real Estate Investment",
+            provider: {
+              "@type": "Organization",
+              name: "1031 Exchange San Jose",
+            },
+            areaServed: {
+              "@type": "State",
+              name: "California",
+            },
           }),
         }}
       />
