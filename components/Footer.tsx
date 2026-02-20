@@ -31,7 +31,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-5">
           {/* Logo & Contact Info */}
-          <div className="lg:col-span-1 space-y-6">
+          <div className="lg:col-span-1 space-y-6 min-w-0">
             {/* Logo - Two lines, elegant like header */}
             <Link href="/" className="inline-block">
               <div className="flex flex-col leading-tight">
@@ -43,7 +43,7 @@ export default function Footer() {
                 </span>
               </div>
             </Link>
-            
+
             <div className="space-y-4 pt-6">
               <a
                 href={phoneNumberHref}
@@ -53,7 +53,7 @@ export default function Footer() {
               </a>
               <a
                 href={`mailto:${email}`}
-                className="block text-lg text-white hover:text-white/70 transition-colors"
+                className="block text-sm text-white hover:text-white/70 transition-colors break-all"
               >
                 {email}
               </a>
