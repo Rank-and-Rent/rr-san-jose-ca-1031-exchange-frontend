@@ -40,7 +40,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-semibold text-[#0F172A] mb-4">Disclaimer</h2>
               <p>
-                The materials on 1031 Exchange San Jose's website are provided on an 'as is' basis. 1031 Exchange San Jose makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                The materials on 1031 Exchange San Jose's website are provided on an 'as is' basis. 1031 Exchange San Jose makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement or other violation of rights.
               </p>
               <p className="mt-4">
                 This website provides educational content only and is not tax or legal advice. Users should consult a Qualified Intermediary and tax advisor before acting on any information provided.
