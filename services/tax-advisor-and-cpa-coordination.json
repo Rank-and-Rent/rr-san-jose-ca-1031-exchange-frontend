@@ -1,0 +1,58 @@
+{
+ "slug": "tax-advisor-and-cpa-coordination",
+ "taxonomy": "services",
+ "title": "Tax Advisor and CPA Coordination",
+ "name": "Tax Advisor and CPA Coordination",
+ "metaTitle": "Tax Advisor and CPA Coordination for San Jose 1031 Exchanges",
+ "metaDescription": "Coordinating with a San Jose investor's CPA and tax advisor on exchange timing, basis carryover, and California's out-of-state exchange reporting rules.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>We don't give tax advice, and we say that plainly to every San Jose client on the first call. What we do is make sure the client's CPA and tax advisor have accurate property, timeline, and closing information early enough to actually do their job, rather than reconstructing it after the fact from a settlement statement. Twenty years of watching exchanges close has shown us how often a good deal gets complicated by information the advisor simply didn't have in time.</p>"
+  },
+  {
+   "heading": "Getting the Advisor Involved Before the Sale Closes",
+   "html": "<p>Basis carryover, depreciation recapture exposure, and the mechanics of boot all need to be modeled before a San Jose seller commits to a relinquished property closing date, not after. We loop the client's CPA in as soon as a sale is under serious contract discussion so they have time to run the numbers and flag anything that changes the client's approach to identification or timing.</p>"
+  },
+  {
+   "heading": "California's Claw-Back Reporting for Out-of-State Exchanges",
+   "html": "<p>California requires taxpayers who exchange out of a California property into replacement property located outside the state to file an annual information return, FTB Form 3840, tracking the deferred gain until it's eventually recognized. This applies whether the San Jose property being sold is exchanged into another California asset or into something out of state, and the ongoing filing obligation is easy to overlook years after the exchange closes if the client's tax preparer isn't told about it up front.</p>"
+  },
+  {
+   "heading": "Where Boot Shows Up and Why It Surprises People",
+   "html": "<p>Boot, any cash or non-like-kind value received in the exchange, including debt relief that isn't replaced with equal or greater debt on the replacement property, is taxable even inside an otherwise successful exchange. We flag potential boot situations early, a smaller replacement property, cash pulled out at closing, so the client's tax advisor can model the taxable portion before it becomes a surprise on next year's return.</p>"
+  },
+  {
+   "heading": "What We Share With the Advisor Team Throughout",
+   "html": "<p>Across a typical San Jose exchange, we keep the client's advisors current on:</p><ul><li>Relinquished and replacement property closing dates and purchase prices</li><li>Any debt assumed or paid off that could create boot exposure</li><li>Whether the replacement property is in-state or out-of-state for California claw-back tracking</li><li>Identification list details and the rule, three-property or 200 percent, being used</li><li>Closing statement figures needed for basis calculations and depreciation schedules</li></ul>"
+  },
+  {
+   "heading": "Depreciation Recapture Is a Separate Question From Deferral Itself",
+   "html": "<p>A successful exchange defers gain on the sale, but depreciation recapture exposure carries forward into the replacement property's basis rather than disappearing, and that carryover calculation gets more complicated when a San Jose property held for years, sometimes decades, is being exchanged into a new asset with a different depreciation schedule. We make sure the advisor has the original purchase price, prior depreciation taken, and any capital improvements on file well before closing, since reconstructing that history after the sale is far harder than pulling it together while records are still fresh.</p><p>None of this changes what the client owes; it just determines how accurately the advisor can calculate it, and that accuracy matters most years down the road when the replacement property is eventually sold outright.</p><p>We keep a simple running file for every client covering original basis, prior depreciation, and improvement history across each property they've exchanged through us, specifically so that record exists in one place rather than scattered across years of separate closing binders by the time an advisor actually needs it.</p><p>Clients who've exchanged through more than one San Jose property over the years tend to be the ones most grateful for that running file, since reconstructing basis history across several transactions from memory alone is close to impossible once a decade or two has passed.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Do you prepare the tax return or file Form 3840 for me?",
+   "a": "No, we coordinate information flow to your CPA and tax advisor, but the return preparation and the annual California filing obligation belong to your tax professional. We recommend every client confirm their filing requirements directly with their advisor."
+  },
+  {
+   "q": "What is boot and how does it show up in a San Jose exchange?",
+   "a": "Boot is any value received that isn't like-kind real property, most commonly cash taken out at closing or a reduction in debt on the replacement property that isn't offset by new cash invested. It's taxable to the extent received, even though the rest of the exchange defers gain successfully."
+  },
+  {
+   "q": "Does California treat 1031 exchanges the same as the federal rules?",
+   "a": "California generally conforms to the federal deferral rules, but it adds its own tracking requirement, Form 3840, when a California property is exchanged into replacement property held outside the state, so the deferred California gain is followed until it's eventually recognized. That's an added layer beyond the federal filing your CPA should know about."
+  },
+  {
+   "q": "When should my CPA get involved in the exchange process?",
+   "a": "As early as possible, ideally before the relinquished property's purchase and sale agreement is signed, so depreciation recapture, basis carryover, and potential boot can be modeled before decisions get locked in. Waiting until after closing narrows what your advisor can actually do."
+  },
+  {
+   "q": "Can you recommend a CPA who specializes in 1031 exchanges?",
+   "a": "We can share names of tax advisors we've coordinated with on prior exchanges, but selecting and relying on that advisor's guidance is between you and them. We stay in our lane, coordinating information and timelines, not providing tax advice."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 860
+}

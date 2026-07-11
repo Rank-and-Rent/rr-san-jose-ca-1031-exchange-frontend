@@ -1,0 +1,58 @@
+{
+ "slug": "boot-calculation-support",
+ "taxonomy": "services",
+ "title": "Boot Calculation Support",
+ "name": "Boot Calculation Support",
+ "metaTitle": "Boot Calculation Support in San Jose, CA",
+ "metaDescription": "Boot calculation support for San Jose 1031 exchangers, tracking debt relief, cash proceeds, and Prop 13 basis exposure before closing on a replacement.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Boot is the taxable piece of a San Jose exchange, whatever cash or non-like-kind value an owner walks away with after debt and equity are matched between the relinquished and replacement property. On buildings held twenty or thirty years around the Rose Garden or Willow Glen, where Proposition 13 has kept assessed value far below market, the depreciation recapture and gain sitting behind a modest boot calculation can be larger than owners expect. We track these numbers from the first conversation about a potential sale, not after a purchase contract is already signed.</p>"
+  },
+  {
+   "heading": "Where Boot Actually Comes From",
+   "html": "<p>Boot shows up in a few predictable places: cash taken out of the transaction, a reduction in mortgage debt from the relinquished to the replacement property without offsetting cash brought in, or non-like-kind property received as part of a deal, like personal property bundled into a building sale. Any of these creates a taxable event even inside an otherwise valid exchange.</p><p>We don't give tax advice, but we do flag every place a deal structure could introduce boot before it becomes a surprise on the settlement statement, then route the specifics to your CPA for a final read before either closing is finalized.</p>"
+  },
+  {
+   "heading": "Debt Relief Is the Most Common Blind Spot",
+   "html": "<p>An owner selling a San Jose building with $2 million in debt and buying a replacement with $1.5 million in debt has $500,000 in debt relief, and unless that gap gets covered with additional cash into the replacement purchase, it's treated as boot regardless of intent. This trips up owners moving from a heavily leveraged legacy hold into a newer, more conservatively financed replacement, which is common when older single-tenant buildings near North First Street get exchanged into newer transit-village multifamily with different lending terms.</p><p>We run this comparison on every candidate before an offer goes out, because a replacement that looks like a clean upgrade on paper can still create a debt relief gap large enough to change the after-tax outcome of the whole exchange.</p>"
+  },
+  {
+   "heading": "How Long-Held San Jose Basis Changes the Stakes",
+   "html": "<p>Proposition 13 has kept many San Jose owners' assessed values well below current market value for buildings held since before the last major reassessment trigger, which means the gap between basis and sale price, and the depreciation recapture layered on top, can be substantial. A boot calculation that looks minor in dollar terms against the sale price can still generate a meaningful tax bill once recapture is layered in. Confirm the actual basis and recapture exposure with your CPA before assuming a small boot figure is immaterial.</p><p>This is especially relevant for owners of legacy North San Jose and Golden Triangle industrial parcels acquired decades ago, where the assessed value has barely moved while market rents and building values climbed steadily around it.</p>"
+  },
+  {
+   "heading": "The Line Items We Check Before Closing",
+   "html": "<p>Before a settlement statement gets finalized, we walk through every line that could introduce boot:</p><ul><li>Net debt relief between relinquished and replacement property</li><li>Cash proceeds not reinvested into the replacement</li><li>Prorated rent, security deposits, or other credits treated as cash equivalents</li><li>Personal property or fixtures bundled into either sale</li><li>Closing costs paid from exchange funds versus outside funds</li></ul>"
+  },
+  {
+   "heading": "Seismic Retrofit Costs and Boot",
+   "html": "<p>When a replacement property in San Jose requires seismic retrofit work as a condition of financing or insurance, the timing and funding source of that work matters for boot purposes. Retrofit costs paid from exchange funds as part of the purchase are generally treated differently than repairs made after closing with outside capital, and mixing the two without a clear plan can create an unintended boot exposure. Confirm the structure of any retrofit funding with your qualified intermediary and tax advisor before the purchase closes. We flag this specifically on older buildings during the identification phase so retrofit costs get built into the purchase structure from the start, rather than negotiated as an afterthought once the lender raises the requirement.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does taking any cash out of a San Jose exchange automatically create boot?",
+   "a": "Yes, any cash received rather than reinvested into the replacement property is treated as boot and is taxable to the extent of gain, regardless of how small the amount is relative to the overall deal."
+  },
+  {
+   "q": "What if my replacement property has less debt than the one I sold?",
+   "a": "The reduction in debt is treated as boot unless you offset it with additional cash into the replacement purchase. This is one of the most common ways owners accidentally trigger a taxable event."
+  },
+  {
+   "q": "Can boot ever be fully avoided in a San Jose exchange?",
+   "a": "In many cases yes, by matching or exceeding both the value and the debt level of the relinquished property with the replacement. Confirm the specific numbers with your qualified intermediary and tax advisor before the purchase contract is signed."
+  },
+  {
+   "q": "Does Proposition 13 basis affect how much tax is owed on boot?",
+   "a": "It affects the size of the gap between basis and sale price, which drives how much of the boot ends up taxable versus how much depreciation recapture applies. A CPA familiar with long-held California property is the right resource to confirm the actual figures."
+  },
+  {
+   "q": "Who calculates the final boot figure at closing?",
+   "a": "The qualified intermediary and your CPA typically confirm the final numbers off the settlement statements for both properties. We track the inputs throughout the transaction, from the initial debt comparison through the final closing figures, so nothing surfaces as a surprise in the final week."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 876
+}

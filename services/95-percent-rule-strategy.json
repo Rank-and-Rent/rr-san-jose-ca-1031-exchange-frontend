@@ -1,0 +1,62 @@
+{
+ "slug": "95-percent-rule-strategy",
+ "taxonomy": "services",
+ "title": "95% Rule Strategy",
+ "name": "95% Rule Strategy",
+ "metaTitle": "95% Rule Strategy in San Jose, CA",
+ "metaDescription": "95% identification rule strategy for San Jose 1031 exchangers targeting multiple transit-village multifamily buildings along the light rail corridor.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>The 95% rule lets a San Jose exchanger identify an unlimited number of replacement properties with no value ceiling, but only if 95% of the combined value identified actually gets acquired by day 180. It's the least forgiving of the three identification rules, and we see it used mostly by owners chasing transit-village multifamily near Communications Hill or along the light rail corridor, where a handful of comparable buildings can look identical on paper until diligence sorts them.</p>"
+  },
+  {
+   "heading": "Why Owners Reach for the 95% Rule at All",
+   "html": "<p>Most San Jose exchangers never need the 95% rule, the three-property or 200% rule covers the vast majority of deals. It gets used when an owner wants to identify more value than the 200% ceiling allows, typically because they're chasing several similar multifamily buildings along a light rail corridor and don't want to be locked out if pricing shifts on one or two of them before closing.</p><p>The tradeoff is real: identify more than 200% of the relinquished property's value, and you have to close on 95% of everything you listed, well beyond the comfortable margin the three-property or 200% rule usually allows.</p>"
+  },
+  {
+   "heading": "The Math That Makes This Rule Unforgiving",
+   "html": "<p>If an owner identifies five properties worth a combined $20 million against a $6 million relinquished sale, that combined figure already exceeds the 200% ceiling of $12 million. Under the 95% rule, that owner now needs to close on properties totaling at least $19 million, 95% of what was identified, not 95% of the exchange value. Falling short by even one deal that doesn't close on time can disqualify the identification retroactively.</p>"
+  },
+  {
+   "heading": "Where This Shows Up in San Jose's Multifamily Corridor",
+   "html": "<p>Communications Hill and the stretch of light rail running toward Diridon Station have produced a run of transit-village multifamily product built to similar specs within a few years of each other, which makes it tempting for an owner to identify four or five comparable buildings as a hedge against any single deal falling through. That's exactly the scenario where the 95% rule gets invoked, usually because the owner wants optionality across buildings that look interchangeable on a rent roll but aren't once you get into unit mix, parking ratios, and reserve studies.</p>"
+  },
+  {
+   "heading": "Building a List That Can Actually Hit 95%",
+   "html": "<p>Because the 95% threshold is calculated against everything identified rather than only what ultimately closes, the list has to be built with real acquisition capacity in mind from the start. Before filing, we confirm:</p><ul><li>Financing capacity confirmed across every property on the list, including backups</li><li>Realistic closing timelines for each seller, not optimistic ones</li><li>No property on the list that's a placeholder with no real intent to buy</li><li>A written contingency plan if one property falls out mid-diligence</li><li>Confirmation from the qualified intermediary that the combined value calculation is correct</li></ul><p>Skipping any one of these checks tends to surface as a problem in the final weeks, exactly when there's the least time to restructure the list or bring in additional financing.</p>"
+  },
+  {
+   "heading": "Why a Backup Candidate Still Matters Under This Rule",
+   "html": "<p>It's tempting to assume the 95% rule makes backup candidates unnecessary since so many properties are already on the list, but the opposite is usually true. Every property named has to actually close for the math to hold, so we still push owners to keep at least one genuine reserve candidate outside the formal 95% count, funded and ready in case a financing shortfall on one of the listed multifamily buildings threatens the whole threshold in the final stretch before day 180.</p>"
+  },
+  {
+   "heading": "What We Watch For Once the Letter Is Filed",
+   "html": "<p>Once the 95% list is filed, every week matters differently than it does under the three-property rule. A single financing delay on one multifamily deal can put the entire 95% threshold at risk, so we track closing progress on every listed property weekly, including the ones an owner isn't treating as a front-runner. Confirm any recalculation of the threshold with your qualified intermediary the moment a property drops off the list, since a late substitution can affect the math for everything else already under contract.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why would I use the 95% rule instead of the safer 200% rule?",
+   "a": "You'd use it only when you genuinely want to identify more value than the 200% ceiling allows, usually because you're hedging across several comparable multifamily buildings. Most owners are better served staying under 200% unless there's a specific reason not to."
+  },
+  {
+   "q": "Does the 95% threshold reset if a property drops off my list?",
+   "a": "No. The threshold is calculated against the original combined value identified by day 45. Dropping a property doesn't lower the bar, it typically makes it harder to hit."
+  },
+  {
+   "q": "What happens if I acquire 90% of the identified value instead of 95%?",
+   "a": "The identification fails entirely if you fall short of 95%, the shortfall isn't prorated or partially excused. This is the rule's core risk, and it's why we build in acquisition capacity checks before the letter is ever filed."
+  },
+  {
+   "q": "Can I mix the 95% rule with the three-property rule on the same exchange?",
+   "a": "No, one identification rule applies to a given exchange. If your combined identified value exceeds 200% of the relinquished property, the 95% rule becomes the operative test whether you intended it or not."
+  },
+  {
+   "q": "Is the 95% rule common in San Jose specifically?",
+   "a": "It shows up more here than in markets with looser inventory, mainly among owners identifying multiple transit-village multifamily buildings along the light rail corridor. Confirm with your qualified intermediary whether your specific list triggers this rule before day 45."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 873
+}

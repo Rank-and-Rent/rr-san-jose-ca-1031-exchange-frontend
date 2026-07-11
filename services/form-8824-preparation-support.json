@@ -1,0 +1,58 @@
+{
+ "slug": "form-8824-preparation-support",
+ "taxonomy": "services",
+ "title": "Form 8824 Preparation Support",
+ "name": "Form 8824 Preparation Support",
+ "metaTitle": "Form 8824 Preparation Support in San Jose, CA",
+ "metaDescription": "Form 8824 preparation support for San Jose 1031 exchangers, organizing settlement figures and Prop 13 basis details for your CPA's tax filing.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Form 8824 is where a San Jose exchange gets reported to the IRS, and it's built from the same numbers we've been tracking throughout the transaction, realized gain, recognized gain, basis in the replacement property, and any boot. We don't prepare or file the form, that's your CPA's role, but we assemble the numbers in the format their software expects so nothing gets reconstructed from memory in April. That handoff runs smoother when the underlying figures were captured accurately at each closing rather than pieced together after the fact.</p>"
+  },
+  {
+   "heading": "What Actually Feeds Into the Form",
+   "html": "<p>The core inputs are the relinquished property's adjusted basis, the sale price, selling expenses, the replacement property's purchase price, any debt relief or cash boot, and the closing costs on both sides. Every one of these should already exist in the settlement statements and the exchange agreement by the time Form 8824 preparation starts, assuming the exchange documentation was assembled correctly from the beginning.</p><p>When a number is missing or inconsistent at this stage, it's almost always traceable back to a settlement statement line item that never got reconciled between the two closings, which is exactly why we cross-check both statements against each other before calling the file complete.</p>"
+  },
+  {
+   "heading": "Multi-Property Exchanges Need More Than One Worksheet",
+   "html": "<p>When a San Jose exchange involves multiple replacement properties, whether from a 200% identification list or a DST placement split across offerings, the basis has to be allocated across each acquired property individually, not lumped into a single figure. That means assembling:</p><ul><li>Individual settlement statements for each replacement property acquired</li><li>An allocation of the relinquished property's basis across all replacements</li><li>Separate depreciation schedules for each new property going forward</li><li>Documentation of how any boot was allocated if multiple properties were involved</li></ul>"
+  },
+  {
+   "heading": "Where Prop 13 Basis Complicates the Depreciation Schedule",
+   "html": "<p>A San Jose owner exchanging out of a building held since before the last reassessment trigger often carries a tax basis far below current market value, which means the depreciation recapture calculation feeding into Form 8824 can be more significant than the sale price alone would suggest. Getting the historical basis right, including any capital improvements made over a long hold period, matters more here than in a market with more frequent turnover. Your CPA is the right party to confirm the final basis figure.</p><p>We help track down the paper trail for those older capital improvements, permits, contractor invoices, prior depreciation schedules, since a long-held North San Jose or Golden Triangle building often has records scattered across decades of ownership rather than filed in one place.</p>"
+  },
+  {
+   "heading": "Handing Off to Your CPA Without Losing Anything",
+   "html": "<p>We package the exchange agreement, both settlement statements, the identification letter, and any DST subscription documents into one file before handing off to your CPA, organized in the sequence their preparation software typically asks for. That handoff usually happens within a few weeks of the replacement closing, while the numbers are still fresh and any settlement statement questions can still be answered by the parties involved rather than reconstructed months later. We also flag anything unusual about the transaction, a seismic retrofit credit, a delayed DST subscription, an allocated basis across several properties, so your CPA isn't discovering it for the first time while preparing the return.</p>"
+  },
+  {
+   "heading": "Common Reasons the Numbers Don't Reconcile",
+   "html": "<p>The most frequent mismatch we catch before handoff is a settlement statement crediting or debiting an item, like a security deposit transfer or a prorated tax bill, that got treated inconsistently between the relinquished and replacement closings. A smaller but recurring issue is a DST sponsor's reporting package arriving on a different schedule than the direct property closings, which can delay the CPA's ability to finalize the form. We flag both before the handoff, not after your CPA calls with questions.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Do you prepare or file Form 8824?",
+   "a": "No, that's your CPA's responsibility. We assemble and organize the underlying transaction numbers so your CPA isn't reconstructing settlement details from memory or scattered files across two separate closings."
+  },
+  {
+   "q": "How many 8824 worksheets does a multi-property exchange need?",
+   "a": "Generally one per replacement property acquired, since basis has to be allocated individually across each. Your CPA will confirm the exact structure based on your specific exchange, including how any DST interests factor into the overall allocation."
+  },
+  {
+   "q": "Does a DST placement get reported differently on Form 8824?",
+   "a": "The underlying mechanics are similar to a directly owned property, but the sponsor's reporting package needs to be incorporated into the basis and income calculations, and the timing of that package can vary by sponsor. Confirm the specific treatment with your CPA."
+  },
+  {
+   "q": "When should I hand documentation off to my CPA?",
+   "a": "As soon as possible after the replacement property closes, ideally within a few weeks, while settlement details are still fresh and any discrepancies can be resolved with the parties involved rather than months later. Waiting until tax season means reconstructing details that could have been confirmed in minutes closer to closing."
+  },
+  {
+   "q": "Why does a long-held San Jose property need extra care on this form?",
+   "a": "Buildings held under Proposition 13 for many years can carry a basis well below current market value, and getting the historical improvements and depreciation schedule right matters more when the gap between basis and sale price is large, since a missed capital improvement can meaningfully shift the recognized gain reported on the form."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 854
+}

@@ -1,0 +1,58 @@
+{
+ "slug": "improvement-exchange-planning",
+ "taxonomy": "services",
+ "title": "Improvement Exchange Planning",
+ "name": "Improvement Exchange Planning",
+ "metaTitle": "Improvement Exchange Planning in San Jose, CA",
+ "metaDescription": "Improvement exchange planning for San Jose 1031 owners, coordinating seismic retrofit and build-to-suit work within the 180-day exchange deadline.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>An improvement exchange lets a San Jose exchanger use exchange funds to build out or upgrade a replacement property before taking title, all inside the same 180-day window. We coordinate this most often when the available replacement building needs seismic retrofit work or a build-to-suit upgrade before it's actually functional for the buyer's intended use. It's one of the more demanding exchange structures to run, since permitting timelines here don't always cooperate with a fixed exchange deadline.</p>"
+  },
+  {
+   "heading": "How the Structure Actually Works",
+   "html": "<p>In an improvement exchange, an exchange accommodation titleholder takes and holds title to the replacement property while exchange funds pay for construction or renovation work, and the exchanger receives the improved property once the work is done, but still within the original 180-day deadline. This differs from a standard forward exchange in one critical way: the improvements have to be substantially complete and in place before the exchanger takes title, because value added after the transfer doesn't count toward the exchange. That single rule drives nearly every scheduling decision on an improvement exchange from day one.</p>"
+  },
+  {
+   "heading": "Why Seismic Retrofit Work Fits This Structure Well",
+   "html": "<p>Older buildings across San Jose, particularly unreinforced masonry or soft-story structures built before current seismic code, sometimes need retrofit work completed before a lender or insurer will sign off on the purchase. An improvement exchange lets that retrofit happen with exchange funds while the exchange accommodation titleholder holds the property, so the exchanger isn't stuck choosing between buying a building that isn't loan-ready or losing the identified replacement entirely while retrofit permits work through the city.</p><p>Without this structure, an owner facing a required retrofit on an otherwise strong replacement candidate would either have to fund the work personally outside the exchange or abandon the property altogether, neither of which serves the owner well.</p>"
+  },
+  {
+   "heading": "What Has to Happen Inside 180 Days",
+   "html": "<p>Every step, permitting, construction, and the eventual transfer, has to complete within the same window that governs any other exchange. That timeline typically has to accommodate:</p><ul><li>City permit review and approval for the retrofit or build-out scope</li><li>Contractor mobilization and substantial completion of the improvement work</li><li>Final inspection and sign-off before the accommodation titleholder transfers title</li><li>Reconciliation of actual construction cost against budgeted exchange funds</li><li>Transfer of title to the exchanger before day 180, with improvements already in place</li></ul>"
+  },
+  {
+   "heading": "Coordinating the Titleholder, the Contractor, and the QI",
+   "html": "<p>Three parties have to move on the same calendar: the exchange accommodation titleholder holding legal title, the contractor executing the retrofit or build-out, and the qualified intermediary managing the exchange funds paying for it. A permit delay at the city, common when seismic retrofit scope gets revised mid-review, can push the whole structure past day 180 if there's no buffer built in. We track permit status weekly once construction is underway, checking in at every stage rather than only at the start and finish of the project, since city review timelines rarely move in a straight line.</p>"
+  },
+  {
+   "heading": "Where Improvement Exchanges Run Into Trouble",
+   "html": "<p>The most common failure point is timeline optimism: an owner assumes a straightforward retrofit scope will clear city permitting in six weeks when it realistically takes twelve, leaving no room for the actual construction once permits are in hand. We build the construction schedule backward from day 180, with a hard buffer for permit review, before committing to an improvement exchange structure rather than a standard purchase with the retrofit handled after closing. If the math doesn't work even with a buffer, we say so early, rather than letting an owner discover it mid-construction with exchange funds already committed.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Can I do the retrofit work myself after taking title instead?",
+   "a": "You can, but then the exchange value is fixed at whatever the property was worth at transfer, and post-transfer improvements don't add to the exchange basis the way they would inside an improvement exchange structure held by an accommodation titleholder. That distinction is worth discussing with your tax advisor before deciding which route to take."
+  },
+  {
+   "q": "Who holds title during the improvement period?",
+   "a": "An exchange accommodation titleholder, a separate legal entity, holds title while the improvements are made, then transfers the improved property to the exchanger before the 180-day deadline."
+  },
+  {
+   "q": "What happens if construction isn't finished by day 180?",
+   "a": "The transfer to the exchanger has to happen by day 180 regardless of construction status, so any unfinished work reduces the value that counts toward the exchange. This is why realistic scheduling, with a permit buffer, matters more here than in a standard purchase, and why we build the schedule backward from day 180 rather than forward from the permit application date."
+  },
+  {
+   "q": "Does this structure work for a seismic retrofit specifically?",
+   "a": "It's one of the more common uses in San Jose, since older buildings sometimes need retrofit work completed before they're truly usable, and the improvement exchange lets that work happen with exchange funds rather than the exchanger's outside capital, which can matter a great deal to an owner who has already committed most of their liquidity to the exchange itself."
+  },
+  {
+   "q": "Is an improvement exchange more expensive to run than a standard purchase?",
+   "a": "Yes, there are additional costs for the accommodation titleholder arrangement and the coordination it requires. Confirm whether the added cost makes sense for your specific retrofit or build-out scope with your qualified intermediary before committing to the structure, since a modest retrofit may not justify the added complexity."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 862
+}

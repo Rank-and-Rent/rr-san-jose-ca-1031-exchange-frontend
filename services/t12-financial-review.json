@@ -1,0 +1,58 @@
+{
+ "slug": "t12-financial-review",
+ "taxonomy": "services",
+ "title": "T12 Financial Review",
+ "name": "T12 Financial Review",
+ "metaTitle": "T12 Financial Review for San Jose 1031 Replacement Property",
+ "metaDescription": "Trailing-12 financial review for San Jose replacement property, normalizing expenses and one-time items before a building is added to the 45-day list.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A trailing-twelve-month operating statement is where the real story of a San Jose replacement property lives, and it's also where sellers most often smooth over the parts of the story they'd rather a buyer not notice. We've reviewed enough T12s across this market to know the difference between a genuinely well-run building and one whose expenses have simply been deferred or reclassified to make the year look better than it was.</p>"
+  },
+  {
+   "heading": "Separating Recurring Expenses From One-Time Items",
+   "html": "<p>Sellers frequently roll a large one-time repair, a legal settlement, or a capital item into a single line that looks like normal operating expense, which makes the trailing period look worse or better than the property's true run rate depending on which direction serves the sale. We rebuild the T12 line by line, pulling out anything that isn't a genuinely recurring cost, before we accept the net operating income figure a broker's package leans on.</p>"
+  },
+  {
+   "heading": "Checking Utility and Tax Line Items Against Reality",
+   "html": "<p>Property tax reassessment under Prop 13 is one of the biggest gaps between a seller's trailing T12 and what a new San Jose owner will actually pay, since a sale triggers reassessment to current market value and the seller's tax line reflects a basis that may be years or decades old. We rebuild the tax line at the post-sale assessed value before comparing cap rates across candidate properties, since comparing a stale tax figure against a market-value figure makes two similar buildings look artificially different.</p>"
+  },
+  {
+   "heading": "Reconciling Management Fees and Deferred Maintenance",
+   "html": "<p>A T12 with an unusually low management fee line often means the current owner is self-managing in a way a new owner won't replicate, and a T12 with unusually low repair and maintenance spending often means capital work has been deferred rather than avoided. We flag both patterns, since either one changes the real go-forward expense load a buyer needs to underwrite against the building's income.</p>"
+  },
+  {
+   "heading": "What We Rebuild Before a Property Goes on the List",
+   "html": "<p>Before recommending a property based on its financials, we rebuild:</p><ul><li>Property tax expense at the post-sale reassessed value rather than the seller's current basis</li><li>Management fee at a market rate if the seller was self-managing or under-billing</li><li>Repair and maintenance spending against the building's actual age and deferred-work history</li><li>One-time legal, insurance, or capital items separated out of recurring operating expense</li></ul>"
+  },
+  {
+   "heading": "Capital Expenditure History Against a Reserve Schedule",
+   "html": "<p>A T12 shows operating expense, not capital spending, so a building with a beautifully clean operating statement can still be sitting on a roof, parking lot, or mechanical system that's due for replacement in the next few years. We ask for the capital expenditure history separately from the T12 and compare it against a reasonable reserve schedule for a building of that age and construction type, since a seller who hasn't spent meaningfully on capital items in a decade is usually deferring cost onto the next owner rather than genuinely avoiding it.</p><p>We build that expected capital need into the comparison across candidate properties, since two buildings with identical trailing NOI can require very different capital investment over the next five years depending on what's actually been maintained.</p><p>Roofing and parking lot resurfacing are the two items we see deferred most often across older San Jose buildings, largely because both can limp along for years past their ideal replacement window before a failure forces the issue, and by then the repair cost has usually grown well beyond what a timely replacement would have run.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why does the property tax line change so much for a replacement property in San Jose?",
+   "a": "Under Proposition 13, a property's assessed value is largely frozen until a change in ownership triggers reassessment to current market value, so a seller's T12 tax line based on a decades-old basis will jump once a new buyer takes title. We rebuild that line at the projected post-sale assessment before comparing net operating income across candidates."
+  },
+  {
+   "q": "How do you spot deferred maintenance hiding in a trailing financial statement?",
+   "a": "We compare repair and maintenance spending against the building's age, mechanical systems, and any capital items disclosed separately, and an unusually low expense line relative to a building's age is often a sign that work has been pushed off rather than completed. That gap gets flagged before the property is recommended."
+  },
+  {
+   "q": "Does a strong T12 net operating income guarantee a good replacement property?",
+   "a": "No, since a strong trailing NOI can be built on a stale tax basis, a below-market management fee, or deferred capital work that all reverse once a new owner takes over. We normalize the statement specifically so the NOI reflects what a new San Jose owner will actually experience."
+  },
+  {
+   "q": "Can I use the T12 review for a property that isn't yet on my identification list?",
+   "a": "Yes, we'll review the trailing financials for any candidate you're weighing, since the goal is giving you an accurate picture before you commit to identifying it. Only properties formally named within the identification rules count toward your exchange, but the underwriting work is the same either way."
+  },
+  {
+   "q": "Do you calculate the tax basis and reassessment figures yourselves?",
+   "a": "We estimate the likely post-sale assessed value based on the purchase price and current county practice, but we recommend confirming the exact figure with a tax advisor or the county assessor's office before finalizing any offer. We don't provide tax advice ourselves."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 853
+}

@@ -1,0 +1,58 @@
+{
+ "slug": "exchange-documentation-assembly",
+ "taxonomy": "services",
+ "title": "Exchange Documentation Assembly",
+ "name": "Exchange Documentation Assembly",
+ "metaTitle": "Exchange Documentation Assembly in San Jose, CA",
+ "metaDescription": "Exchange documentation assembly for San Jose 1031 owners, covering assignment language, title history, and older Alviso and Berryessa parcel quirks.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Every San Jose exchange runs on a paper trail that has to hold together end to end, the exchange agreement, the assignment of contract rights, the identification letter, and the closing documents on both properties. On older parcels near Alviso or in the Berryessa area, where recorded plats and easements sometimes date back decades before the current zoning, that trail takes more care to assemble than a straightforward suburban tract deal. We build the file as we go rather than reconstructing it from memory once a title company or CPA asks a question.</p>"
+  },
+  {
+   "heading": "The Core Documents Every Exchange Needs",
+   "html": "<p>A complete San Jose exchange file has to include a specific set of documents, assembled in the right sequence and signed by the right parties. At minimum, that means:</p><ul><li>The exchange agreement between the exchanger and the qualified intermediary</li><li>Assignment of the purchase and sale contract rights on both properties</li><li>The written identification letter delivered by day 45</li><li>Settlement statements from both the relinquished and replacement closings</li><li>Deed and title documentation for the replacement property</li><li>Confirmation of direct deed transfer where the QI never takes title</li></ul>"
+  },
+  {
+   "heading": "Where Assignment Language Gets Missed",
+   "html": "<p>The assignment of contract rights has to happen before closing, not after, and it has to be documented in writing to both the buyer and seller on each side of the deal. Owners who sign a purchase contract personally and only bring in the qualified intermediary later sometimes miss this step, which can jeopardize the exchange's validity even if the closing itself goes smoothly. We build the assignment into the contract paperwork from the first signature, not as an afterthought before closing.</p><p>This matters most on fast-moving San Jose deals where an owner and a buyer shake hands on terms before any exchange professional is involved, since retrofitting proper assignment language into an already-negotiated contract is harder than building it in from the start.</p>"
+  },
+  {
+   "heading": "Title History on Older San Jose Parcels",
+   "html": "<p>Parcels near Alviso and older sections of Berryessa sometimes carry recorded easements, water rights, or annexation-era boundary quirks that predate the modern lot lines shown on a current plat map. A title company unfamiliar with these older recordings can miss something that surfaces late in the exchange timeline, which is exactly when there's the least room to fix it. We flag these parcels for extra title review earlier in the process rather than waiting for a title commitment to surface the issue on its own. A cloud on title discovered in week 42 of a 45-day identification window can force an owner to drop an otherwise strong candidate simply for lack of time to resolve it.</p>"
+  },
+  {
+   "heading": "Keeping the QI's Paper Trail Separate From the Deal's",
+   "html": "<p>The qualified intermediary's documentation, the exchange agreement, the assignment, the identification letter, has to stand on its own and be consistent with the closing documents, but it isn't the same paperwork as the purchase and sale contracts themselves. Owners sometimes conflate the two and assume signing a contract satisfies the exchange requirements. It doesn't. We keep both tracks moving in parallel and cross-check them against each other before either closing.</p><p>A signed purchase agreement with no corresponding exchange agreement or assignment on file is one of the most common gaps we find when we're brought in partway through a deal an owner started on their own.</p>"
+  },
+  {
+   "heading": "What We Assemble Before Either Closing",
+   "html": "<p>Before the relinquished property closes, we confirm the exchange agreement is signed, the assignment language is in the purchase contract, and the QI has acknowledged its role in writing. Before the replacement property closes, we confirm the identification letter was delivered on time, the assignment on that contract is in place, and title has cleared any of the older-parcel issues specific to this metro. Nothing moves to signature without that checklist confirmed in writing, and we'd rather push a closing date by a few days than sign off on a file with an open item.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What happens if the assignment of contract rights isn't documented?",
+   "a": "The exchange can be disqualified even if the closing proceeds normally, because the IRS requires the qualified intermediary to formally step into the exchanger's contract rights before closing. This is one of the most common paperwork failures we check for first."
+  },
+  {
+   "q": "Do older San Jose parcels near Alviso need extra title work?",
+   "a": "Often yes. Historical annexation boundaries and older recorded easements in that area can surface title questions that a standard search misses, so we flag these parcels for a more thorough review earlier in the timeline rather than waiting on the title commitment to raise it."
+  },
+  {
+   "q": "Can the qualified intermediary take title to either property directly?",
+   "a": "Most exchanges use a direct deed structure where title passes straight from seller to buyer, with the QI's role documented through the exchange agreement rather than appearing on the deed itself. Confirm the specific structure with your QI."
+  },
+  {
+   "q": "How far in advance should documentation assembly start?",
+   "a": "Ideally before the relinquished property goes under contract, since the assignment language needs to be built into that contract from the first draft, not added after signatures are already in place."
+  },
+  {
+   "q": "Who keeps the master file of all exchange documents?",
+   "a": "The qualified intermediary typically retains the official exchange file, but we keep our own parallel copy and checklist so nothing is missing or inconsistent when it comes time for tax reporting, and so your CPA has a single organized packet rather than several partial ones."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 868
+}

@@ -1,0 +1,58 @@
+{
+ "slug": "three-property-rule-strategy",
+ "taxonomy": "services",
+ "title": "Three-Property Rule Strategy",
+ "name": "Three-Property Rule Strategy",
+ "metaTitle": "Three-Property Rule Strategy for San Jose 1031 Exchanges",
+ "metaDescription": "Building a three-property identification list that survives San Jose's land-scarce corridors, from North San Jose flex to Coyote Valley industrial.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>The three-property rule sounds simple until you're trying to fill three real slots in a San Jose market where good inventory in a given corridor can be genuinely scarce. Naming three properties without value limits is the most commonly used identification method, but it only works if all three are properties that could plausibly close, not padding added to check a box.</p>"
+  },
+  {
+   "heading": "Why Three Real Candidates Beats Three Convenient Ones",
+   "html": "<p>We've watched clients name a third property purely to fill the list, a building they had no real intention of buying, only to have their first-choice deal fall through and discover the backup wasn't actually available anymore or never was seriously for sale. In corridors like North San Jose's flex and R&D market near the Golden Triangle, where inventory turns quickly, a padded third slot is close to useless. We only recommend properties for a three-property list that a client could genuinely close on if needed.</p>"
+  },
+  {
+   "heading": "Sequencing the List by Realistic Availability",
+   "html": "<p>We typically order a three-property list by which building has the clearest path to closing first, factoring in seller motivation, financing contingencies already cleared, and how competitive the corridor is. A property in the tighter North San Jose R&D corridor might carry more competition and a shorter runway than a comparable building further out toward Coyote Valley's slower-moving industrial land, and that difference should shape which property gets pursued first, beyond which one happens to be named first on paper.</p>"
+  },
+  {
+   "heading": "When the Three-Property Rule Isn't the Right Tool",
+   "html": "<p>If a client wants more than three candidates because a specific asset class, medical office near a single hospital campus, for instance, has genuinely thin inventory in San Jose, the 200 percent rule is usually the better fit, since it allows any number of properties as long as their combined value stays within twice the relinquished property's sale price. We help clients decide between the two rules based on actual market depth rather than defaulting to three out of habit.</p>"
+  },
+  {
+   "heading": "What Makes a Three-Property List Defensible",
+   "html": "<p>Before finalizing a three-property identification list, we confirm each candidate has:</p><ul><li>A seller genuinely willing to transact, beyond a listing sitting untouched for months</li><li>Financing terms realistic for the client's timeline inside the 180-day exchange period</li><li>No title or entitlement issue likely to delay closing past the deadline</li><li>A legal description precise enough to satisfy the identification requirement</li><li>A rough sense of where it ranks against the other two candidates in likelihood of closing</li></ul>"
+  },
+  {
+   "heading": "Financing Contingencies Rarely Line Up the Same Way Across Three Candidates",
+   "html": "<p>A lender underwriting a North San Jose flex building with a single tech tenant will move on a different timeline than one underwriting a grocery-anchored retail center or a small apartment building, and stacking three candidates with three different lender processes against one 180-day exchange period takes real coordination. We map out each candidate's likely financing timeline early, since a property that looks like the strongest choice on price can turn into the weakest choice if its financing simply can't close before the deadline.</p><p>Where possible, we favor at least one candidate with financing already largely cleared, a refinance-friendly asset or an all-cash path, specifically so the client has a fallback that isn't hostage to a slow lender if the preferred property's financing runs long.</p><p>We put this timeline in writing for the client early, showing each candidate's expected loan approval date against the shared 180-day deadline, so nobody is surprised late in the process by a financing contingency that was always going to be the tightest part of the transaction.</p><p>That written timeline also gives a client a concrete basis for deciding, mid-exchange, whether to push harder on the preferred property or pivot to the backup candidate before too much of the 180 days has already passed.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does the three-property rule limit the value of the properties I identify?",
+   "a": "No, under the three-property rule you can name up to three properties of any combined value, unlike the 200 percent rule, which limits total value but not the count. The three-property rule is simplest when good candidates are limited in number rather than value."
+  },
+  {
+   "q": "Can I switch from the three-property rule to the 200 percent rule mid-exchange?",
+   "a": "You can revise your identification list, including which rule you're relying on, at any point within the 45-day window, but once that window closes the list is generally locked. We build the list with the right rule from the start so a late switch isn't necessary."
+  },
+  {
+   "q": "What happens if all three of my identified properties fall through?",
+   "a": "If none of the identified properties close within the 180-day exchange period, the exchange fails and the sale of the relinquished property becomes fully taxable. That risk is exactly why we push clients toward three real candidates rather than a token third choice."
+  },
+  {
+   "q": "Is it better to identify three properties in the same corridor or spread across San Jose?",
+   "a": "It depends on how deep inventory is in that corridor; a market like North San Jose's R&D and flex sector can support three legitimate candidates close together, while a thinner asset class might need candidates spread across different parts of the city to find three real options. We build the list around actual availability rather than geographic neatness."
+  },
+  {
+   "q": "Do you handle the legal description requirements for the identification notice?",
+   "a": "We help gather the address and description details for each candidate property, but the qualified intermediary confirms the notice satisfies the legal identification requirements before it's submitted. That coordination happens well before the 45-day deadline, not at the last minute."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 884
+}

@@ -1,0 +1,58 @@
+{
+ "slug": "reverse-exchange-coordination",
+ "taxonomy": "services",
+ "title": "Reverse Exchange Coordination",
+ "name": "Reverse Exchange Coordination",
+ "metaTitle": "Reverse Exchange Coordination in San Jose, CA",
+ "metaDescription": "Reverse exchange parking arrangements for San Jose buyers who need to secure a replacement property before selling in a competitive, land-scarce market.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>North San Jose's flex and R&D corridor near the Golden Triangle turns over fast enough that waiting to sell before you buy can mean losing the building you actually want. A reverse exchange lets a buyer secure the replacement property first and park title with an accommodation titleholder while the relinquished property sells. We've coordinated these arrangements through enough tight San Jose closings to know they take more structure up front than a standard exchange, not less.</p>"
+  },
+  {
+   "heading": "Why Land Scarcity Pushes Buyers Toward Reverse Structures",
+   "html": "<p>Buildings near San Jose's semiconductor and technology campuses, the corridor running past Cisco's North San Jose headquarters and the R&D facilities scattered along North First Street, rarely sit on the market long, and a buyer who waits for their existing property to close first can watch the target building sell to someone else. A reverse exchange removes that timing risk by letting the buyer close on the replacement property immediately, with an exchange accommodation titleholder holding title until the relinquished sale catches up.</p>"
+  },
+  {
+   "heading": "How the Exchange Accommodation Titleholder Actually Works",
+   "html": "<p>The EAT is a separate entity, often set up specifically for this transaction, that takes and holds title to either the replacement property or the relinquished property for up to 180 days while the other side of the exchange gets sorted out. The buyer typically arranges financing for the EAT to acquire the replacement property, then the relinquished property is marketed and sold within the 180-day window, at which point title to the replacement property transfers from the EAT to the buyer to complete the exchange.</p>"
+  },
+  {
+   "heading": "The 180-Day Clock Runs Differently in a Reverse Exchange",
+   "html": "<p>Both the 45-day identification period and the 180-day exchange period still apply in a reverse exchange, but they attach to whichever property the EAT is holding rather than running from a relinquished-property closing the way a standard exchange does. That distinction matters for how a client plans the sale of their existing San Jose property, since the marketing and closing timeline for the relinquished asset now has to fit inside a clock that started before that sale was even under contract.</p>"
+  },
+  {
+   "heading": "What Has to Be Lined Up Before an EAT Can Close",
+   "html": "<p>Before a reverse exchange closing can happen, we confirm:</p><ul><li>Financing arranged for the EAT entity to acquire the replacement property, since many lenders require different underwriting for a title-holding entity</li><li>Qualified exchange accommodation agreement drafted and executed before the EAT takes title</li><li>A realistic marketing timeline for the relinquished property that fits inside the 180-day window</li><li>Property management arrangements for whichever asset the EAT is holding during the interim period</li><li>Clear documentation trail showing the EAT never acted as the buyer's agent</li></ul>"
+  },
+  {
+   "heading": "Who Carries Insurance and Liability While Title Sits With the EAT",
+   "html": "<p>While the exchange accommodation titleholder holds title, someone still has to insure the property, cover general liability, and, if it's an occupied building, manage tenant relations and rent collection, and that responsibility needs to be spelled out in the qualified exchange accommodation agreement rather than assumed. In practice the buyer typically manages the property day to day under a management agreement with the EAT, but the insurance policy and liability structure need to name the correct party or a claim during the parking period can turn into a coverage dispute nobody wants to sort out mid-exchange.</p><p>We flag this explicitly for every reverse exchange in North San Jose's competitive corridor, since a vacant building sitting under EAT ownership for months still carries real exposure if a pipe fails or a trespasser gets hurt on-site.</p><p>We confirm the insurance policy naming, the deductible responsibility, and who's obligated to maintain the property physically before the EAT ever takes title, rather than sorting that out after something has already gone wrong during the parking period.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why would a San Jose buyer choose a reverse exchange instead of waiting to sell first?",
+   "a": "In corridors where inventory moves quickly, like the North San Jose R&D and flex market, waiting to sell first can mean losing the replacement property to another buyer before your existing sale even closes. A reverse exchange lets you lock in the replacement property immediately while the relinquished property sale catches up."
+  },
+  {
+   "q": "Who actually holds the deed during a reverse exchange?",
+   "a": "The exchange accommodation titleholder, a separate entity set up for this purpose, holds title to either the replacement or the relinquished property for up to 180 days, not the buyer directly. That structure is what keeps the arrangement compliant with the reverse exchange safe harbor."
+  },
+  {
+   "q": "Does the 45-day identification rule still apply in a reverse exchange?",
+   "a": "Yes, within 45 days of the EAT taking title, the taxpayer must identify which property is being relinquished if the replacement property was parked first, so the identification discipline doesn't go away just because the order of operations flipped. We track that deadline the same way we would in a standard exchange."
+  },
+  {
+   "q": "Is a reverse exchange more expensive to set up than a standard exchange?",
+   "a": "Generally yes, since it involves forming or engaging a separate titleholding entity, additional financing considerations, and more complex documentation than a standard forward exchange. Clients should weigh that added cost against the risk of losing a competitive replacement property in a tight San Jose corridor."
+  },
+  {
+   "q": "Can you find the replacement property and coordinate the EAT structure at the same time?",
+   "a": "Yes, sourcing the replacement property and coordinating the reverse exchange mechanics happen together in practice, since the property's financing and title needs shape how the EAT structure gets set up. We work alongside the client's qualified intermediary and attorney throughout, without providing tax advice ourselves."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 884
+}

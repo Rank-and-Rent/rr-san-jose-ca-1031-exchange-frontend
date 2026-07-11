@@ -1,0 +1,58 @@
+{
+ "slug": "forward-exchange-coordination",
+ "taxonomy": "services",
+ "title": "Forward Exchange Coordination",
+ "name": "Forward Exchange Coordination",
+ "metaTitle": "Forward Exchange Coordination in San Jose, CA",
+ "metaDescription": "Forward exchange coordination for San Jose 1031 owners, sequencing a North San Jose sale against an early replacement search in a tight market.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A forward exchange is the standard sequence, sell the relinquished San Jose property first, then acquire the replacement within 180 days, and it's the structure behind most of the exchanges we coordinate. The sequencing sounds simple until land scarcity in submarkets like North San Jose forces an owner to start the replacement search well before the relinquished sale even closes. Coordinating that early search without letting it slow down the sale itself is most of what makes forward exchange coordination worth having a dedicated process for.</p>"
+  },
+  {
+   "heading": "The Sequence That Has to Happen in Order",
+   "html": "<p>In a forward exchange, the relinquished property has to close first, with sale proceeds going directly to the qualified intermediary, before the exchanger can close on any replacement property. The 45-day identification window and the 180-day exchange period both start on that first closing date, running concurrently rather than sequentially. Getting this order right, and never letting exchange funds pass through the exchanger's hands, is what keeps the structure valid.</p><p>An owner who closes the relinquished sale on a Tuesday, for instance, is already on day one of both clocks by Wednesday morning, whether or not a replacement candidate has been settled on yet.</p>"
+  },
+  {
+   "heading": "Why We Start the Replacement Search Before Listing",
+   "html": "<p>Given how little single-tenant and flex inventory turns over in North San Jose in a typical quarter, waiting until the relinquished property is under contract to start looking at replacements often leaves too little runway. We begin screening replacement candidates as soon as an owner commits to the exchange, sometimes before the relinquished property is even listed, so the 45-day window opens against a list that's already been diligenced rather than one built from scratch under deadline pressure. This early work also gives us a realistic read on how long the relinquished sale itself is likely to take, which feeds directly into how aggressive the replacement search needs to be.</p>"
+  },
+  {
+   "heading": "Where a Forward Exchange Can Still Go Sideways",
+   "html": "<p>Even with early preparation, a handful of failure points show up repeatedly in forward exchanges:</p><ul><li>Sale proceeds routed to the exchanger instead of the qualified intermediary</li><li>Identification letter delivered late or not delivered in writing</li><li>Assignment of contract rights missing from the purchase agreement</li><li>Replacement financing falling through with no backup identified</li><li>Debt relief between the two properties creating unplanned boot</li></ul>"
+  },
+  {
+   "heading": "Coordinating the QI's Role at Each Handoff",
+   "html": "<p>The qualified intermediary has to be formally assigned into both the sale contract and the purchase contract, hold the sale proceeds throughout the gap between closings, and confirm receipt of the identification letter in writing. We track each of these handoffs as its own checkpoint rather than assuming they happen automatically once the QI is engaged, because a missed assignment on either contract can undermine the whole structure even if the closings themselves go smoothly. Each checkpoint gets confirmed in writing before we move to the next one, so there's a clear record of exactly when each requirement was satisfied.</p>"
+  },
+  {
+   "heading": "When a Forward Structure Isn't the Right Fit",
+   "html": "<p>A forward exchange assumes the relinquished property will actually sell before the exchanger needs to close on a replacement, which doesn't always hold in a market where the right replacement building surfaces on its own timeline. When a San Jose owner finds a replacement they don't want to lose before their existing property has sold, a reverse exchange structure, holding the replacement through an exchange accommodation titleholder, is usually the better fit. We flag this early rather than forcing a forward structure onto a deal that doesn't sequence that way, since trying to force the wrong structure onto a mismatched timeline tends to cost more in the end than simply choosing correctly from the start.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What's the difference between a forward and a reverse exchange?",
+   "a": "In a forward exchange, the relinquished property sells first and the replacement is acquired within 180 days after. In a reverse exchange, the replacement is acquired first, typically through an exchange accommodation titleholder, before the relinquished property sells. Most San Jose exchangers use the forward structure, since it's simpler and less costly to run."
+  },
+  {
+   "q": "Can I touch the sale proceeds at any point in a forward exchange?",
+   "a": "No. Sale proceeds have to go directly to the qualified intermediary and stay there until they're used to acquire the replacement property. Any direct receipt by the exchanger, even briefly, can disqualify the exchange."
+  },
+  {
+   "q": "How early should I start looking at replacement properties?",
+   "a": "As early as possible, ideally before the relinquished property is even listed, especially in tight submarkets like North San Jose where replacement inventory doesn't turn over quickly. Starting late is the single most common reason a forward exchange ends up rushed in its final weeks."
+  },
+  {
+   "q": "What happens if my replacement financing falls through late?",
+   "a": "If a backup identified property exists, you can pivot to it. If not, the exchange fails once day 180 passes without a closing, and the deferred gain becomes taxable for the year the relinquished property sold. This is exactly why we push owners to keep at least one genuine backup candidate rather than a single point of failure."
+  },
+  {
+   "q": "Does the qualified intermediary need to be involved before the relinquished property is listed?",
+   "a": "It helps to engage the QI early so the assignment language is built into the listing and sale contract from the start, rather than added as an amendment closer to closing, when there's less flexibility to fix a drafting gap."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 862
+}

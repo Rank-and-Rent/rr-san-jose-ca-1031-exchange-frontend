@@ -1,0 +1,58 @@
+{
+ "slug": "market-comparable-analysis",
+ "taxonomy": "services",
+ "title": "Market Comparable Analysis",
+ "name": "Market Comparable Analysis",
+ "metaTitle": "Market Comparable Analysis in San Jose, CA",
+ "metaDescription": "Market comparable analysis for San Jose 1031 exchangers, pricing candidates by submarket and asset class instead of a blended citywide average.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Market comparable analysis on a San Jose exchange means pulling recent sales across the specific submarket and asset class an owner is considering, not a citywide average that blends Santana Row retail pricing with Golden Triangle industrial. After years of tracking these submarkets separately, we've found that generic comps are the fastest way to misprice a replacement property and lose real dollars against the identification deadline. Getting the comp set right early saves an owner from either overpaying on a rushed offer or losing a strong candidate to a competing buyer who priced it correctly.</p>"
+  },
+  {
+   "heading": "Why Citywide Averages Mislead San Jose Buyers",
+   "html": "<p>A single per-square-foot average for San Jose commercial real estate blends together Golden Triangle industrial, downtown office towers, and transit-village multifamily, three asset classes with entirely different buyer pools and pricing drivers. An owner using a citywide figure to evaluate a specific replacement candidate is working from a number that doesn't actually describe the building in front of them, which shows up fastest when an offer gets rejected as out of touch with what that particular submarket is actually trading at. By the time that rejection happens, days of the 45-day window are already gone.</p>"
+  },
+  {
+   "heading": "How We Pull Comps by Submarket and Asset Class",
+   "html": "<p>We build comp sets around the specific submarket and asset type of each identification candidate rather than a single citywide figure. That typically means separating:</p><ul><li>North San Jose and Golden Triangle industrial and flex sales</li><li>Downtown and near-Diridon office and mixed-use transactions</li><li>Transit-village multifamily sales near BART and light rail stops</li><li>Retail sales in the Santana Row, Valley Fair, and surrounding trade area</li><li>Land sales specifically, given how differently land scarcity prices raw parcels versus improved buildings</li></ul>"
+  },
+  {
+   "heading": "Transit-Village Multifamily Near the BART and Light Rail Corridor",
+   "html": "<p>Multifamily buildings near the Berryessa BART station and along the VTA light rail corridor have traded at a premium tied directly to transit access, and that premium moves independently of multifamily pricing in less transit-connected parts of the city. An owner comparing a Communications Hill acquisition against a general multifamily average risks either overpaying relative to non-transit comps or underbidding relative to what similarly transit-connected buildings have actually closed at. We treat the transit premium as its own variable to isolate, not something to average away into a broader multifamily figure.</p>"
+  },
+  {
+   "heading": "Retail Comps Around Santana Row and Valley Fair",
+   "html": "<p>Retail pricing near Santana Row and Valley Fair reflects a specific mix of destination shopping and mixed-use foot traffic that doesn't extend evenly to retail parcels elsewhere in the city, even ones a few miles away along a similar arterial. We pull comps specific to that trade area separately from neighborhood retail elsewhere in San Jose, since blending the two tends to overstate what a standalone strip center outside the Santana Row trade area is actually worth. An owner evaluating a candidate outside that immediate trade area needs its own comp set entirely, built from sales in that specific pocket of the city rather than borrowed from a stronger-performing district nearby.</p>"
+  },
+  {
+   "heading": "Feeding Comps Into the Identification Decision, Not the Offer Alone",
+   "html": "<p>Comparable analysis matters before the identification letter goes out, well beyond the moment an owner sits down to negotiate a final offer, because a candidate that looks reasonably priced against a stale or mismatched comp set can eat into the limited time available under the 45-day window if the actual sale doesn't clear at the price an owner expected. We run comps on every serious candidate before it's added to the identification list, including candidates an owner later decides not to pursue.</p><p>That extra diligence on candidates that never make the final letter isn't wasted effort, it's part of how we rule out weaker options quickly enough to leave real time for the ones that matter.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why not rely on a broker's general market report for pricing?",
+   "a": "General market reports typically average across asset classes and submarkets that behave very differently here, industrial, multifamily, and retail each have distinct buyer pools and pricing drivers, so a blended figure can be misleading for a specific candidate on the identification letter."
+  },
+  {
+   "q": "Does transit access really move multifamily pricing that much in San Jose?",
+   "a": "Proximity to BART and light rail stops has been a consistent pricing factor for multifamily buyers in this market, which is why we pull transit-adjacent comps separately from citywide multifamily figures rather than blending them, since the two groups of buyers often behave differently at the negotiating table."
+  },
+  {
+   "q": "How far back do you look for comparable sales?",
+   "a": "It depends on how active the specific submarket has been; thinly traded categories like Golden Triangle industrial sometimes require looking back further than an actively traded category like transit-village multifamily, and we adjust the lookback window candidate by candidate rather than applying one rule to every asset class."
+  },
+  {
+   "q": "Should comp analysis happen before or after making an offer?",
+   "a": "Before, ideally before a candidate is even added to the identification letter, so the 45-day window isn't spent negotiating against a mismatched comp set that was wrong from the start, or defending an offer that a seller's broker can easily poke holes in."
+  },
+  {
+   "q": "Do land comps get treated differently than building comps here?",
+   "a": "Yes. Land scarcity prices raw parcels on a different basis than improved buildings, and blending the two produces a comp set that doesn't accurately describe either category, particularly for owners weighing a ground-lease or build-to-suit candidate against a finished building."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 858
+}

@@ -1,0 +1,58 @@
+{
+ "slug": "lender-preflight-coordination",
+ "taxonomy": "services",
+ "title": "Lender Preflight Coordination",
+ "name": "Lender Preflight Coordination",
+ "metaTitle": "Lender Preflight Coordination in San Jose, CA",
+ "metaDescription": "Lender preflight coordination for San Jose 1031 replacements, clearing seismic review and Prop 13 reassessment before underwriting stalls closing.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Lender preflight work on a San Jose replacement property means clearing financing conditions before they surface as a surprise in the final two weeks before closing, and in this market that almost always includes a seismic review and a Proposition 13 reassessment check that changes what the lender is actually willing to size debt against. We run this work in parallel with everything else the exchange requires, not as a separate step tacked on after a purchase contract is signed.</p>"
+  },
+  {
+   "heading": "Why Seismic Review Comes Up on Nearly Every Deal",
+   "html": "<p>Lenders financing older buildings in San Jose, particularly unreinforced masonry or soft-story construction built before current code, routinely require a seismic assessment before finalizing loan terms, and the scope or cost of any required retrofit can change the debt amount a lender is willing to extend. We pull this review early in the replacement search, not after a purchase contract is signed, because a retrofit condition discovered in week 30 of a 45-day identification window leaves very little room to renegotiate. A building that looked fully financeable at first glance can suddenly need a six-figure retrofit reserve once the lender's engineer actually walks the site.</p>"
+  },
+  {
+   "heading": "How Prop 13 Reassessment Changes the Lender's Numbers",
+   "html": "<p>Because Proposition 13 resets assessed value at acquisition, the replacement property's post-purchase property tax bill is often meaningfully higher than what the seller has been paying, and a lender's debt service coverage calculation has to reflect that new figure, not the seller's historical number. Owners who run their own back-of-envelope math off the seller's current tax bill sometimes find the lender's underwriting comes in tighter than expected once the reassessed figure gets plugged in. We push for a reassessment estimate as soon as a candidate is under serious consideration, well before an owner is committed to a purchase price that a lender ultimately won't support at that debt level.</p>"
+  },
+  {
+   "heading": "What Preflight Actually Checks",
+   "html": "<p>Before a replacement purchase contract gets signed, we confirm a specific set of lender conditions rather than waiting for underwriting to surface them later. That includes:</p><ul><li>Seismic assessment requirements and any retrofit cost estimate</li><li>Reassessed property tax figure under Proposition 13, not the seller's current bill</li><li>Insurance requirements, including any seismic or flood-zone riders</li><li>Debt service coverage ratio against realistic, not optimistic, rent assumptions</li><li>Appraisal timeline against the 180-day exchange deadline</li></ul>"
+  },
+  {
+   "heading": "Coordinating Timeline With the 180-Day Deadline",
+   "html": "<p>A lender's appraisal, underwriting, and closing conditions have to clear inside the same 180-day window governing the exchange itself, which means loan preflight has to start the moment a replacement property is identified, not after the purchase contract is fully negotiated. We run lender conditions in parallel with title and exchange documentation rather than sequentially, since a seismic assessment ordered late can add weeks the exchange timeline doesn't have. Ordering it the same week a candidate goes on the identification letter, rather than after the purchase contract is signed, is usually the difference between having options and having none.</p>"
+  },
+  {
+   "heading": "When a Lender Condition Threatens the Closing Date",
+   "html": "<p>If a seismic retrofit requirement or a reassessment-driven debt service shortfall surfaces close to the 180-day deadline, the options narrow fast: renegotiate the loan terms, bring additional equity to close the debt service gap, or pivot to a backup identified property if one exists. We flag lender risk on every candidate during the identification phase specifically so this decision, if it comes up, happens with weeks of runway rather than days. An owner facing this choice with two months left has real options; an owner facing it with two weeks left usually doesn't.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does every San Jose replacement property require a seismic assessment?",
+   "a": "Not every building, but lenders routinely require one on older construction, particularly unreinforced masonry or soft-story buildings. We check this early in the identification process rather than waiting for the lender to raise it late in underwriting, when there's little time left to react."
+  },
+  {
+   "q": "How much can a Prop 13 reassessment change my property tax bill?",
+   "a": "It resets assessed value to the purchase price, which for a long-held seller can be well below the actual sale price, meaning the buyer's post-purchase tax bill is often materially higher than the seller's historical figure. Confirm the specific reassessed number with your tax advisor and lender before finalizing debt sizing, since the swing can be large enough to shift the loan amount a lender is willing to approve."
+  },
+  {
+   "q": "What happens if a seismic retrofit condition surfaces after I've identified the property?",
+   "a": "Depending on timing, you may be able to renegotiate loan terms, bring additional equity, or pivot to a backup identified property if one exists. This is why we screen for seismic risk before a building goes on the identification letter, not after, when the options for responding are far more limited."
+  },
+  {
+   "q": "Can lender underwriting delays push my exchange past 180 days?",
+   "a": "It's a real risk if underwriting starts late. We run lender preflight in parallel with the rest of the exchange timeline specifically to avoid the appraisal and underwriting process becoming the bottleneck that pushes a deal past the deadline."
+  },
+  {
+   "q": "Who confirms the reassessed tax figure before closing?",
+   "a": "Typically your tax advisor or a local reassessment specialist confirms the projected figure, which we then pass along to the lender's underwriting team so the debt service calculation reflects reality rather than the seller's current bill, avoiding a late surprise in the underwriting file."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 857
+}

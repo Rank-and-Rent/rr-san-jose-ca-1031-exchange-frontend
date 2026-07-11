@@ -1,0 +1,78 @@
+{
+ "slug": "redwood-city-ca",
+ "taxonomy": "locations",
+ "title": "Redwood City",
+ "name": "Redwood City",
+ "metaTitle": "Redwood City 1031 Exchange Investors | San Jose, CA",
+ "metaDescription": "1031 exchange guidance for Redwood City investors weighing Redwood Shores office campuses, downtown Courthouse Square retail, and Port-adjacent industrial.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Redwood City runs two almost separate commercial identities at once — the revitalized downtown around Courthouse Square, and the office towers out in Redwood Shores — and an exchanger who treats them as one market is missing how differently each one actually leases. An exchanger who only tours one side of the city risks anchoring their entire pricing expectation on a submarket that has nothing to do with the parcel they're actually buying.</p>"
+  },
+  {
+   "heading": "Redwood Shores Trades on Corporate Campus Terms",
+   "html": "<p>Redwood Shores has spent years housing large corporate office campuses, including buildings long associated with Oracle before the company's headquarters move, along with Electronic Arts and other technology tenants along the waterfront.</p><p>Buildings here are typically leased to a small number of large corporate tenants, and an exchanger should treat a Redwood Shores acquisition as a single-tenant or few-tenant concentration risk, checking lease term and renewal options directly rather than assuming the district's overall reputation for corporate tenancy protects any one building.</p>"
+  },
+  {
+   "heading": "Two Markets Under One City Name",
+   "html": "<p>Redwood City's split identity produces a genuinely varied shortlist:</p><ul><li>large corporate office campuses in Redwood Shores, leased to major technology tenants</li><li>downtown mixed-use retail and office around Courthouse Square, riding the area's ongoing revitalization</li><li>Sequoia Station-area retail and transit-oriented development near the Caltrain stop</li><li>industrial and marine-serving properties tied to the Port of Redwood City</li><li>garden-style and newer multifamily scattered between downtown and the waterfront office parks</li></ul>"
+  },
+  {
+   "heading": "Revitalization Downtown Hasn't Reached Every Block",
+   "html": "<p>Courthouse Square and the surrounding downtown blocks have gone through a genuine revitalization over the years, drawing restaurants, entertainment, and new mixed-use development to a district that looked very different a couple of decades ago.</p><p>That revitalization hasn't reached every block evenly, and an exchanger should walk the specific parcel rather than assuming downtown-wide momentum guarantees the same tenant demand a block or two off the main square. A vacant storefront a few doors from the busiest block can sit that way for a surprisingly long stretch if the underlying foot traffic simply thins out that quickly.</p>"
+  },
+  {
+   "heading": "The Port Adds an Industrial Layer Most Exchangers Overlook",
+   "html": "<p>The Port of Redwood City still supports marine-related and heavy industrial uses that don't exist elsewhere in this part of the Peninsula, giving the city an industrial layer distinct from the office and retail identity most people associate with it.</p><p>An exchanger considering port-adjacent industrial property should confirm zoning and any use restrictions tied to the port district directly, since these parcels don't always convert as easily to standard commercial or residential use as an unfamiliar buyer might assume. Even where conversion is technically possible, the timeline and cost involved can be substantial enough to change the deal's return profile entirely.</p>"
+  },
+  {
+   "heading": "Two Playbooks, One Shared Deadline",
+   "html": "<p>Whether the replacement property is a Redwood Shores office campus or a downtown mixed-use building, the qualified intermediary, the tax advisor, and a lender who has reviewed the specific tenant concentration or zoning restrictions need the same file before identification.</p><p>These two ends of the Redwood City market carry different risks, and treating them with the same generic diligence checklist is how an exchanger misses a port-zoning restriction or a corporate lease's renewal terms until it's too late to fix before the 180-day window closes. Confirm figures and deadlines with your own advisors; this page describes the market, not tax advice.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Should I underwrite a Redwood Shores office building differently than downtown retail?",
+   "a": "Yes. Redwood Shores concentrates income in a small number of large corporate tenants, while downtown retail depends on the area's ongoing revitalization and foot traffic."
+  },
+  {
+   "q": "Does downtown Redwood City's revitalization guarantee demand on every block?",
+   "a": "No. Walk the specific parcel, since momentum hasn't reached every block around Courthouse Square evenly."
+  },
+  {
+   "q": "Can port-adjacent industrial property convert easily to standard commercial use?",
+   "a": "Not always. Confirm zoning and use restrictions tied to the Port of Redwood City directly before assuming an easy conversion."
+  },
+  {
+   "q": "How many Redwood City properties am I allowed to identify?",
+   "a": "Up to three regardless of value under the standard rule, or more under the 200% rule if combined value stays within twice what you sold."
+  },
+  {
+   "q": "What if my Redwood City identification falls through near Day 45?",
+   "a": "Have a genuinely underwritten backup ready in the other half of the market — downtown if your first pick was Redwood Shores, or the reverse."
+  },
+  {
+   "q": "Do Redwood Shores and downtown Redwood City share the same tenant base?",
+   "a": "No. Redwood Shores leases mostly to large technology and professional-services corporate tenants, while downtown depends on independent restaurants, retail, and smaller office users drawn to its revitalization."
+  },
+  {
+   "q": "Should Sequoia Station-area retail be priced like downtown Courthouse Square retail?",
+   "a": "Not automatically. Sequoia Station leans on Caltrain commuter traffic and transit-oriented development, a different driver than Courthouse Square's destination dining and entertainment draw."
+  },
+  {
+   "q": "How do I know if a parcel actually falls within the Port of Redwood City's jurisdiction?",
+   "a": "Confirm directly with the port district and the city's planning department, since boundary lines here aren't always obvious from a standard property listing."
+  },
+  {
+   "q": "Is a Redwood Shores building's proximity to the waterfront a meaningful value driver?",
+   "a": "It can be for the tenant experience and amenity value, but confirm any flood-zone or sea-level considerations directly, since waterfront-adjacent parcels here can carry insurance and construction requirements that an inland Redwood City building doesn't."
+  },
+  {
+   "q": "Should I underwrite Sequoia Station retail and Redwood Shores retail as the same product type?",
+   "a": "No — Sequoia Station leans on commuter foot traffic while Redwood Shores retail mostly serves office-campus employees, so pull tenant sales data specific to each corridor rather than one blended figure."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 890
+}

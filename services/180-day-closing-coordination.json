@@ -1,0 +1,58 @@
+{
+ "slug": "180-day-closing-coordination",
+ "taxonomy": "services",
+ "title": "180-Day Closing Coordination",
+ "name": "180-Day Closing Coordination",
+ "metaTitle": "180-Day Closing Coordination in San Jose, CA",
+ "metaDescription": "180-day 1031 closing coordination for San Jose owners, tracking Santa Clara County recording turnaround, Prop 13 timing, and semiconductor-tenant lease handoffs.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A 1031 closing in San Jose runs on two clocks that rarely get discussed together: the IRS's 180-day exchange period, and the Santa Clara County Recorder's own turnaround for stamping the deed that starts the new owner's holding period and, separately, triggers a Prop 13 reassessment notice. Investors coming off a North San Jose R&amp;D sale often treat the exchange calendar as the only deadline in the room, then discover in the final two weeks that a reassessment letter, a semiconductor tenant's badge-access handoff, or a title company waiting on a prior lien release is just as capable of pushing a closing date.</p>"
+  },
+  {
+   "heading": "The Recorder's Stamp Sets Prop 13 Reassessment, Not the 1031 Clock",
+   "html": "<p>The 180-day exchange period is measured from the day the relinquished property actually funds and closes, in calendar days, running concurrently with the 45-day identification window rather than starting after it ends. Santa Clara County's recording queue is a separate matter entirely: how quickly the Recorder's Office stamps and returns the deed determines when the County Assessor issues a Prop 13 reassessment notice on the replacement side, and that notice can land weeks after the exchange itself is already closed.</p><p>We keep both timelines visible on the same calendar so an owner isn't blindsided by a reassessed tax bill landing mid-quarter with no warning, and so a slow recording queue during a busy season never gets mistaken for a problem with the exchange itself. The IRS deadline and the county's paperwork move independently, and confusing the two has led more than one San Jose owner to assume there was more runway left than there actually was.</p>"
+  },
+  {
+   "heading": "Single-Tenant Semiconductor Leases Slow Down a Same-Week Double Closing",
+   "html": "<p>North San Jose and the Golden Triangle are still built out with single-tenant buildings leased to semiconductor and hardware companies, and those leases carry assignment and consent clauses negotiated for a tenant's benefit, not for a seller trying to close in the same week as a purchase. A consent to assignment can take longer to land than an ordinary estoppel certificate, especially when the tenant's own legal department routes the request through a facilities group that also has to sign off on equipment removal rights for cleanroom infrastructure left behind.</p><p>Funds from the relinquished sale route to the qualified intermediary and stay there until the replacement closes; touching that money directly at any point during the gap is the constructive-receipt trigger that unwinds the entire exchange rather than a minor paperwork slip. A slow tenant consent doesn't put exchange funds at risk, it simply narrows the runway for closing the replacement side.</p>"
+  },
+  {
+   "heading": "What Gets Confirmed Before Two Escrows Open on the Same Calendar",
+   "html": "<p>A short list gets checked every week rather than assumed to be handled, since a single missed item can stall either side of a San Jose double closing:</p><ul><li>Escrow instructions on both sides matched against the exchange agreement's like-kind language</li><li>Preliminary title report cleared of exceptions before the closing week begins</li><li>Tenant consent to assignment and any cleanroom equipment rider signed before the notice period runs out</li><li>Insurance binder in place for the replacement property's first day of ownership</li><li>A confirmed recording slot with the title company, since Santa Clara's queue can run several business days behind during a busy season</li><li>Lender's final approval and payoff demand reconciled against the escrow settlement figures</li><li>The forty-five-day identification deadline re-checked against wherever the closing calendar has actually landed by the final week</li></ul>"
+  },
+  {
+   "heading": "Land Scarcity in the Golden Triangle Means There's Rarely a Real Backup",
+   "html": "<p>North San Jose's supply of single-tenant and flex space moves with the semiconductor cycle, and when a first-choice replacement falls through in the final weeks, a backup identified property is often not actually sitting on the market waiting. Land along North First Street and the Golden Triangle is scarce enough that a comparable substitute rarely exists at the moment it's needed most.</p><p>We flag it early when an owner is leaning on a single identified property with no genuine fallback, so the closing schedule accounts for that specific risk rather than surfacing as a crisis in week twenty-five. In practice that means pricing a second candidate in Edenvale or along the Monterey Road corridor well before it's needed, so there's somewhere real to pivot if financing or diligence on the first choice stalls.</p>"
+  },
+  {
+   "heading": "A Seismic Item Late, Or an Exchange That Ends Up Crossing State Lines",
+   "html": "<p>A cleanroom exhaust system, an aging rooftop unit, or a seismic retrofit item flagged at the final walk-through doesn't have to kill the exchange, but it forces a fast decision: negotiate a credit, escrow a holdback, or walk and lean on a second identified property if one genuinely exists. If the deal collapses and funds remain with the qualified intermediary past day 180, the exchange fails and the deferred gain becomes taxable in the year the relinquished property sold.</p><p>If the replacement property ends up outside California, a separate obligation follows the deal after closing: the state's Franchise Tax Board requires an annual Form 3840 filing that tracks the deferred California-source gain until the replacement is eventually sold or converted to a fully taxable transaction. That filing has nothing to do with the 180-day clock, but it's worth confirming with a tax advisor before assuming the exchange is finished once escrow closes.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does a slow Santa Clara County recording queue push back my 180-day deadline?",
+   "a": "No. The 180-day period is measured from the date the relinquished property actually closes and funds are disbursed, not from when the Recorder's Office stamps and returns the deed. A slow recording queue can delay a Prop 13 reassessment notice or a lender's confirmation of record, but it doesn't move the IRS deadline itself."
+  },
+  {
+   "q": "How does Prop 13 reassessment interact with a 1031 purchase?",
+   "a": "Reassessment happens at change of ownership regardless of whether the purchase is part of a 1031 exchange, since deferring gain for federal and state tax purposes doesn't defer the new assessed value. Build the likely post-reassessment tax bill into the replacement property's underwriting before closing, and confirm the specifics with a tax advisor."
+  },
+  {
+   "q": "What if a semiconductor tenant's consent to assignment doesn't arrive before our closing date?",
+   "a": "Closing can still happen if the purchase agreement allows funding before the consent lands, though most lenders on single-tenant buildings want it in hand first. We push tenant legal departments to route consent requests early precisely because facilities sign-off on equipment removal rights tends to be the slowest step."
+  },
+  {
+   "q": "Can the 180 days be extended because of a backed-up recording office or a slow tenant consent?",
+   "a": "Extensions beyond the standard 180 days are rare and, in practice, have only followed a formally declared disaster affecting the exchange; a local processing backlog or a slow tenant legal department doesn't qualify. Check with a qualified intermediary and tax advisor before counting on any additional time."
+  },
+  {
+   "q": "Does the exchange still require an ongoing filing if my replacement property is outside California?",
+   "a": "Yes. The Franchise Tax Board requires an annual Form 3840 to track deferred California-source gain on an out-of-state replacement until it's sold or otherwise disposed of in a fully taxable transaction. That filing is separate from the exchange closing itself and continues afterward."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 1141
+}

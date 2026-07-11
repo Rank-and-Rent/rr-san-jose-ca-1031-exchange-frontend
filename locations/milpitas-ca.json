@@ -1,0 +1,78 @@
+{
+ "slug": "milpitas-ca",
+ "taxonomy": "locations",
+ "title": "Milpitas",
+ "name": "Milpitas",
+ "metaTitle": "Milpitas 1031 Exchange Investors | San Jose, CA",
+ "metaDescription": "1031 exchange guidance for Milpitas investors weighing older industrial along Montague Expressway, BART-adjacent multifamily, and retail near the Great Mall.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Milpitas gets treated as San Jose's industrial overflow valley, but the city's own BART extension and the Great Mall's decades-long run as a regional retail draw give it a more layered commercial identity than the warehouse label suggests. That layered identity matters for an exchanger's underwriting, since a single freeway exit here can separate a fully modernized logistics building from one still built for 1980s manufacturing tenants.</p>"
+  },
+  {
+   "heading": "The Great Mall Sits on a Site With a Longer Industrial History",
+   "html": "<p>The Great Mall occupies a large parcel that started as an auto assembly plant before its conversion to retail, and that history is a useful reminder that Milpitas land has been repurposed before and can be again. The mall itself now anchors a retail corridor that draws from across the South Bay.</p><p>An exchanger looking at retail near the Great Mall should still underwrite the specific tenant and lease term rather than assuming the mall's regional draw guarantees performance for every nearby pad.</p>"
+  },
+  {
+   "heading": "The Freeway-and-Rail Product Mix",
+   "html": "<p>Milpitas' commercial stock spans several distinct categories:</p><ul><li>older industrial and flex buildings along Montague Expressway and McCarthy Boulevard, some dating to the city's earlier manufacturing era</li><li>semiconductor-equipment and technology campuses tied to companies like KLA</li><li>warehouse and distribution space benefiting from direct access to 880, 237, and 680</li><li>retail near the Great Mall, riding regional draw rather than purely local demand</li><li>newer multifamily near the Milpitas BART station</li></ul>"
+  },
+  {
+   "heading": "BART's Arrival Changed the Multifamily Math Near the Station",
+   "html": "<p>The Milpitas BART station, part of the broader extension connecting the South Bay to the wider regional system, has pulled new multifamily development toward the station area in a way that didn't exist for the city a decade ago.</p><p>That shift means station-adjacent apartments now compete on a transit premium that older Milpitas complexes farther from the line don't carry, and an exchanger comparing cap rates across the city needs to separate those two multifamily tiers rather than treating them as one market.</p>"
+  },
+  {
+   "heading": "Older Industrial Stock Needs a Harder Functional Review",
+   "html": "<p>A meaningful share of Milpitas' industrial buildings were built for an earlier generation of manufacturing and equipment use, with clear heights, loading configurations, and power capacity that may not match what a modern logistics or advanced-manufacturing tenant needs.</p><p>An exchanger should walk the specific building rather than relying on the corridor's reputation for industrial demand, since functional obsolescence in an older building can mean a longer vacancy than the surrounding market's headline numbers suggest. A building's listed square footage tells an exchanger almost nothing about whether it can actually serve a modern tenant's racking, power, or dock-door requirements.</p>"
+  },
+  {
+   "heading": "Get the Functional Review Done Before You Commit",
+   "html": "<p>A Milpitas industrial or retail property needs the qualified intermediary, the tax advisor, and a lender who has reviewed the building's actual functional condition, all working from the same file before the identification deadline.</p><p>Move too fast without that coordination and the risk is real: a lender flags an older building's functional limits after the identification notice is filed, and the 180-day window closes with no time to substitute a better-underwritten property. Confirm figures and deadlines with your own advisors; this page describes the market, not tax advice.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does proximity to the Great Mall guarantee strong retail performance?",
+   "a": "No. Underwrite the specific tenant and lease term, since the mall's regional draw doesn't automatically extend to every nearby pad."
+  },
+  {
+   "q": "Should I pay the same cap rate for BART-adjacent apartments as older Milpitas complexes?",
+   "a": "No. Station-area multifamily now carries a transit premium that older, farther complexes don't, so compare them as separate tiers."
+  },
+  {
+   "q": "How do I evaluate Milpitas' older industrial buildings?",
+   "a": "Walk the building itself and check clear height, loading configuration, and power capacity against what a modern tenant actually needs, rather than relying on the corridor's general reputation."
+  },
+  {
+   "q": "What's the identification limit for a Milpitas purchase?",
+   "a": "Up to three properties regardless of value under the standard rule, or more under the 200% rule if combined value stays within twice what you sold."
+  },
+  {
+   "q": "What if my Milpitas identification falls through near Day 45?",
+   "a": "Have a real backup ready in a different corridor and avoid taking receipt of exchange funds while you resolve it."
+  },
+  {
+   "q": "Does KLA's presence in Milpitas support demand for nearby industrial and flex space?",
+   "a": "To a degree, through its own facilities and adjacent vendor and equipment-service tenants, but a general industrial building elsewhere in the city still needs its own tenant and lease review."
+  },
+  {
+   "q": "Should I expect Milpitas retail to perform like retail in Santa Clara or Sunnyvale?",
+   "a": "Not directly. Milpitas retail leans more heavily on regional draw from the Great Mall than on dense local office employment, so the demand drivers differ even at similar rents."
+  },
+  {
+   "q": "How much does BART access actually move Milpitas multifamily pricing?",
+   "a": "Enough that station-adjacent complexes and older properties several miles away shouldn't be compared on the same cap rate; pull separate comps for each tier before pricing a purchase."
+  },
+  {
+   "q": "Is warehouse space near the 880/237/680 interchange automatically a strong replacement property?",
+   "a": "Freeway access helps, but confirm the building's clear height, dock-door count, and column spacing against current logistics-tenant standards, since some older Milpitas warehouse stock was built to specifications that no longer match modern distribution demand."
+  },
+  {
+   "q": "How do I compare a semiconductor-equipment campus lease to a standard office lease here?",
+   "a": "Treat them as different asset classes entirely — equipment-tenant buildings often carry heavier power and structural requirements baked into the lease economics, so pull comps from similar-use buildings rather than generic office or industrial data."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 870
+}

@@ -1,0 +1,58 @@
+{
+ "slug": "qualified-intermediary-coordination",
+ "taxonomy": "services",
+ "title": "Qualified Intermediary Coordination",
+ "name": "Qualified Intermediary Coordination",
+ "metaTitle": "Qualified Intermediary Coordination in San Jose, CA",
+ "metaDescription": "Coordinating the qualified intermediary, escrow, and title timeline on San Jose 1031 exchanges so proceeds never touch the seller's hands.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>The qualified intermediary is the one party in a San Jose 1031 exchange whose job is entirely about what the seller never touches. Get that piece wrong and the whole exchange collapses into a taxable sale, no matter how well the replacement property was sourced. We've coordinated QI timelines through San Jose and greater Santa Clara County escrow offices long enough to know exactly where the handoffs tend to slip.</p>"
+  },
+  {
+   "heading": "Why the Money Can Never Touch the Seller's Hands",
+   "html": "<p>Constructive receipt is the concept that trips up more San Jose exchanges than any deadline does. If sale proceeds land in the seller's account, or even sit somewhere the seller could direct on demand, the exchange is dead regardless of intent. The qualified intermediary exists specifically to hold those funds and to be the contractual seller of the relinquished property and buyer of the replacement, so the taxpayer never has direct control of the cash at any point in the transaction.</p>"
+  },
+  {
+   "heading": "Setting Up the Exchange Agreement Before Escrow Opens",
+   "html": "<p>The exchange agreement, the assignment of the purchase and sale contract, and the notice to the other parties all need to be in place before the relinquished property closes, not after. We work with the client's chosen QI to get those documents drafted and signed while escrow is still open on a San Jose closing, then coordinate with the escrow officer so the assignment reads correctly at closing instead of getting patched together at the table.</p>"
+  },
+  {
+   "heading": "Where San Jose Closings Tend to Slip",
+   "html": "<p>Local title and escrow offices across San Jose handle exchange closings routinely, but the same handful of issues recur: a payoff demand that arrives late and eats into the identification window, a title exception that needs resolving before the replacement property can close inside the 180-day period, or a lender who wasn't told early enough that the purchase is part of an exchange and needs its loan documents to reflect that. We flag these on a timeline at the start of the exchange, not when they surface as a surprise two weeks before a deadline.</p>"
+  },
+  {
+   "heading": "What We Confirm at Each Stage of the Coordination",
+   "html": "<p>Across a typical exchange, we track and confirm:</p><ul><li>Exchange agreement and assignment documents executed before the relinquished property closes</li><li>Proceeds routed directly to the qualified intermediary's escrow account, never to the seller</li><li>45-day identification notice delivered to the intermediary in writing and on time</li><li>Title and lender requirements for the replacement property confirmed before the 180-day deadline</li><li>Closing statements on both sides reconciled against the exchange agreement</li></ul>"
+  },
+  {
+   "heading": "When One Sale Funds Several Replacement Properties",
+   "html": "<p>Some San Jose clients sell a single larger asset and split the proceeds across two or three smaller replacement properties, which means the qualified intermediary is tracking several concurrent closings against the same 45-day and 180-day clocks rather than a single one-to-one transaction. We map out each leg's closing timeline separately, since a delay on one replacement purchase doesn't extend the deadline for the others, and the intermediary needs accurate figures on how proceeds are being allocated across the legs before any of them close.</p><p>The reverse situation, several relinquished properties funding one larger replacement, runs the same way in practice: every relinquished closing feeds the same qualified intermediary account, and the 45-day window is measured from the earliest relinquished property's closing date, not the last one.</p><p>We keep a single tracking document across every leg of a multi-property San Jose exchange, listing each closing date, each proceeds transfer, and each deadline it drives, so nothing gets missed simply because the transaction has more moving parts than a standard one-for-one exchange.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Can I use my own attorney or CPA as my qualified intermediary?",
+   "a": "No. The IRS disqualifies anyone who has acted as your employee, attorney, accountant, investment banker, or real estate agent within the two years before the exchange, so those relationships need an independent QI instead. We help clients select an intermediary with no disqualifying relationship to their transaction."
+  },
+  {
+   "q": "What actually happens if sale proceeds land in my account by mistake?",
+   "a": "The exchange is treated as a taxable sale from that point, because constructive receipt of the funds ends the exchange's tax-deferred status regardless of what happens afterward. This is exactly why the qualified intermediary, not the seller or the seller's agent, holds every dollar from closing to closing."
+  },
+  {
+   "q": "Does the qualified intermediary need to be based in California?",
+   "a": "No, a qualified intermediary can operate from anywhere and routinely handles exchanges across state lines, but we still coordinate closely with local Santa Clara County escrow and title offices so the closing mechanics match what the intermediary's agreement requires. Local familiarity speeds up the parts of the closing that touch county recording and payoff demands."
+  },
+  {
+   "q": "How early should the qualified intermediary be involved before closing?",
+   "a": "Before the purchase and sale agreement on the relinquished property is signed, ideally, since the exchange agreement and assignment language need to be part of the transaction from the start rather than added afterward. Waiting until just before closing narrows your options and adds unnecessary risk to the 45-day window."
+  },
+  {
+   "q": "Do you recommend a specific qualified intermediary to every client?",
+   "a": "We can introduce clients to intermediaries we've coordinated with before, but the choice and the tax treatment are between the client, their qualified intermediary, and their own tax advisor. We coordinate the moving pieces; we don't provide tax advice or make that selection for anyone."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 859
+}

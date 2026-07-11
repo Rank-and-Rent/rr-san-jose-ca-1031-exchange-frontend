@@ -1,0 +1,58 @@
+{
+ "slug": "multifamily-replacement-sourcing",
+ "taxonomy": "services",
+ "title": "Multifamily Replacement Sourcing",
+ "name": "Multifamily Replacement Sourcing",
+ "metaTitle": "Multifamily Replacement Sourcing in San Jose, CA",
+ "metaDescription": "Multifamily 1031 sourcing across San Jose's transit-village corridors, weighing rent-ordinance exposure and build vintage before the 45-day list is locked.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Multifamily is the deepest replacement pool in San Jose, which is exactly why it's easy to source poorly. Two buildings a half mile apart can carry completely different rent-ordinance exposure depending on when they were built and how many units they hold. We've sourced apartment replacement property here long enough to know that the vintage on the county assessor record matters as much as the cap rate on the flyer.</p>"
+  },
+  {
+   "heading": "The Transit-Village Corridors Doing Most of the Building",
+   "html": "<p>New multifamily supply concentrates around a few nodes: the Berryessa BART station area on the north side, the blocks around Diridon Station where transit and job growth are converging, North San Jose's Component Drive and Zanker Road corridor near the R&D campuses, and Communications Hill south of downtown. These projects trade as newer, non-rent-controlled stock with predictable operating expenses, which is a different animal from the older garden-style buildings scattered through Willow Glen and the Rose Garden area.</p>"
+  },
+  {
+   "heading": "Rent Ordinance Exposure Before You Look at the Rent Roll",
+   "html": "<p>San Jose's Apartment Rent Ordinance and its just-cause eviction protections apply to a meaningful share of the older multifamily stock, generally buildings completed before 1979 with three or more units, and the coverage rules changed enough times over the years that we check current status building by building rather than assuming based on age alone. A property outside ordinance coverage can raise rents and turn units at market pace; a covered property cannot, and that difference belongs in the underwriting before a building goes on the identification list, not after.</p><p>We also check whether a seller's stated rent roll reflects covered increases correctly, since ordinance violations attach to the property and follow new ownership.</p>"
+  },
+  {
+   "heading": "Build Vintage, Density Bonus, and What It Means for a 1031 Buyer",
+   "html": "<p>Newer transit-village projects often carry density-bonus or affordable-unit set-asides tied to the city's approval, which affects both the rent roll composition and any future renovation plans. Older buildings near Willow Glen and Cambrian Park tend to have lower unit counts, simpler mechanical systems, and more deferred maintenance than the marketing package admits. Neither is automatically the better replacement property; it depends on whether the exchange buyer wants stabilized income or upside through renovation and re-tenanting.</p>"
+  },
+  {
+   "heading": "What We Verify Before Recommending a Multifamily Property",
+   "html": "<p>Before a multifamily building goes on a client's list, we confirm:</p><ul><li>Whether the building falls under the city's rent ordinance and just-cause eviction rules</li><li>Actual unit mix and vacancy against the trailing operating statements, not the pro forma</li><li>Any density-bonus or affordability covenants recorded against the parcel</li><li>Deferred maintenance on roofing, plumbing, and electrical systems in older buildings</li><li>Parking ratio relative to unit count, since several transit-village projects were approved with reduced parking</li></ul>"
+  },
+  {
+   "heading": "Utility Billing and Submetering on Older San Jose Buildings",
+   "html": "<p>A meaningful share of the older garden-style buildings around Willow Glen and Cambrian Park still bill utilities on a flat basis rolled into rent rather than through individual submeters, which means an owner absorbs every spike in water and gas costs directly. Retrofitting a building for submetered billing or a ratio-based utility billing system can meaningfully improve net operating income, but it carries upfront capital cost and, in ordinance-covered buildings, notice requirements before tenants can be billed differently than they have been.</p><p>Newer transit-village construction near Berryessa BART and North San Jose is typically built submetered from the start, so the utility question there is less about retrofit cost and more about confirming the submeter system is actually being billed correctly and reconciled against the master utility account each month.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is multifamily property automatically like-kind to the commercial building I'm selling?",
+   "a": "Yes. Real property held for investment is like-kind to other real property regardless of asset class, so an apartment building qualifies as a replacement for retail, office, or industrial property you're relinquishing. The harder question is whether the operating profile fits what you're trying to accomplish, not whether it technically qualifies."
+  },
+  {
+   "q": "How do you check whether a building is covered by the rent ordinance?",
+   "a": "We look at the recorded construction date, unit count, and any prior city determinations on file, since coverage rules have shifted over time and a seller's assumption about status isn't always current. We flag ambiguous cases before they go on the identification list so there's time to confirm before the 45-day window closes."
+  },
+  {
+   "q": "Can I identify a multifamily property under the 200 percent rule alongside other asset classes?",
+   "a": "Yes, the 200 percent rule lets you identify any number of properties as long as their combined fair market value doesn't exceed twice what you sold, and multifamily can sit on that list next to retail or industrial candidates. We help build that list so the total value stays within the rule rather than defaulting to the three-property limit by accident."
+  },
+  {
+   "q": "Do newer transit-village apartments trade at lower cap rates than older buildings?",
+   "a": "Generally yes, because they carry less deferred maintenance and no rent-ordinance ceiling on turnover pricing, but the gap varies by corridor and by how much of the unit mix is affordability-restricted. We run the comparison building by building rather than quoting a market average that won't match the specific property you're considering."
+  },
+  {
+   "q": "Will you tell me whether to buy the older building or the newer one?",
+   "a": "We lay out the operating and regulatory differences so you can decide with your advisors; we don't make that call for you and we don't give tax guidance. Confirm structure and timing with your qualified intermediary and your CPA before you commit to either property."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 867
+}

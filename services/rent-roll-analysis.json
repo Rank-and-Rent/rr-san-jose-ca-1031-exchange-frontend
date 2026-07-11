@@ -1,0 +1,58 @@
+{
+ "slug": "rent-roll-analysis",
+ "taxonomy": "services",
+ "title": "Rent Roll Analysis",
+ "name": "Rent Roll Analysis",
+ "metaTitle": "Rent Roll Analysis for San Jose 1031 Exchanges",
+ "metaDescription": "Rent roll analysis for San Jose replacement property, checking ordinance-covered increases and lease-in-place data before the 45-day list is finalized.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A rent roll on a seller's flyer and a rent roll you can actually underwrite are two different documents in San Jose. The gap between them usually comes down to which units fall under rent-ordinance coverage and whether the stated increases were legal when they were taken. We check the underlying lease file against the summary sheet before a multifamily or mixed-use property goes anywhere near a client's identification list.</p>"
+  },
+  {
+   "heading": "Matching the Rent Roll to Actual Lease Files",
+   "html": "<p>The most common gap we find in a San Jose rent roll is a unit shown at a rate the seller expects to achieve rather than the rate currently in the lease. We pull the actual lease for every unit above a threshold rent variance and confirm the effective date, the security deposit held, and whether any concessions were given that don't show up on the summary line. A rent roll that hasn't been checked against source documents is a marketing document, not an underwriting document.</p>"
+  },
+  {
+   "heading": "Ordinance-Covered Increases and Where They Get Missed",
+   "html": "<p>Buildings covered by San Jose's rent ordinance can only take increases within the allowed annual percentage, and we've seen sellers carry forward increases that exceeded that cap without realizing the exposure transfers to the new owner. We flag any unit where the increase history looks aggressive relative to ordinance limits, since an improperly taken increase can be challenged by a tenant well after the sale closes, and that liability doesn't stay with the seller.</p>"
+  },
+  {
+   "heading": "Reading Vacancy and Concession History Honestly",
+   "html": "<p>A trailing twelve months of low vacancy can hide a pattern of short free-rent concessions used to keep the headline rate high while the effective rent is quietly lower. We reconstruct effective rent per unit rather than relying on face rent alone, and we look at how vacancy tracked across the seasons rather than accepting a single snapshot month as representative of the building's real performance.</p>"
+  },
+  {
+   "heading": "What Gets Checked Line by Line",
+   "html": "<p>For every rent roll we review before a property is identified, we confirm:</p><ul><li>Lease-in-place rent against the actual signed document, not the asking rate</li><li>Whether the unit falls under San Jose's rent ordinance and if increase history stays within the allowed cap</li><li>Security deposits held and whether they match what the ledger shows</li><li>Concessions given in the trailing twelve months and their effect on effective rent</li><li>Month-to-month tenancies versus fixed-term leases, since renewal risk differs sharply between the two</li></ul>"
+  },
+  {
+   "heading": "Common Area Charges on Mixed-Use Rent Rolls",
+   "html": "<p>A handful of San Jose properties combine ground-floor retail with residential units above, and the rent roll on these mixed-use buildings often bundles common area maintenance charge-backs into the retail tenant's rent line without separating what's actually being reimbursed. We isolate the CAM reimbursement from base rent for every commercial tenant on a mixed-use rent roll, since a tenant whose rent looks strong on paper may really be paying a modest base rent plus a CAM pass-through that could shrink if a major shared expense drops off.</p><p>We also check whether the CAM reconciliation has actually been performed annually as most leases require, since a landlord who has skipped reconciliation for several years may be sitting on an underbilled or overbilled balance that becomes the new owner's problem to sort out.</p><p>We ask for at least three years of CAM reconciliation statements where they exist, and where they don't, we treat that gap as a flag worth raising before a client identifies the property, since an unreconciled CAM pool is a liability that transfers silently at closing.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why does the rent roll matter for a 1031 exchange if the property already qualifies as like-kind?",
+   "a": "Like-kind eligibility is about the type of property, not its income quality, so a rent roll full of unverifiable numbers can still close an exchange and still leave you with a badly underwritten asset. We check the rent roll to protect the investment decision, separate from the exchange's tax treatment."
+  },
+  {
+   "q": "How do you know if a unit is covered by San Jose's rent ordinance?",
+   "a": "We check the recorded construction date and unit count against the ordinance's coverage thresholds, since buildings completed before a certain year with a minimum number of units generally fall under it while newer construction typically doesn't. We confirm current status rather than relying on the seller's characterization."
+  },
+  {
+   "q": "What happens if I identify a property and then find rent roll problems afterward?",
+   "a": "If the issues surface after the 45-day identification deadline, you may be limited in swapping to a different property without restarting the exchange, which is exactly why we push to complete this review before a building goes on the list rather than after. Early review protects your identification options."
+  },
+  {
+   "q": "Do concessions and free rent get factored into replacement property value?",
+   "a": "They should be, since a unit with two months free on a twelve-month lease is earning less than its face rent suggests, and pricing a building off face rent alone overstates the income you're actually buying. We reconstruct effective rent specifically so the valuation reflects reality."
+  },
+  {
+   "q": "Can you analyze a rent roll for a property outside the standard 1031 identification list?",
+   "a": "Yes, we'll review a rent roll for any property you're considering, whether or not it ends up as one of your identified replacements, since the underwriting discipline is the same either way. We just note that only properties named within the identification rules count toward your exchange."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 862
+}

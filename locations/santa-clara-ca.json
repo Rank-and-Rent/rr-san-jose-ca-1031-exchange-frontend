@@ -1,0 +1,62 @@
+{
+ "slug": "santa-clara-ca",
+ "taxonomy": "locations",
+ "title": "Santa Clara",
+ "name": "Santa Clara",
+ "metaTitle": "Santa Clara 1031 Exchange Investors | San Jose, CA",
+ "metaDescription": "1031 exchange guidance for Santa Clara investors weighing Tasman Drive R&D campuses, single-tenant NNN semiconductor leases, and transit-village multifamily.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Santa Clara gets flattened in casual conversation into ‘the NVIDIA city,’ but the tax parcels tell a more complicated story. Between the semiconductor campuses along Tasman Drive, the transit-village apartments rising near the Caltrain station, and the retail pads that live and die by the Levi's Stadium event calendar, an exchanger buying on the city's tech reputation alone is skipping the part of the underwriting that actually matters.</p>"
+  },
+  {
+   "heading": "NVIDIA and Applied Materials Don't Make a Building Interchangeable",
+   "html": "<p>Santa Clara's semiconductor pedigree runs deep — Intel's earliest campus sat here, and NVIDIA's headquarters and Applied Materials' sprawling campus still anchor the city's identity as a chip town. That history draws exchangers toward any building with a tech-sounding tenant, on the assumption that the address alone carries the credit.</p><p>A single-tenant R&D or cleanroom-adjacent building built to one company's specifications doesn't release easily to the next tenant. The lab plumbing, the power density, the loading configuration — all of it is sunk cost for a buyer if that one tenant leaves, and a replacement property priced as generic office without pricing in that re-tenanting risk is a mistake that shows up years later, not at closing.</p>"
+  },
+  {
+   "heading": "The Product Types Hiding Under One Tech-Campus Label",
+   "html": "<p>A realistic Santa Clara shortlist usually pulls from several distinct product types, each with its own underwriting question:</p><ul><li>R&D and flex buildings along San Tomas Expressway, where lab-specific buildout limits the resale tenant pool</li><li>single-tenant NNN campuses tied to a semiconductor or software credit tenant</li><li>Tasman Drive office space competing directly with the light-rail corridor's newer supply</li><li>transit-village apartments built near the Caltrain and VTA station</li><li>retail pads near Levi's Stadium and Great America, priced on event-day foot traffic</li></ul>"
+  },
+  {
+   "heading": "Levi's Stadium Fills the Calendar, Not Every Week",
+   "html": "<p>Levi's Stadium and the Great America theme park across the street bring real regional traffic to the retail pads along Tasman and Great America Parkway, and that traffic supports restaurants and hotels that lean on event nights and summer weekends.</p><p>The same calendar that fills a parking lot on a Sunday afternoon leaves it mostly empty the rest of the week, and a retail lease priced on peak-day visibility rather than average daily traffic is pricing the exception, not the rule. An exchanger should ask for actual trailing sales figures from the tenant, not a story about game-day crowds.</p>"
+  },
+  {
+   "heading": "A Prop 13 Reassessment Resets the NNN Math",
+   "html": "<p>California's Prop 13 caps annual property tax growth on an ongoing basis, but a change in ownership triggers reassessment to current market value, and that reset can move the tax line on a single-tenant NNN lease meaningfully higher than the seller's prior bill.</p><p>Because most net-lease structures pass that tax increase through to the tenant, the reassessment itself isn't the exchanger's cost — but a buyer who doesn't model it correctly can misjudge how a large jump affects the tenant's total occupancy cost and, by extension, renewal risk at the next lease expiration. This is a conversation for your tax advisor and the local assessor's office, not an assumption carried over from the seller's tax bill.</p>"
+  },
+  {
+   "heading": "Tilt-Up Age and Seismic Retrofit Belong in the Diligence File",
+   "html": "<p>Santa Clara's older industrial and flex stock includes a meaningful share of tilt-up concrete construction built before current seismic standards, and an exchanger moving fast to meet the identification deadline can miss whether a given building has already been retrofitted or still needs the work.</p><p>A retrofit that hasn't happened yet is a real capital item, not a footnote, and it belongs in front of the qualified intermediary and any lender reviewing the file well before the closing date — not discovered during a rushed final walkthrough.</p>"
+  },
+  {
+   "heading": "The File Everyone Needs Before Day 45",
+   "html": "<p>A single-tenant Santa Clara building — semiconductor NNN lease, R&D campus, or transit-village multifamily — needs the same coordinated file in front of the qualified intermediary, the tax advisor, and a lender who has actually reviewed the tenant's lease terms, before it goes on the identification notice.</p><p>Skip that step and the risk is concrete: a lender balks at the tenant concentration two weeks before closing, or a reassessment estimate comes in wrong, and the 180-day window closes with the gain still due and no time left to substitute a better-underwritten building. Confirm figures and deadlines with your own advisors directly; this page describes the market, not tax advice.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is a Tasman Drive semiconductor NNN lease a safe 1031 replacement?",
+   "a": "Only after reviewing the tenant's lease term, renewal options, and how a change-of-ownership Prop 13 reassessment affects total occupancy cost. The tenant's name alone doesn't substitute for that review."
+  },
+  {
+   "q": "Does proximity to Levi's Stadium make retail a stronger bet?",
+   "a": "Not by itself. Ask for trailing sales figures across a full year rather than only event weekends, since stadium and Great America traffic is concentrated on a handful of dates."
+  },
+  {
+   "q": "How many Santa Clara properties can I identify?",
+   "a": "Up to three regardless of value under the standard rule, or more under the 200% rule if their combined value stays within twice what you sold. Your qualified intermediary confirms which applies."
+  },
+  {
+   "q": "What if my Santa Clara identification falls through close to Day 45?",
+   "a": "Have a genuinely underwritten backup ready, ideally in a different Santa Clara submarket, and avoid taking receipt of exchange funds while you sort it out — that alone can end the exchange."
+  },
+  {
+   "q": "Do I need to check seismic retrofit status on older industrial buildings?",
+   "a": "Yes. Tilt-up construction predating current standards may still need retrofit work, and that cost belongs in the file before closing, not discovered afterward."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 874
+}

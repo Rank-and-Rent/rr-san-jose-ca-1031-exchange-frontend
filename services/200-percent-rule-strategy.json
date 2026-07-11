@@ -1,0 +1,62 @@
+{
+ "slug": "200-percent-rule-strategy",
+ "taxonomy": "services",
+ "title": "200% Rule Strategy",
+ "name": "200% Rule Strategy",
+ "metaTitle": "200% Rule Strategy in San Jose, CA",
+ "metaDescription": "200% identification rule strategy for San Jose 1031 exchangers, covering single-tenant tech, industrial, and multifamily candidates across the metro.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>The 200% rule lets a San Jose exchanger identify more than three properties on the 45-day letter, as long as the combined value of everything listed doesn't exceed twice what the relinquished property sold for. In a market where land scarcity puts real constraints on what's actually available to buy, that extra room on the identification letter often matters more here than in markets with looser supply. We've run this calculation for owners exchanging out of single-tenant buildings across North San Jose long enough to know exactly where the math tends to surprise people first.</p>"
+  },
+  {
+   "heading": "Why Three Properties Rarely Cover a San Jose Exchange",
+   "html": "<p>The default three-property rule lets you identify any three properties regardless of value, but in a market where single-tenant tech buildings along North First Street and the Golden Triangle rarely trade, and where land scarcity keeps a lid on new industrial product, three candidates often aren't enough to guarantee a live deal by day 180. Owners exchanging out of a legacy North San Jose parcel frequently need a longer list just to have a realistic shot at closing on something.</p><p>The 200% rule solves that by uncapping the number of properties you can list, so long as their combined value stays inside the ceiling.</p>"
+  },
+  {
+   "heading": "How the 200% Ceiling Gets Calculated",
+   "html": "<p>The math is straightforward but unforgiving: add up the fair market value of every property on your identification letter, and it cannot exceed 200% of what you sold the relinquished property for. A San Jose owner selling a $6 million single-tenant building can identify any number of replacements as long as their combined value stays at or under $12 million. Go one dollar over on day 46 and the entire list can be disqualified, the excess doesn't get quietly excused.</p><p>We run this calculation before the letter goes out, not after, because a late correction usually means the 45-day window has already closed. Owners moving out of long-held San Jose real estate sometimes find their theoretical ceiling far exceeds what the local replacement market can actually supply inside that window, which is its own planning problem separate from the arithmetic itself.</p>"
+  },
+  {
+   "heading": "Spreading Identification Across Asset Classes",
+   "html": "<p>Owners coming out of a single-tenant North San Jose building often use the 200% room to identify across categories instead of stacking similar risk in one place. A typical San Jose list might include:</p><ul><li>A single-tenant tech or hardware building along the North First Street corridor</li><li>A multi-tenant flex property near the Golden Triangle</li><li>A transit-village multifamily property near Communications Hill or a light rail stop</li><li>A retail parcel in the Santana Row or Valley Fair trade area</li><li>A self-storage facility in Edenvale or along the Monterey Road corridor</li></ul>"
+  },
+  {
+   "heading": "Why We Rarely Recommend Maxing Out the Ceiling",
+   "html": "<p>Filing an identification letter at the full 200% ceiling looks like maximum optionality, but every property on that list still has to be genuinely diligenced, priced, and financeable inside the same 45 days. An owner who names six or seven candidates just to fill out the ceiling, with real intent on only two or three of them, ends up spreading the same limited attention across too many deals at once instead of running the two or three that matter down to the wire.</p><p>We typically build the list around candidates the owner would realistically close on, then use the remaining room under 200% as a hedge against one of those falling through rather than a checklist to fill for its own sake.</p>"
+  },
+  {
+   "heading": "Where Prop 13 Basis Changes the Calculus",
+   "html": "<p>Because Proposition 13 resets assessed value at acquisition, the replacement property's purchase price becomes the new baseline for local property tax, not the relinquished property's decades-old assessment. That reset changes the after-tax return math enough that some owners use the 200% list to test two or three price points against projected tax bills before committing to one. Confirm the reassessment mechanics with your tax advisor before treating any projection as final.</p>"
+  },
+  {
+   "heading": "What Trips Owners Up on the 200% Letter",
+   "html": "<p>The most common failure isn't the math, it's timing: an owner adds a fourth property after day 45 thinking there's flexibility, or drops a property off the list without documenting the change properly with the qualified intermediary. Verbal changes and informal emails don't count. Every addition, removal, or value revision on a 200% letter needs to be in writing and delivered to the QI before midnight on day 45, San Jose time, with no exceptions for weekends or holidays.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How is the 200% ceiling different from the three-property rule?",
+   "a": "The three-property rule caps you at three candidates with no value limit. The 200% rule removes the count cap entirely but caps total value at twice what you sold. Most exchangers pick whichever rule fits their actual list rather than choosing in advance, and the correct rule is usually obvious once the candidate list is actually drafted."
+  },
+  {
+   "q": "Can I use both the three-property rule and the 200% rule on the same letter?",
+   "a": "No, you identify under one rule or the other for a given exchange, not a blend. If your list exceeds three properties, the 200% ceiling applies automatically regardless of what you intended."
+  },
+  {
+   "q": "What happens if my identified properties' combined value goes over 200% by accident?",
+   "a": "The entire identification is treated as invalid unless you fall under the 95% rule by actually acquiring 95% of what you identified by value. This is why we run the calculation before the letter is finalized, not after."
+  },
+  {
+   "q": "Can I substitute a different North San Jose building after day 45?",
+   "a": "No. The identification letter locks at midnight on day 45. Any property not on that list, in writing, with the QI cannot become a replacement property in this exchange."
+  },
+  {
+   "q": "Does land scarcity in San Jose make the 200% rule more common here than elsewhere?",
+   "a": "It shows up more often in tight single-tenant and industrial submarkets like ours, where a short list of three properties may not survive diligence or financing before day 180. Confirm with your QI whether your specific list should run under the three-property or 200% rule before the letter goes out, since the wrong choice can be hard to unwind once it's filed."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 984
+}
