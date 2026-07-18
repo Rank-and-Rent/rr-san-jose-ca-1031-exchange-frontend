@@ -96,7 +96,7 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+  const siteKey = "";
 
   // Combine service options with services from data
   const allServices = useMemo(() => {
@@ -238,7 +238,7 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
   // San Jose design system - clean, minimal
   const inputBase = "w-full border-b bg-transparent py-3 text-sm focus:outline-none transition-colors";
   const labelBase = "block text-xs font-medium uppercase tracking-[0.15em] mb-2";
-  
+
   const inputStyles = darkMode
     ? `${inputBase} border-white/20 text-white placeholder:text-white/50 focus:border-lime`
     : `${inputBase} border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-gray-900`;
@@ -247,10 +247,10 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
     ? `${inputBase} border-white/20 text-white bg-transparent focus:border-lime`
     : `${inputBase} border-gray-200 text-gray-900 bg-white focus:border-gray-900`;
 
-  const labelStyles = darkMode 
-    ? `${labelBase} text-white/60` 
+  const labelStyles = darkMode
+    ? `${labelBase} text-white/60`
     : `${labelBase} text-gray-400`;
-  
+
   const hintStyles = darkMode ? "text-xs text-white/50 mt-1" : "text-xs text-gray-400 mt-1";
 
   if (isSubmitted) {
@@ -278,19 +278,19 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
         </h2>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form className="space-y-5" action="/api/contact" method="post">
         {/* Row 1: Name + Email */}
         <div className="grid gap-5 md:grid-cols-2">
           <div>
             <label htmlFor="name" className={labelStyles}>Name <span className="text-gray-900">*</span></label>
             <input type="text" id="name" value={formData.name} onChange={handleChange('name')}
-              placeholder="Primary investor or advisor name" className={inputStyles} required />
+              placeholder="Primary investor or advisor name" className={inputStyles} required name="name"/>
             {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
           </div>
           <div>
             <label htmlFor="email" className={labelStyles}>Email <span className="text-gray-900">*</span></label>
             <input type="email" id="email" value={formData.email} onChange={handleChange('email')}
-              placeholder="We send a confirmation and checklist" className={inputStyles} required />
+              placeholder="We send a confirmation and checklist" className={inputStyles} required name="email"/>
             {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
           </div>
         </div>
@@ -300,61 +300,35 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
           <div>
             <label htmlFor="phone" className={labelStyles}>Phone <span className="text-gray-900">*</span></label>
             <input type="tel" id="phone" value={formData.phone} onChange={handleChange('phone')}
-              placeholder="We confirm timelines within one business day" className={inputStyles} required />
+              placeholder="We confirm timelines within one business day" className={inputStyles} required name="phone"/>
             {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
           </div>
-          <div>
-            <label htmlFor="company" className={labelStyles}>Company</label>
-            <input type="text" id="company" value={formData.company} onChange={handleChange('company')}
-              placeholder="Company or organization (optional)" className={inputStyles} />
-          </div>
+
         </div>
 
         {/* Service */}
         <div>
-          <label htmlFor="projectType" className={labelStyles}>Service <span className="text-gray-900">*</span></label>
-          <select id="projectType" value={formData.projectType} onChange={handleChange('projectType')} className={selectStyles} required>
-            <option value="">Select the service you are interested in</option>
-            {allServices.map(s => <option key={s} value={s}>{s}</option>)}
-          </select>
+          <label htmlFor="projectType" className={labelStyles}>Have You Used a 1031 Exchange Before? <span className="text-gray-900">*</span></label>
+          <select id="projectType" className={selectStyles} name="hasCompleted1031" required><option value="">Select yes or no</option><option value="Yes">Yes</option><option value="No">No</option></select>
           {errors.projectType && <p className="text-red-500 text-xs mt-1">{errors.projectType}</p>}
         </div>
 
         {/* Row 3: City + Timeline */}
         <div className="grid gap-5 md:grid-cols-2">
-          <div>
-            <label htmlFor="city" className={labelStyles}>City</label>
-            <input type="text" id="city" value={formData.city} onChange={handleChange('city')}
-              placeholder="Primary metro or submarket (optional)" className={inputStyles} />
-          </div>
-          <div>
-            <label htmlFor="timeline" className={labelStyles}>Timeline</label>
-            <select id="timeline" value={formData.timeline} onChange={handleChange('timeline')} className={selectStyles}>
-              <option value="">Select timeline (optional)</option>
-              {timelineOptions.map(t => <option key={t} value={t}>{t}</option>)}
-            </select>
-          </div>
+
+
         </div>
 
         {/* Property Being Sold */}
-        <div>
-          <label htmlFor="property" className={labelStyles}>Property Being Sold</label>
-          <input type="text" id="property" value={formData.property} onChange={handleChange('property')}
-            placeholder="Property type, location, and estimated value (optional)" className={inputStyles} />
-        </div>
+
 
         {/* Estimated Close Date */}
-        <div>
-          <label htmlFor="estimatedCloseDate" className={labelStyles}>Estimated Close Date</label>
-          <input type="date" id="estimatedCloseDate" value={formData.estimatedCloseDate} onChange={handleChange('estimatedCloseDate')} className={inputStyles} />
-          <p className={hintStyles}>Determines your 45 day and 180 day milestones (optional)</p>
-        </div>
+
 
         {/* Message */}
         <div>
-          <label htmlFor="message" className={labelStyles}>Message</label>
-          <textarea id="message" value={formData.message} onChange={handleChange('message')} rows={4}
-            placeholder="Outline goals, replacement preferences, or coordination needs (optional)" className={`${inputStyles} resize-none`} />
+          <label htmlFor="message" className={labelStyles}>Exchange Details</label>
+          <textarea id="message" className={`${inputStyles} resize-none`} name="notes" rows={4} placeholder="Share any exchange questions or context"></textarea>
         </div>
 
         {submitError && (
@@ -363,13 +337,9 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
           </div>
         )}
 
-        {siteKey && (
-          <div className="flex justify-start">
-            <div ref={captchaRef} className="min-h-[78px]" />
-          </div>
-        )}
 
-        <button type="submit" disabled={isSubmitting || !!(siteKey && !turnstileReady)}
+
+        <button type="submit"
           className={`w-full py-4 text-xs font-medium uppercase tracking-[0.2em] transition-all disabled:opacity-50 disabled:cursor-not-allowed ${
             darkMode ? 'bg-lime text-gray-900 hover:bg-lime-light' : 'bg-gray-900 text-white hover:bg-gray-800'
           }`}>
