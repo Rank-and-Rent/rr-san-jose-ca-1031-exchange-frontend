@@ -60,12 +60,6 @@ export default function Footer() {
             </div>
             
             <div className="pt-4">
-              <p className="text-white/80 font-light">
-                {address.split(",")[0]}
-              </p>
-              <p className="text-white/80 font-light">
-                {address.split(",").slice(1).join(",")}
-              </p>
             </div>
           </div>
           
