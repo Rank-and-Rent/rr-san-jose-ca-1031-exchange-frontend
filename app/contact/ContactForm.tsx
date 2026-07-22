@@ -288,20 +288,20 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
             {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
           </div>
           <div>
-            <label htmlFor="email" className={labelStyles}>Email <span className="text-gray-900">*</span></label>
-            <input type="email" id="email" value={formData.email} onChange={handleChange('email')}
-              placeholder="We send a confirmation and checklist" className={inputStyles} required name="email"/>
-            {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+            <label htmlFor="phone" className={labelStyles}>Phone Number <span className="text-gray-900">*</span></label>
+            <input type="tel" id="phone" value={formData.phone} onChange={handleChange('phone')}
+              placeholder="We confirm timelines within one business day" className={inputStyles} required name="phone"/>
+            {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
           </div>
         </div>
 
         {/* Row 2: Phone + Company */}
         <div className="grid gap-5 md:grid-cols-2">
           <div>
-            <label htmlFor="phone" className={labelStyles}>Phone Number <span className="text-gray-900">*</span></label>
-            <input type="tel" id="phone" value={formData.phone} onChange={handleChange('phone')}
-              placeholder="We confirm timelines within one business day" className={inputStyles} required name="phone"/>
-            {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
+            <label htmlFor="email" className={labelStyles}>Email <span className="text-gray-900">*</span></label>
+            <input type="email" id="email" value={formData.email} onChange={handleChange('email')}
+              placeholder="We send a confirmation and checklist" className={inputStyles} required name="email"/>
+            {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
           </div>
 
         </div>
