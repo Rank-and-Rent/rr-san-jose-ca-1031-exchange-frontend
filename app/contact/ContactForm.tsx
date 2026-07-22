@@ -298,7 +298,7 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
         {/* Row 2: Phone + Company */}
         <div className="grid gap-5 md:grid-cols-2">
           <div>
-            <label htmlFor="phone" className={labelStyles}>Phone <span className="text-gray-900">*</span></label>
+            <label htmlFor="phone" className={labelStyles}>Phone Number <span className="text-gray-900">*</span></label>
             <input type="tel" id="phone" value={formData.phone} onChange={handleChange('phone')}
               placeholder="We confirm timelines within one business day" className={inputStyles} required name="phone"/>
             {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
@@ -308,7 +308,7 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
 
         {/* Service */}
         <div>
-          <label htmlFor="projectType" className={labelStyles}>Have You Used a 1031 Exchange Before? <span className="text-gray-900">*</span></label>
+          <label htmlFor="projectType" className={labelStyles}>Have you completed a 1031 exchange before? <span className="text-gray-900">*</span></label>
           <select id="projectType" className={selectStyles} name="hasCompleted1031" required><option value="">Select yes or no</option><option value="Yes">Yes</option><option value="No">No</option></select>
           {errors.projectType && <p className="text-red-500 text-xs mt-1">{errors.projectType}</p>}
         </div>
@@ -327,7 +327,7 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
 
         {/* Message */}
         <div>
-          <label htmlFor="message" className={labelStyles}>Exchange Details</label>
+          <label htmlFor="message" className={labelStyles}>Notes</label>
           <textarea id="message" className={`${inputStyles} resize-none`} name="notes" rows={4} placeholder="Share any exchange questions or context"></textarea>
         </div>
 
