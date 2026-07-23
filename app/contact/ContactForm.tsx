@@ -1,8 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, Suspense, useMemo } from 'react';
-import { useSearchParams } from 'next/navigation';
-import { servicesData } from '@/data/services';
+import { useState, useEffect, useRef, Suspense } from 'react';
 
 declare global {
   interface Window {
@@ -40,33 +38,23 @@ function loadTurnstile(): Promise<void> {
   });
 }
 
-const serviceOptions = [
-  "Forward Exchange",
-  "Reverse Exchange",
-  "Qualified Intermediary Services",
-  "Property Identification",
-  "NNN Property Identification",
-  "Exchange Consultation",
-  "Form 8824 Preparation",
-  "Boot Analysis",
-];
-
-const timelineOptions = ["Immediate", "45 days", "180 days", "Planning phase"];
-
 type FormData = {
   name: string;
-  email: string;
   phone: string;
-  company: string;
-  projectType: string;
-  city: string;
-  timeline: string;
-  property: string;
-  estimatedCloseDate: string;
-  message: string;
+  email: string;
+  hasCompleted1031: boolean;
+  notes: string;
 };
 
-type FormErrors = Partial<Record<keyof FormData, string>>;
+const initialFormData: FormData = {
+  name: '',
+  phone: '',
+  email: '',
+  hasCompleted1031: false,
+  notes: '',
+};
+
+type FormErrors = Partial<Record<"name" | "phone" | "email", string>>;
 
 type ContactFormProps = {
   onSuccess?: () => void;
@@ -75,20 +63,8 @@ type ContactFormProps = {
 };
 
 function ContactFormContent({ onSuccess, className = '', darkMode = false }: ContactFormProps) {
-  const searchParams = useSearchParams();
   const captchaRef = useRef<HTMLDivElement | null>(null);
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    projectType: '',
-    city: '',
-    timeline: '',
-    property: '',
-    estimatedCloseDate: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState<FormData>(initialFormData);
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [turnstileId, setTurnstileId] = useState<string | null>(null);
@@ -97,21 +73,6 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const siteKey = "";
-
-  // Combine service options with services from data
-  const allServices = useMemo(() => {
-    const dataServices = servicesData.map((s) => s.name);
-    const combined = new Set([...serviceOptions, ...dataServices]);
-    return Array.from(combined).sort();
-  }, []);
-
-  // Prefill from URL params
-  useEffect(() => {
-    const projectTypeParam = searchParams?.get('projectType');
-    if (projectTypeParam) {
-      setFormData(prev => ({ ...prev, projectType: projectTypeParam }));
-    }
-  }, [searchParams]);
 
   // Load Turnstile
   useEffect(() => {
@@ -149,7 +110,6 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
     if (!formData.email.trim()) newErrors.email = 'Email is required';
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) newErrors.email = 'Please enter a valid email';
     if (!formData.phone.trim()) newErrors.phone = 'Phone is required';
-    if (!formData.projectType) newErrors.projectType = 'Please select a service';
     return newErrors;
   };
 
@@ -202,18 +162,17 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          ...formData,
+          name: formData.name,
+          email: formData.email,
           phone: formData.phone.replace(/\D/g, ''),
-          details: formData.message,
+          hasCompleted1031: formData.hasCompleted1031 ? "Yes" : "No",
+          notes: formData.notes,
           turnstileToken,
         }),
       });
 
       if (response.ok) {
-        setFormData({
-          name: '', email: '', phone: '', company: '', projectType: '',
-          city: '', timeline: '', property: '', estimatedCloseDate: '', message: ''
-        });
+        setFormData(initialFormData);
         if (window.turnstile && turnstileId) window.turnstile.reset(turnstileId);
         setIsSubmitted(true);
         onSuccess?.();
@@ -230,9 +189,11 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
     }
   };
 
-  const handleChange = (field: keyof FormData) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+  const handleChange = (field: "name" | "phone" | "email" | "notes") => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({ ...prev, [field]: e.target.value }));
-    if (errors[field]) setErrors(prev => ({ ...prev, [field]: undefined }));
+    if (field === "name" || field === "phone" || field === "email") {
+      if (errors[field]) setErrors(prev => ({ ...prev, [field]: undefined }));
+    }
   };
 
   // San Jose design system - clean, minimal
@@ -243,15 +204,9 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
     ? `${inputBase} border-white/20 text-white placeholder:text-white/50 focus:border-lime`
     : `${inputBase} border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-gray-900`;
 
-  const selectStyles = darkMode
-    ? `${inputBase} border-white/20 text-white bg-transparent focus:border-lime`
-    : `${inputBase} border-gray-200 text-gray-900 bg-white focus:border-gray-900`;
-
   const labelStyles = darkMode
     ? `${labelBase} text-white/60`
     : `${labelBase} text-gray-400`;
-
-  const hintStyles = darkMode ? "text-xs text-white/50 mt-1" : "text-xs text-gray-400 mt-1";
 
   if (isSubmitted) {
     return (
@@ -278,57 +233,50 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
         </h2>
       </div>
 
-      <form className="space-y-5" action="/api/contact" method="post">
-        {/* Row 1: Name + Email */}
+      <form className="space-y-5" onSubmit={handleSubmit}>
+        {/* Row 1: Name + Phone */}
         <div className="grid gap-5 md:grid-cols-2">
           <div>
             <label htmlFor="name" className={labelStyles}>Name <span className="text-gray-900">*</span></label>
-            <input type="text" id="name" value={formData.name} onChange={handleChange('name')}
-              placeholder="Primary investor or advisor name" className={inputStyles} required name="name"/>
+            <input type="text" id="name" name="name" autoComplete="name" value={formData.name} onChange={handleChange('name')}
+              placeholder="Primary investor or advisor name" className={inputStyles} required/>
             {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
           </div>
           <div>
             <label htmlFor="phone" className={labelStyles}>Phone Number <span className="text-gray-900">*</span></label>
-            <input type="tel" id="phone" value={formData.phone} onChange={handleChange('phone')}
-              placeholder="We confirm timelines within one business day" className={inputStyles} required name="phone"/>
+            <input type="tel" id="phone" name="phone" autoComplete="tel" value={formData.phone} onChange={handleChange('phone')}
+              placeholder="We confirm timelines within one business day" className={inputStyles} required/>
             {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
           </div>
         </div>
 
-        {/* Row 2: Phone + Company */}
-        <div className="grid gap-5 md:grid-cols-2">
-          <div>
-            <label htmlFor="email" className={labelStyles}>Email <span className="text-gray-900">*</span></label>
-            <input type="email" id="email" value={formData.email} onChange={handleChange('email')}
-              placeholder="We send a confirmation and checklist" className={inputStyles} required name="email"/>
-            {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
-          </div>
-
-        </div>
-
-        {/* Service */}
+        {/* Email */}
         <div>
-          <label htmlFor="projectType" className={labelStyles}>Have you completed a 1031 exchange before? <span className="text-gray-900">*</span></label>
-          <select id="projectType" className={selectStyles} name="hasCompleted1031" required><option value="">Select yes or no</option><option value="Yes">Yes</option><option value="No">No</option></select>
-          {errors.projectType && <p className="text-red-500 text-xs mt-1">{errors.projectType}</p>}
+          <label htmlFor="email" className={labelStyles}>Email <span className="text-gray-900">*</span></label>
+          <input type="email" id="email" name="email" autoComplete="email" value={formData.email} onChange={handleChange('email')}
+            placeholder="We send a confirmation and checklist" className={inputStyles} required/>
+          {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
         </div>
 
-        {/* Row 3: City + Timeline */}
-        <div className="grid gap-5 md:grid-cols-2">
-
-
+        {/* Prior 1031 exchange */}
+        <div className="flex items-center gap-3">
+          <input type="hidden" name="hasCompleted1031" value="No" />
+          <input
+            id="hasCompleted1031"
+            type="checkbox"
+            name="hasCompleted1031"
+            value="Yes"
+            checked={formData.hasCompleted1031}
+            onChange={(e) => setFormData(prev => ({ ...prev, hasCompleted1031: e.target.checked }))}
+            className="h-4 w-4"
+          />
+          <label htmlFor="hasCompleted1031" className={`${labelStyles} mb-0`}>Have you completed a 1031 exchange before?</label>
         </div>
 
-        {/* Property Being Sold */}
-
-
-        {/* Estimated Close Date */}
-
-
-        {/* Message */}
+        {/* Notes */}
         <div>
-          <label htmlFor="message" className={labelStyles}>Notes</label>
-          <textarea id="message" className={`${inputStyles} resize-none`} name="notes" rows={4} placeholder="Share any exchange questions or context"></textarea>
+          <label htmlFor="notes" className={labelStyles}>Notes</label>
+          <textarea id="notes" name="notes" rows={5} value={formData.notes} onChange={handleChange('notes')} className={`${inputStyles} resize-none`} placeholder="Share any exchange questions or context"></textarea>
         </div>
 
         {submitError && (
@@ -337,9 +285,8 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
           </div>
         )}
 
-
-
         <button type="submit"
+          disabled={isSubmitting}
           className={`w-full py-4 text-xs font-medium uppercase tracking-[0.2em] transition-all disabled:opacity-50 disabled:cursor-not-allowed ${
             darkMode ? 'bg-lime text-gray-900 hover:bg-lime-light' : 'bg-gray-900 text-white hover:bg-gray-800'
           }`}>

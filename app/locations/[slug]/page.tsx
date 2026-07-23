@@ -54,10 +54,16 @@ export default async function LocationPage({ params }: Props) {
 
   // Convert slug to batch key format (remove "-ca" suffix)
   const batchKey = slug.replace(/-ca$/, '');
+  type LocationBatchEntry = {
+    mainDescription: string;
+    richSections?: Array<{ heading: string | null; html: string }>;
+    popularPaths?: Array<{ type: string; slug: string; name: string; rank: number; whyPopular: string }>;
+    faqs?: Array<{ question: string; answer: string }>;
+  };
   const batchData =
-    (locationBatches01.locationsBatch01 as Record<string, { mainDescription: string; popularPaths?: Array<{ type: string; slug: string; name: string; rank: number; whyPopular: string }>; faqs?: Array<{ question: string; answer: string }> }>)[batchKey] ||
-    (locationBatches02.locationsBatch02 as Record<string, { mainDescription: string; popularPaths?: Array<{ type: string; slug: string; name: string; rank: number; whyPopular: string }>; faqs?: Array<{ question: string; answer: string }> }>)[batchKey] ||
-    (locationBatches03.locationsBatch03 as Record<string, { mainDescription: string; popularPaths?: Array<{ type: string; slug: string; name: string; rank: number; whyPopular: string }>; faqs?: Array<{ question: string; answer: string }> }>)[batchKey];
+    (locationBatches01.locationsBatch01 as Record<string, LocationBatchEntry>)[batchKey] ||
+    (locationBatches02.locationsBatch02 as Record<string, LocationBatchEntry>)[batchKey] ||
+    (locationBatches03.locationsBatch03 as Record<string, LocationBatchEntry>)[batchKey];
   const relatedServices = servicesData.slice(0, 4);
   const relatedLocations = locationsData.filter((l) => l.slug !== slug).slice(0, 4);
 
@@ -131,6 +137,25 @@ export default async function LocationPage({ params }: Props) {
                 )}
               </div>
             </div>
+          )}
+
+          {/* Rich Local Market Sections */}
+          {batchData && batchData.richSections && batchData.richSections.length > 0 && (
+            <section className="space-y-14 max-w-4xl">
+              {batchData.richSections.map((section, index) => (
+                <div key={index} className="space-y-4">
+                  {section.heading && (
+                    <h3 className="text-xl md:text-2xl text-gray-900 font-light tracking-wide">
+                      {section.heading}
+                    </h3>
+                  )}
+                  <div
+                    className="text-gray-500 leading-relaxed font-light prose prose-lg max-w-none prose-p:text-gray-500 prose-headings:font-light prose-ul:text-gray-500 prose-li:marker:text-gray-300"
+                    dangerouslySetInnerHTML={{ __html: section.html }}
+                  />
+                </div>
+              ))}
+            </section>
           )}
 
           {/* Popular Paths */}
