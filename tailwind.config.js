@@ -4,6 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "brand-dark": "#0F1629",
+        "brand-charcoal": "#111827",
+        "brand-copper": "#0EA5A6",
+        "brand-copper-light": "#0EA5A6",
+        "brand-gold": "#0EA5A6",
+        "brand-gold-dark": "#0EA5A6",
         navy: {
           DEFAULT: "#1B2444",
           dark: "#0F1629",

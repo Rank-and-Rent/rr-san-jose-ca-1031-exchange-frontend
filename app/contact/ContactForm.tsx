@@ -201,16 +201,16 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
   const labelBase = "block text-xs font-medium uppercase tracking-[0.15em] mb-2";
 
   const inputStyles = darkMode
-    ? `${inputBase} border-white/20 text-white placeholder:text-white/50 focus:border-lime`
+    ? `${inputBase} border-white/45 text-white placeholder:text-white/75 focus:border-lime`
     : `${inputBase} border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-gray-900`;
 
   const labelStyles = darkMode
-    ? `${labelBase} text-white/60`
+    ? `${labelBase} text-white/85`
     : `${labelBase} text-gray-400`;
 
   if (isSubmitted) {
     return (
-      <div className={`border p-8 text-center ${darkMode ? 'border-white/20 bg-white/5' : 'border-gray-200 bg-gray-50'} ${className}`}>
+      <div className={`border p-8 text-center ${darkMode ? 'border-white/45 bg-white/5' : 'border-gray-200 bg-gray-50'} ${className}`}>
         <div className={`w-16 h-16 ${darkMode ? 'bg-lime/20' : 'bg-gray-100'} flex items-center justify-center mx-auto mb-6`}>
           <svg className={`w-8 h-8 ${darkMode ? 'text-lime' : 'text-gray-900'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -294,7 +294,7 @@ function ContactFormContent({ onSuccess, className = '', darkMode = false }: Con
         </button>
       </form>
 
-      <p className={`mt-6 text-xs ${darkMode ? 'text-white/60' : 'text-gray-400'}`}>
+      <p className={`mt-6 text-xs ${darkMode ? 'text-white/85' : 'text-gray-400'}`}>
         Consult your QI, CPA, and legal counsel before executing exchange strategies.
       </p>
     </div>
