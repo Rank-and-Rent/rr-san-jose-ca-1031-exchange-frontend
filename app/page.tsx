@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import HomePage from "../components/HomePage";
 
 export const metadata: Metadata = {
-  title: "San Jose 1031 Exchange Experts | California Qualified Intermediary Network",
+  title: "1031 Exchange San Jose | Direct & Passive Options",
   description:
-    "Bay Area 1031 exchange specialists offering compliant, technology-driven coordination for investors across Northern California.",
+    "Planning a San Jose investment-property sale? Compare direct replacements and passive DST possibilities, then request free information.",
   openGraph: {
-    title: "San Jose 1031 Exchange Experts",
+    title: "1031 Exchange San Jose | Direct & Passive Options",
     description:
-      "Trusted California 1031 advisors delivering precision, compliance, and clarity for property owners in San Jose and Silicon Valley.",
+      "Planning a San Jose investment-property sale? Compare direct replacements and passive DST possibilities, then request free information.",
     url: "https://www.1031exchangesanjose.com/",
     siteName: "1031 Exchange San Jose",
     images: ["/og-image.png"],
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "San Jose 1031 Exchange Experts",
-    description: "Defer capital gains taxes with a compliant, technology-enabled 1031 exchange process.",
+    title: "1031 Exchange San Jose | Direct & Passive Options",
+    description: "Planning a San Jose investment-property sale? Compare direct replacements and passive DST possibilities, then request free information.",
     images: ["/og-image.png"],
   },
   alternates: {
@@ -28,4 +28,3 @@ export const metadata: Metadata = {
 export default function Home() {
   return <HomePage />;
 }
-

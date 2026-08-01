@@ -20,9 +20,9 @@ const sourceSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.1031exchangesanjose.com"),
-  title: "San Jose 1031 Exchange Experts | California Qualified Intermediary Network",
+  title: "1031 Exchange San Jose | Direct & Passive Options",
   description:
-    "Bay Area 1031 exchange specialists offering compliant, technology-driven coordination for investors across Northern California.",
+    "Planning a San Jose investment-property sale? Compare direct replacements and passive DST possibilities, then request free information.",
   icons: {
     icon: [
       { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -38,6 +38,12 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/favicon/site.webmanifest",
+
+  alternates: { canonical: "/" },
+
+  twitter: { card: "summary_large_image", title: "1031 Exchange San Jose | Direct & Passive Options", description: "Planning a San Jose investment-property sale? Compare direct replacements and passive DST possibilities, then request free information." },
+
+  openGraph: { title: "1031 Exchange San Jose | Direct & Passive Options", description: "Planning a San Jose investment-property sale? Compare direct replacements and passive DST possibilities, then request free information." },
 };
 
 export default function RootLayout({
