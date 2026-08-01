@@ -267,9 +267,7 @@ export default function HomePage() {
                     <Link
                   href="/contact"
                   className="inline-flex items-center justify-center border border-white/60 text-white px-14 py-5 text-[11px] font-light uppercase tracking-[0.3em] hover:bg-white hover:text-gray-900 transition-all duration-500"
-                >
-                  Start Your Exchange
-                </Link>
+                >Talk Through the San Jose Sale</Link>
               </div>
             </div>
             
@@ -338,7 +336,7 @@ export default function HomePage() {
           <section className="bg-gray-50 py-20 md:py-28 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 lg:px-10 mb-12">
               <h2 className="text-3xl md:text-4xl text-gray-900 font-light tracking-wide text-center uppercase">
-                Property Types We Serve
+                Property Without Day-to-Day Management
               </h2>
             </div>
             
@@ -417,11 +415,9 @@ export default function HomePage() {
 
               <div className="text-center mt-16">
                 <Link
-                  href="/tools"
+                  href="/contact?request=guide"
                   className="inline-flex items-center justify-center border border-white/50 text-white px-10 py-4 text-xs font-medium uppercase tracking-[0.2em] hover:bg-white hover:text-navy transition-all duration-300"
-                >
-                  View All Tools
-                </Link>
+                >Get Free San Jose 1031 Information</Link>
               </div>
             </div>
           </section>
@@ -529,19 +525,14 @@ export default function HomePage() {
             
             <div className="relative z-10 max-w-4xl mx-auto px-6 text-center py-20">
               <h2 className="text-3xl md:text-4xl lg:text-5xl text-white font-light tracking-wide uppercase">
-                Partner With Our Team
+                San Jose 1031 Exchange Solutions
               </h2>
-              <p className="mt-8 text-white/70 text-base max-w-2xl mx-auto font-light leading-relaxed">
-                Our San Jose team delivers deep local knowledge and full-service support for your 1031 exchange. 
-                Let us guide you through the process with precision and personalized care.
-              </p>
+              <p className="mt-8 text-white/70 text-base max-w-2xl mx-auto font-light leading-relaxed">A San Jose owner may be selling an appreciated rental, commercial asset, or inherited property to reduce management, diversify beyond Silicon Valley, or seek a different income profile. We frame the exchange around equity, debt, control, workload, geography, and replacements with a credible closing path. DST interests may give San Jose investors professionally managed fractional ownership in institutional-quality real estate without tenant or maintenance duties. Some offerings can begin around $100,000, while current availability, projected distributions, fees, financing, sponsor and property risk, illiquidity, eligibility, and suitability vary.</p>
               <div className="mt-12">
               <Link
-                  href="/contact"
+                  href="/contact?request=properties"
                   className="inline-flex items-center justify-center bg-white text-gray-900 px-10 py-4 text-xs font-medium uppercase tracking-[0.2em] hover:bg-gray-100 transition-all duration-300"
-              >
-                  Get Started
-              </Link>
+              >Request the San Jose Property List</Link>
               </div>
             </div>
           </section>
