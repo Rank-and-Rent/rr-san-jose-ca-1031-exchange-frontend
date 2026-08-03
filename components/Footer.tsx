@@ -27,6 +27,22 @@ export default function Footer() {
 
   return (
     <footer className="bg-navy text-white">
+      <div className="border-b border-white/10 bg-navy-dark">
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-7 px-6 py-10 md:flex-row md:items-center lg:px-10">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/45">Free San Jose 1031 exchange guidance</p>
+            <p className="mt-3 text-2xl font-light">Have a property sale or replacement question?</p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <a href={phoneNumberHref} className="inline-flex min-h-12 items-center justify-center bg-white px-6 text-xs font-semibold uppercase tracking-[0.15em] text-navy transition hover:bg-gray-100">
+              Call {phoneNumberDisplay}
+            </a>
+            <Link href="/contact?request=properties" className="inline-flex min-h-12 items-center justify-center border border-white/40 px-6 text-xs font-semibold uppercase tracking-[0.15em] text-white transition hover:bg-white hover:text-navy">
+              Get a Free Property List
+            </Link>
+          </div>
+        </div>
+      </div>
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-5">

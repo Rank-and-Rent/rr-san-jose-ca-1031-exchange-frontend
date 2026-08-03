@@ -59,6 +59,13 @@ export default function Header() {
     return () => document.removeEventListener("keydown", handleEscape);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
   const handleServicesMouseEnter = () => {
     if (servicesTimeoutRef.current) clearTimeout(servicesTimeoutRef.current);
     setServicesOpen(true);
@@ -90,7 +97,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-navy/95 backdrop-blur-sm" : "bg-transparent"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled || mobileMenuOpen ? "bg-navy/95 backdrop-blur-sm" : "bg-transparent"}`}>
       <nav className="max-w-[1600px] mx-auto px-6 lg:px-12" aria-label="Main navigation">
         <div className="flex h-20 items-center justify-between">
           {/* Logo - Kim Bibb Style: Two lines, elegant spacing */}
@@ -250,18 +257,19 @@ export default function Header() {
 
             <a
               href={phoneNumberHref}
-              className="text-[11px] font-normal uppercase tracking-[0.2em] text-white/90 hover:text-white transition"
+              className="inline-flex min-h-10 items-center justify-center border border-white/50 px-5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white transition hover:bg-white hover:text-navy"
             >
-              {phoneNumberDisplay}
+              Call {phoneNumberDisplay}
             </a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="lg:hidden flex items-center justify-center w-10 h-10 text-white"
+            className="relative z-20 flex h-11 w-11 items-center justify-center border border-white/25 text-white lg:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? (
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -278,49 +286,62 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-navy/95 backdrop-blur-sm border-t border-white/10">
-          <div className="max-w-7xl mx-auto px-6 py-8 space-y-6">
+        <div className="absolute inset-x-0 top-full h-[calc(100vh-5rem)] overflow-y-auto border-t border-white/10 bg-navy lg:hidden">
+          <div className="mx-auto flex min-h-full max-w-7xl flex-col px-6 py-9">
+            <p className="mb-8 text-[10px] font-semibold uppercase tracking-[0.3em] text-white/40">1031 Exchange Solutions</p>
+            <div className="space-y-1">
             <Link
               href="/services"
-              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
+              className="block border-b border-white/10 py-4 text-sm font-normal uppercase tracking-[0.15em] text-white/90 transition hover:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               Services
             </Link>
             <Link
               href={LOCATIONS_ROUTE}
-              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
+              className="block border-b border-white/10 py-4 text-sm font-normal uppercase tracking-[0.15em] text-white/90 transition hover:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               Locations
             </Link>
             <Link
               href="/tools"
-              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
+              className="block border-b border-white/10 py-4 text-sm font-normal uppercase tracking-[0.15em] text-white/90 transition hover:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               Tools
             </Link>
             <Link
               href="/property-types"
-              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
+              className="block border-b border-white/10 py-4 text-sm font-normal uppercase tracking-[0.15em] text-white/90 transition hover:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               Property Types
             </Link>
             <Link
               href="/contact"
-              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
+              className="block border-b border-white/10 py-4 text-sm font-normal uppercase tracking-[0.15em] text-white/90 transition hover:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
             </Link>
-            <a
-              href={phoneNumberHref}
-              className="block text-sm font-normal uppercase tracking-[0.15em] text-white/90 hover:text-white transition"
-            >
-              {phoneNumberDisplay}
-            </a>
+            </div>
+
+            <div className="mt-auto space-y-3 pt-10">
+              <a
+                href={phoneNumberHref}
+                className="flex min-h-14 items-center justify-center bg-white px-6 text-xs font-semibold uppercase tracking-[0.15em] text-navy"
+              >
+                Call {phoneNumberDisplay}
+              </a>
+              <Link
+                href="/contact?request=properties"
+                className="flex min-h-14 items-center justify-center border border-white/40 px-6 text-xs font-semibold uppercase tracking-[0.15em] text-white"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Get a Free Property List
+              </Link>
+            </div>
           </div>
         </div>
       )}

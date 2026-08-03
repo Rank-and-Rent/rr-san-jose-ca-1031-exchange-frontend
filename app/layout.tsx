@@ -20,9 +20,9 @@ const sourceSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.1031exchangesanjose.com"),
-  title: "1031 Exchange San Jose | Direct & Passive Options",
+  title: "1031 Exchange San Jose | Free Turnkey Exchange Help",
   description:
-    "Planning a San Jose investment-property sale? Compare direct replacements and passive DST possibilities, then request free information.",
+    "Free 1031 exchange guidance for San Jose property owners. Get help with QI setup, replacement properties, DST options, deadlines, and closing.",
   icons: {
     icon: [
       { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/" },
 
-  twitter: { card: "summary_large_image", title: "1031 Exchange San Jose | Direct & Passive Options", description: "Planning a San Jose investment-property sale? Compare direct replacements and passive DST possibilities, then request free information." },
+  twitter: { card: "summary_large_image", title: "1031 Exchange San Jose | Free Turnkey Exchange Help", description: "Free 1031 exchange guidance for San Jose property owners. Get help with QI setup, replacement properties, DST options, deadlines, and closing." },
 
-  openGraph: { title: "1031 Exchange San Jose | Direct & Passive Options", description: "Planning a San Jose investment-property sale? Compare direct replacements and passive DST possibilities, then request free information." },
+  openGraph: { title: "1031 Exchange San Jose | Free Turnkey Exchange Help", description: "Free 1031 exchange guidance for San Jose property owners. Get help with QI setup, replacement properties, DST options, deadlines, and closing." },
 };
 
 export default function RootLayout({
