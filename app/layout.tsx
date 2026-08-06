@@ -59,6 +59,7 @@ export default function RootLayout({
         <Footer />
         <StickyCTA />
         <Analytics />
+              <script src="/turnstile-contact.js" defer></script>
       </body>
     </html>
   );
